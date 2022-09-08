@@ -1,8 +1,44 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      //"rich-text"
+      "list-context.image-list#home-slider"
     ]
+  },
+  "list-context.image-list#home-slider":{    
+    "children":[
+      "slider-layout#main-slider__home-slider"
+    ],
+    "props":{
+      "name": "Imágenes Slider",
+      "height": 650,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png",
+          "description": "Promo #1"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png",
+          "description": "Promo #2"
+        }
+      ]
+    }
+  },
+  "slider-layout#main-slider__home-slider":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
+      "blockClass": "mainSlider"
+    }
   },
   "rich-text": { 
     "props": { 
