@@ -1,0 +1,136 @@
+{
+    "flex-layout.row#highlights":{
+        "props":{
+            "blockClass": "highlightRow",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": false,
+            "paddingTop": 8,
+            "paddingBottom": 9,
+            "colGap": 3,
+            "fullWidth": true,
+            "colSizing": "equal"            
+        },
+        "children":[
+            "flex-layout.col#highlight1",
+            "flex-layout.col#highlight2",
+            "flex-layout.col#highlight3",
+            "flex-layout.col#highlight4"
+        ]        
+    },
+    "flex-layout.col#highlight1":{
+        "props": {
+            "verticalAlign": "middle",
+            "paddingTop": 3,
+            "paddingBottom": 3            
+        },
+        "children":[            
+            "rich-text#highlight1-title",
+            "rich-text#highlight1-description"
+        ]
+    },    
+    "flex-layout.col#highlight2":{
+        "props": {
+            "verticalAlign": "middle",
+            "paddingTop": 3,
+            "paddingBottom": 3            
+        },
+        "children":[            
+            "rich-text#highlight2-title",
+            "rich-text#highlight2-description"
+        ]
+    },    
+    "flex-layout.col#highlight3":{
+        "props": {
+            "verticalAlign": "middle",
+            "paddingTop": 3,
+            "paddingBottom": 3
+        },
+        "children":[
+            "rich-text#highlight3-title",
+            "rich-text#highlight3-description"
+        ]
+    },
+    "flex-layout.col#highlight4":{
+        "props": {
+            "verticalAlign": "middle",
+            "paddingTop": 3,
+            "paddingBottom": 3            
+        },
+        "children":[
+            "rich-text#highlight4-title",
+            "rich-text#highlight4-description"
+        ]
+    },
+    "rich-text#highlight1-title":{
+        "props":{
+            "text":"Envío<br>Gratis",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-6",
+            "blockClass": "highlights-title"
+        }
+    },
+    "rich-text#highlight1-description":{
+        "props":{
+            "text": "Por compras<br>desde $000.000",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-body",
+            "blockClass": "highlights-description"
+        }
+    },
+    "rich-text#highlight2-title":{
+        "props":{
+            "text":"Compras<br>Seguras",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-6",
+            "blockClass": "highlights-title"
+        }
+    },
+    "rich-text#highlight2-description":{
+        "props":{
+            "text": "Seguridad de<br>principio a fin",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-body",
+            "blockClass": "highlights-description"
+        }
+    },
+    "rich-text#highlight3-title":{
+        "props":{
+            "text":"Medios de<br>Pago",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-6",
+            "blockClass": "highlights-title"
+        }
+    },
+    "rich-text#highlight3-description":{
+        "props":{
+            "text": "Tarjetas Débito<br>y Crédito",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-body",
+            "blockClass": "highlights-description"
+        }
+    },
+    "rich-text#highlight4-title":{
+        "props":{
+            "text":"Devolución<br>Sin Costo",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-6",
+            "blockClass": "highlights-title"
+        }
+    },
+    "rich-text#highlight4-description":{
+        "props":{
+            "text": "Por compras<br>desde $000.000",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-body",
+            "blockClass": "highlights-description"
+        }
+    }
+}

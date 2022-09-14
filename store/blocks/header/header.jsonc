@@ -7,8 +7,36 @@
   },
   "header-layout.desktop": {
     "children": [
+      "flex-layout.row#promo-topbar",
       "sticky-layout#desktop"
     ]
+  },
+  "flex-layout.row#promo-topbar":{
+    "props":{
+      "horizontalAlign": "center",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "fullWidth": true     
+    },
+    "children":[
+      "flex-layout.col#col__promo-topbar"      
+    ]
+  },
+  "flex-layout.col#col__promo-topbar":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },    
+    "children":[
+      "link#promo-link__promo-topbar"
+    ]
+  },
+  "link#promo-link__promo-topbar":{
+    "props":{
+      "label": "Lorem ipsum dolor 50% sit amet, consectetur adipiscing elit. Duis suscipit suscipit nisl, vel semper elit.",
+      "href": "#",
+      "target": "_blank"
+    }
   },
   "sticky-layout#desktop": {
     "props": {

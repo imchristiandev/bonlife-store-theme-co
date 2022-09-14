@@ -1,51 +1,36 @@
 {
   "store.home": { 
-    "blocks": [
-      //"rich-text"
-      "list-context.image-list#home-slider"
+    "blocks": [      
+      "list-context.image-list#home-slider",
+      "flex-layout.row#highlights",
+      "info-card#promo-banner-one",
+      "info-card#promo-banner-two"
     ]
-  },
-  "list-context.image-list#home-slider":{    
-    "children":[
-      "slider-layout#main-slider__home-slider"
-    ],
+  }  ,
+  "info-card#promo-banner-one":{
     "props":{
-      "name": "Imágenes Slider",
-      "height": 650,
-      "preload": true,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png",
-          "description": "Promo #1"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png",
-          "description": "Promo #2"
-        }
-      ]
+        "isFullModeStyle": false,        
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+        "headline": "Lorem Ipsum",        
+        "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "callToActionText": "Ver Productos",
+        "callToactionUrl": "#",
+        "blockClass": "info-card-promoBannerOne",
+        "textAlignment": "center",
+        "textPosition": "right"
     }
   },
-  "slider-layout#main-slider__home-slider":{
+  "info-card#promo-banner-two":{
     "props":{
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "desktopOnly",
-      "blockClass": "mainSlider"
-    }
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Bonlife Store Theme",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "isFullModeStyle": false,      
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Lorem Ipsum",        
+      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "callToActionText": "Ver Productos",
+      "callToactionUrl": "#",
+      "blockClass": "info-card-promoBannerOne",
+      "textAlignment": "center",
+      "textPosition": "left"
     }
   }
 }
