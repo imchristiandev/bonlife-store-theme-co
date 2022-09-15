@@ -1,0 +1,99 @@
+{
+    "flex-layout.row#categories-row":{
+        "props":{
+            "paddingTop": 6,
+            "paddingBottom": 8            
+        },
+        "children": [
+            "slider-layout#categories-featured-slider"
+        ]
+    },
+    "slider-layout#categories-featured-slider":{
+        "children":[
+            "info-card#category-one",
+            "info-card#category-two",
+            "info-card#category-three",
+            "info-card#category-four",
+            "info-card#category-five",
+            "info-card#category-six"
+        ],
+        "props":{
+            "autoplay": {
+                "timeout": 2500,
+                "stopOnHover": true
+            },
+            "itemsPerPage":{
+                "desktop": 3,
+                "tablet": 2,
+                "phone": 1
+            },
+            "navigationStep": 1
+        }
+    },
+    "info-card#category-one":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category One",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    },
+    "info-card#category-two":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category Two",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    },
+    "info-card#category-three":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category Three",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    },
+    "info-card#category-four":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category Four",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    },
+    "info-card#category-five":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category Five",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    },
+    "info-card#category-six":{
+        "props":{
+            "imageUrl": "#",
+            "isFullModeStyle": true,
+            "textMode": "rich-text",
+            "headline": "### Category Featured",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "textPosition": "center"
+        }
+    }
+}
