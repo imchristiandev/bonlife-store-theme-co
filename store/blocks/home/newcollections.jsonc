@@ -1,0 +1,53 @@
+{
+    "flex-layout.row#new-collection-row":{
+        "props": {
+            "paddingTop": 4,
+            "paddingBottom": 8            
+        },
+        "children": [
+            "list-context.product-list#new-collection-shelf"
+        ]
+    },
+    "list-context.product-list#new-collection-shelf":{
+        "blocks":[
+            "product-summary.shelf#summary__new-collection-shelf"
+        ],
+        "children":[
+            "slider-layout#new-collection-slider"
+        ],
+        "props":{
+            //"category": "2/15",
+            "hideUnavailableItems": false
+        }
+    },
+    "product-summary.shelf#summary__new-collection-shelf":{
+        "children":[
+            "product-summary-image",
+            "product-summary-space",
+            "product-summary-brand",
+            "product-summary-name", 
+            "product-summary-sku-selector#selector-new-collection-products",
+            "product-summary-price",     
+            "product-summary-buy-button"
+        ]        
+    },
+    "product-summary-sku-selector#selector-new-collection-products":{
+        "props":{            
+            "thumbnailImage": "skuvariation",                     
+            "visibility": "more-than-one"
+        }
+    },
+    "slider-layout#new-collection-slider":{
+        "props":{
+            "itemsPerPage":{
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "caruosel"
+        }
+    }
+}
