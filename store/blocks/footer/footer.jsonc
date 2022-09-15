@@ -4,23 +4,248 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer-desktop",
+      "flex-layout.row#copyright"
     ]
+  },  
+  "flex-layout.row#footer-desktop":{
+    "props":{
+      "paddingTop": 6,
+      "paddingBottom": 8      
+    },
+    "children":[
+      "flex-layout.col#left-col__footer",      
+      "flex-layout.col#right-col__footer"
+    ]
+  },
+
+  //
+  "flex-layout.col#left-col__footer":{    
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "image#logo__left-col__footer",
+      "social-networks"
+    ]
+  },
+  "image#logo__left-col__footer":{
+    "props":{
+      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
+      "height": "200px"
+    }
+  },
+  "social-networks":{
+    "props":{
+      "socialNetworks":[
+        {"url": "https://facebook.com", "name": "Facebook"},
+        {"url": "https://instagram.com", "name": "Instagram"},
+        {"url": "https://twitter.com", "name": "Twitter"}
+      ]      
+    }
+  },
+  //
+  "flex-layout.col#right-col__footer":{
+    "props":{
+      "verticalAlign": "top"      
+    },
+    "children":[
+      "flex-layout.row#newsletter-row",
+      "flex-layout.row#contact-info-row"      
+    ]
+  },  
+  "flex-layout.row#newsletter-row":{
+    "props":{      
+      "paddingTop": 6,
+      "paddingBottom": 5,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "flex-layout.col#newsletter-col"
+    ]    
+  },
+  "flex-layout.col#newsletter-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
+    },
+    "children":[
+      "rich-text#newletter-title",
+      "newsletter-form"
+    ]
+  },
+  "rich-text#newletter-title":{
+    "props":{
+      "text": "## Newsletter",
+      "textAligment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  } , 
+  "newsletter-form":{
+    "children":[
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText": "Tu email"
+    }
+  },
+  "newsletter-submit": {
+    "props":{
+      "submitButtonLabel": "Suscribirme"
+    }
+  },
+  //
+  "flex-layout.row#contact-info-row":{
+    "children":[
+      "flex-layout.col#contact-col",
+      "flex-layout.col#policy-col"      
+    ]
+  },  
+  "flex-layout.col#contact-col":{
+    "children": [
+      "rich-text#col-title__contact-col",      
+      "link#option-one__contact-col",
+      "link#option-two__contact-col",
+      "link#option-three__contact-col",
+      "link#option-four__contact-col",
+      "link#option-five__contact-col"
+    ]
+  },
+  "flex-layout.col#policy-col":{
+    "children": [
+      "rich-text#col-title__policy-col",
+      "link#option-one__policy-col",
+      "link#option-two__policy-col",
+      "link#option-three__policy-col",
+      "link#option-four__policy-col",
+      "link#option-five__policy-col"
+    ]
+  },  
+  //
+  "rich-text#col-title__contact-col":{
+    "props":{
+      "text": "#### Nosotros"
+    }
+  },  
+  "link#option-one__contact-col":{
+    "props":{
+      "href": "mailto:info@bonlife.com.co",
+      "label": "info@bonlife.com.co"
+    }
+  },
+  "link#option-two__contact-col":{
+    "props":{
+      "href": "tel:+576025572822",
+      "label": "+57 (602) 557 2822"
+    }
+  },
+  "link#option-three__contact-col":{
+    "props":{
+      "href": "tel:+573165351122",
+      "label": "+57 (316) 535 1122"
+    }
+  },
+  "link#option-four__contact-col":{
+    "props":{
+      "href": "#",
+      "label": "Calle 10 # 23A 11"
+    }
+  },
+  "link#option-five__contact-col":{
+    "props":{
+      "href": "#",
+      "label": "Cali, Colombia"
+    }
+  },
+  //
+  "rich-text#col-title__policy-col":{
+    "props":{
+      "text": "#### Políticas"
+    }
+  },
+  "link#option-one__policy-col":{
+    "props":{
+      "href": "#",
+      "label": "Privacidad"
+    }
+  },
+  "link#option-two__policy-col":{
+    "props":{
+      "href": "#",
+      "label": "Día sin IVA"
+    }
+  },
+  "link#option-three__policy-col":{
+    "props":{
+      "href": "#",
+      "label": "Tratamiento de datos"
+    }
+  },
+  "link#option-four__policy-col":{
+    "props":{
+      "href": "#",
+      "label": "Políticas de compra"
+    }
+  },
+  "link#option-five__policy-col":{
+    "props":{
+      "href": "#",
+      "label": "PQR"
+    }
+  },     
+  //
+  "flex-layout.row#copyright":{
+    "children":[
+      "flex-layout.col#copyright-text-left-col",
+      "flex-layout.row#copyright-logos-right-col"
+    ]
+  },
+  "flex-layout.col#copyright-text-left-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "width": "90%",
+      "paddingLeft": 5
+    },
+    "children":["rich-text#copyright-text"]
+  },
+  "rich-text#copyright-text":{
+    "props":{
+      "text": "Todos los derechos reservados",
+      "textAligment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#copyright-logos-right-col":{
+    "props":{
+      "paddingTop": 3,
+      "preventHorizontalStretch": true
+    },
+    "children":[
+      "image#onewaylogo",
+      "image#vtexlogo"
+    ]
+  },
+  "image#onewaylogo":{
+    "props":{
+      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
+      "height": "30px"
+    }
+  },
+  "image#vtexlogo":{
+    "props":{
+      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
+      "height": "30px"
+    }
   },
   "footer-layout.mobile": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer-mobile"
     ]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
-    }
-  }
+  "flex-layout.row#footer-mobile":{}
 }
