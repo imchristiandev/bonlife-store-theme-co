@@ -5,6 +5,7 @@
   "footer-layout.desktop": { 
     "children": [
       "flex-layout.row#footer-desktop",
+      "flex-layout.row#footer-logistic-information",
       "flex-layout.row#copyright"
     ]
   },  
@@ -197,7 +198,50 @@
       "href": "#",
       "label": "PQR"
     }
-  },     
+  },   
+  //
+  "flex-layout.row#footer-logistic-information":{
+    "props":{
+      "paddingBottom": 8,
+      "paddingTop": 6,
+      "horizontalAlign": "center"
+      // "preventHorizontalStretch": true
+    },
+    "children":[
+      "flex-layout.col#payment-methods-col",
+      "flex-layout.col#carriers-col"
+    ]
+  },  
+  "flex-layout.col#payment-methods-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "image#payment-methods-img"
+    ]
+  },
+  "flex-layout.col#carriers-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "image#carriers-img"
+    ]
+  },
+  "image#payment-methods-img":{
+    "props":{
+      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
+      "height": "100px"
+    }
+  },
+  "image#carriers-img":{
+    "props":{
+      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
+      "height": "100px"
+    }
+  },
   //
   "flex-layout.row#copyright":{
     "children":[
