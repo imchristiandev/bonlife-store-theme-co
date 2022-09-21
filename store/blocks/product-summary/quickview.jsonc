@@ -119,7 +119,7 @@
     },
     "product-summary-sku-selector#quickview": {
         "props": {
-            "thumbnailImage": "skuvariation",
+            //"thumbnailImage": "skuvariation",
             "imageHeight": 28,
             "blockClass": "quickview",
             "visibility": "more-than-one"
