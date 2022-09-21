@@ -5,9 +5,34 @@
             "paddingBottom": 8            
         },
         "children": [
-            "list-context.product-list#new-collection-shelf"
+            "flex-layout.col#new-collection-col"            
         ]
     },
+    "flex-layout.col#new-collection-col":{
+        "props":{
+            "verticalAlign": "middle"            
+        },
+        "children":[
+            "rich-text#new-collections-title",
+            "rich-text#new-collections-description",
+            "list-context.product-list#new-collection-shelf",
+            "flex-layout.row#new-collection-button-col"            
+        ]
+    },
+    "rich-text#new-collections-title":{
+        "props":{
+          "text": "## Nueva Colección",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"      
+        }
+      },
+      "rich-text#new-collections-description":{
+        "props":{
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"      
+        }
+      },
     "list-context.product-list#new-collection-shelf":{
         "blocks":[
             "product-summary.shelf#summary__new-collection-shelf"
@@ -48,6 +73,25 @@
             "fullWidth": false,
             "showNavigationArrows": "desktopOnly",
             "blockClass": "caruosel"
+        }
+    },
+    "flex-layout.row#new-collection-button-col":{
+        "props":{            
+            "horizontalAlign": "center",
+            "paddingTop": 8,
+            "paddingBottom": 6,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "link#collection-button"        
+        ]
+    },
+    "link#collection-button":{
+        "props":{
+            "label": "Ver Colección",
+            "href": "#",
+            // "target": "_blank",
+            "displayMode": "button"
         }
     }
 }

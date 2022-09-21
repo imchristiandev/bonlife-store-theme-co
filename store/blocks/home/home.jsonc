@@ -4,9 +4,7 @@
       "list-context.image-list#home-slider",
       "flex-layout.row#highlights",
       "info-card#promo-banner-one",
-      "info-card#promo-banner-two",
-      "rich-text#new-collections-title",
-      "rich-text#new-collections-description",
+      "info-card#promo-banner-two",      
       "flex-layout.row#new-collection-row",
       "rich-text#featured-products-title",
       "flex-layout.row#featured-products-row",      
@@ -38,33 +36,12 @@
       "textAlignment": "center",
       "textPosition": "left"
     }
-  },
-  "rich-text#new-collections-title":{
-    "props":{
-      "text": "## Nueva Colección",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"      
-    }
-  },
-  "rich-text#new-collections-description":{
-    "props":{
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"      
-    }
-  },
+  },  
   "rich-text#featured-products-title":{
     "props": {
       "text": "## Productos Destacados",
       "textAligment": "LEFT",
       "textPosition": "LEFT"
     }
-  }
-  /*"rich-text#featured-products-description":{
-    "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "textAligment": "LEFT",
-      "textPosition": "LEFT"
-    }
-   }*/
+  }  
 }
