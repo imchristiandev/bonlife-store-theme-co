@@ -1,0 +1,205 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#product-detailed-information"      
+    ]
+  },
+  "flex-layout.row#product-breadcrumb":{
+    "children":[
+      "breadcrumb#pdp-breadcrumb"
+    ],
+    "props":{
+      "marginTop": 4
+    }
+  },
+  "breadcrumb#pdp-breadcrumb":{
+    "props":{
+      "showOnMobile": true      
+    }
+  },
+  "flex-layout.row#product-main":{
+    "children":[
+      "flex-layout.col#product-image__product__main",
+      "flex-layout.col#main-info__product-main"      
+    ],
+    "props":{
+      "colGap": 9,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7      
+    }
+  },
+  "flex-layout.col#product-image__product__main":{
+    "children":[
+      "product-images"
+    ],
+    "props":{
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "product-images":{
+    "props":{
+      "displayThumbnailsArrows": true,      
+      "thumbnailsOrientation": "vertical"
+    }
+  },
+  "flex-layout.col#main-info__product-main":{
+    "children":[
+      "product-name",
+      "product-separator",      
+      "product-identifier.product",
+      "product-price#product-details",
+      "product-separator",      
+      "sku-selector",
+      "product-quantity",
+      "add-to-cart-button",
+      // "flex-layout.row#buy-button-quantity",
+      "shipping-simulator",
+      "share#default"
+    ],
+    "props":{
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "product-price#product-details":{
+    "props":{
+      "showSavings": true
+    }
+  },
+  "flex-layout.row#buy-button-quantity":{
+    "children":[
+      "product-quantity",
+      "add-to-cart-button"
+    ],
+    "props":{
+      "marginTop": 4,
+      "marginBottom": 7
+    }
+  },
+  "share#default":{
+    "props":{
+      "social":{
+        "Facebook": true,
+        "WhatsApp": true,        
+        "Pinterest": true,
+        "Twitter": true
+      }
+    }
+  },
+  "flex-layout.row#product-detailed-information":{
+    "props":{
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    },
+    "children":[
+      "tab-layout#tabs__product-detailed-information"
+    ]
+  },
+  "tab-layout#tabs__product-detailed-information":{
+    "children":[
+      "tab-list#tabs-list__product-detailed-information",
+      "tab-content#tabs-content__product-detailed-information"
+    ]
+  },
+  "tab-list#tabs-list__product-detailed-information":{
+    "children":[
+      "tab-list.item#description",
+      "tab-list.item#product-information",
+      "tab-list.item#shipping-information",
+      "tab-list.item#payment-methods"
+    ]
+  },
+  "tab-list.item#description":{
+    "props":{
+      "tabId": "description",
+      "label": "Descripción",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#product-information":{
+    "props":{
+      "tabId": "product-information",
+      "label": "Información de producto"
+    }
+  },
+  "tab-list.item#shipping-information":{
+    "props":{
+      "tabId": "shipping-information",
+      "label": "Envío"
+    }
+  },
+  "tab-list.item#payment-methods":{
+    "props":{
+      "tabId": "payment-methods",
+      "label": "Métodos de pago"
+    }
+  },
+  "tab-content#tabs-content__product-detailed-information":{
+    "children":[
+      "tab-content.item#description",
+      "tab-content.item#product-information",
+      "tab-content.item#shipping-information",
+      "tab-content.item#payment-methods"
+    ]
+  },
+  "tab-content.item#description":{
+    "children":[
+      "product-description"
+    ],
+    "props":{
+      "tabId": "description"
+    }
+  },
+  "tab-content.item#product-information":{
+    "children":[
+      "rich-text#content__product-information"
+    ],
+    "props":{
+      "tabId": "product-information"
+    }
+  },
+  "tab-content.item#shipping-information":{
+    "children":[
+      "rich-text#content__shipping-information"
+    ],
+    "props":{
+      "tabId": "shipping-information"
+    }
+  },
+  "tab-content.item#payment-methods":{
+    "children":[
+      "rich-text#content__payment-methods"
+    ],
+    "props":{
+      "tabId": "payment-methods"
+    }
+  },
+  "product-description":{
+    "props":{
+      "collapseContent": true,
+      "showTitle": true,
+      "title": "Descripción"
+    }
+  },
+  "rich-text#content__product-information":{
+    "props":{
+      "text": "#### Información de producto"      
+    }
+  },
+  "rich-text#content__shipping-information":{
+    "props":{
+      "text": "#### Tabla de medidas"      
+    }
+  },
+  "rich-text#content__payment-methods":{
+    "props":{
+      "text": "#### Envío & Devoluciones"
+    }
+  }
+}
