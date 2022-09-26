@@ -1,0 +1,89 @@
+{
+    "vtex.menu@2.x:menu#aboutus":{
+        "props": {
+            "orientation": "vertical"
+        },
+        "children":[
+            "menu-item#option-one-contact",
+            "menu-item#option-two-contact",
+            "menu-item#option-three-contact",
+            "menu-item#option-four-contact",
+            "menu-item#option-five-contact"
+        ]
+    },
+    "menu-item#option-one-contact":{
+        "props":{
+            "id": "option-one-contact",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "mailto:info@bonlife.com.co",
+                "noFollow": false,
+                "tagTitle": "info@bonlife.com.co",
+                "text": "info@bonlife.com.co"
+            }
+        }
+    },
+    "menu-item#option-two-contact":{
+        "props":{
+            "id": "option-two-contact",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "tel:+576025572822",
+                "noFollow": false,
+                "tagTitle": "+57 (602) 557 2822",
+                "text": "+57 (602) 557 2822"
+            }
+        }
+    },
+    "menu-item#option-three-contact":{
+        "props":{
+            "id": "option-three-contact",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "tel:+573165351122",
+                "noFollow": false,
+                "tagTitle": "+57 (316) 535 1122",
+                "text": "+57 (316) 535 1122"
+            }
+        }
+    },
+    "menu-item#option-four-contact":{
+        "props":{
+            "id": "option-four-contact",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Calle 10 # 23A 11",
+                "text": "Calle 10 # 23A 11"
+            }
+        }
+    },
+    "menu-item#option-five-contact":{
+        "props":{
+            "id": "option-five-contact",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Cali, Colombia",
+                "text": "Cali, Colombia"
+            }
+        }
+    }      
+}

@@ -1,0 +1,89 @@
+{
+    "vtex.menu@2.x:menu#legal":{
+        "props": {
+            "orientation": "vertical"
+        },
+        "children":[
+            "menu-item#option-one-legal",
+            "menu-item#option-two-legal",
+            "menu-item#option-three-legal",
+            "menu-item#option-four-legal",
+            "menu-item#option-five-legal"
+        ]
+    },
+    "menu-item#option-one-legal":{
+        "props":{
+            "id": "option-one-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Privacidad",
+                "text": "Privacidad"
+            }
+        }
+    },
+    "menu-item#option-two-legal":{
+        "props":{
+            "id": "option-two-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Día sin IVA",
+                "text": "Día sin IVA"
+            }
+        }
+    },
+    "menu-item#option-three-legal":{
+        "props":{
+            "id": "option-three-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Tratamiento de datos",
+                "text": "Tratamiento de datos"
+            }
+        }
+    },
+    "menu-item#option-four-legal":{
+        "props":{
+            "id": "option-four-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Políticas de compra",
+                "text": "Políticas de compra"
+            }
+        }
+    },
+    "menu-item#option-five-legal":{
+        "props":{
+            "id": "option-five-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "PQR",
+                "text": "PQR"
+            }
+        }
+    }      
+}

@@ -109,97 +109,27 @@
   },  
   "flex-layout.col#contact-col":{
     "children": [
-      "rich-text#col-title__contact-col",      
-      "link#option-one__contact-col",
-      "link#option-two__contact-col",
-      "link#option-three__contact-col",
-      "link#option-four__contact-col",
-      "link#option-five__contact-col"
+      "rich-text#col-title__contact-col",
+      "vtex.menu@2.x:menu#aboutus"      
     ]
   },
   "flex-layout.col#policy-col":{
     "children": [
       "rich-text#col-title__policy-col",
-      "link#option-one__policy-col",
-      "link#option-two__policy-col",
-      "link#option-three__policy-col",
-      "link#option-four__policy-col",
-      "link#option-five__policy-col"
+      "vtex.menu@2.x:menu#legal"      
     ]
   },  
   //
   "rich-text#col-title__contact-col":{
     "props":{
-      "text": "#### Nosotros"
+      "text": "#### Contáctenos"
     }
   },  
-  "link#option-one__contact-col":{
-    "props":{
-      "href": "mailto:info@bonlife.com.co",
-      "label": "info@bonlife.com.co"
-    }
-  },
-  "link#option-two__contact-col":{
-    "props":{
-      "href": "tel:+576025572822",
-      "label": "+57 (602) 557 2822"
-    }
-  },
-  "link#option-three__contact-col":{
-    "props":{
-      "href": "tel:+573165351122",
-      "label": "+57 (316) 535 1122"
-    }
-  },
-  "link#option-four__contact-col":{
-    "props":{
-      "href": "#",
-      "label": "Calle 10 # 23A 11"
-    }
-  },
-  "link#option-five__contact-col":{
-    "props":{
-      "href": "#",
-      "label": "Cali, Colombia"
-    }
-  },
-  //
   "rich-text#col-title__policy-col":{
     "props":{
       "text": "#### Políticas"
     }
-  },
-  "link#option-one__policy-col":{
-    "props":{
-      "href": "#",
-      "label": "Privacidad"
-    }
-  },
-  "link#option-two__policy-col":{
-    "props":{
-      "href": "#",
-      "label": "Día sin IVA"
-    }
-  },
-  "link#option-three__policy-col":{
-    "props":{
-      "href": "#",
-      "label": "Tratamiento de datos"
-    }
-  },
-  "link#option-four__policy-col":{
-    "props":{
-      "href": "#",
-      "label": "Políticas de compra"
-    }
-  },
-  "link#option-five__policy-col":{
-    "props":{
-      "href": "#",
-      "label": "PQR"
-    }
-  },   
-  //
+  },  
   "flex-layout.row#footer-logistic-information":{
     "props":{
       "paddingBottom": 8,
