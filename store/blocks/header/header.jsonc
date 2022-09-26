@@ -57,10 +57,10 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#search-bar-col",
+      "locale-switcher",      
+      "minicart.v2",
+      "login"
     ]
   },
   "flex-layout.col#spacer": {
@@ -78,8 +78,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://www.logodesign.net/logo-new/text-under-swoosh-9385ld.png?size=1&industry=All&bg=0",
+      "height": "70"
     }
   },
   "flex-layout.col#category-menu":{
@@ -122,28 +122,117 @@
       ]
     }
   },
+  "flex-layout.col#search-bar-col":{
+    "props":{
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "search-bar"
+    ]
+  },
+
+
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"      
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
-  },
-  "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
+      "flex-layout.row#main-actions__mobile",
+      "flex-layout.row#search-bar-login-row__mobile"
+    ]
+  },
+  "flex-layout.row#main-actions__mobile": {    
+    "children": [
+      "flex-layout.col#menu-drawer-col",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#logo-mobile-col",
+      "flex-layout.col#spacer",
+      "flex-layout.col#cart-col"
     ],
     "props": {
+      "horizontalAlign": "center",
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  "flex-layout.col#menu-drawer-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "drawer"
+    ]
+  },
+  "flex-layout.col#logo-mobile-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "logo#mobile"
+    ]
+  },  
+  "flex-layout.col#cart-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "minicart.v2"
+    ]
+  },
   "drawer": {
     "children": []
+  },
+  "logo#mobile":{
+    "props":{
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.logodesign.net/logo-new/text-under-swoosh-9385ld.png?size=1&industry=All&bg=0",
+      "height": "50"
+    }
+  },  
+  "flex-layout.row#search-bar-login-row__mobile":{
+    "props":{
+      "horizontalAlign": "between",
+      "blockClass": "search-bar-login-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children":[
+      "flex-layout.col#login-col",
+      "flex-layout.col#search-bar-col__mobile"
+    ]
+  },
+  "flex-layout.col#login-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "login#mobile"
+    ]
+  },
+  "login#mobile":{
+    "props":{
+      "showIconProfile": true,      
+      "logInButtonBehavior": "popover"
+    }
+  },
+  "flex-layout.col#search-bar-col__mobile" :{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "paddingRight": 4
+    },
+    "children":[
+      "search-bar"
+    ]
   }
 }
