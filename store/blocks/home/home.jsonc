@@ -1,47 +1,28 @@
 {
   "store.home": { 
-    "blocks": [      
+    "blocks": [            
       "list-context.image-list#home-slider",
+      "responsive-layout.desktop#home-desktop",
+      "responsive-layout.mobile#home-mobile"
+    ]
+  },  
+  "responsive-layout.desktop#home-desktop":{
+    "children":[
       "flex-layout.row#highlights",
       "info-card#promo-banner-one",
       "info-card#promo-banner-two",      
-      "flex-layout.row#new-collection-row",
-      "rich-text#featured-products-title",
-      "flex-layout.row#featured-products-row",      
+      "flex-layout.row#new-collection-row__desktop",            
+      "flex-layout.row#featured-products-row__desktop",      
       "flex-layout.row#categories-row"
     ]
   },
-  "info-card#promo-banner-one":{
-    "props":{
-        "isFullModeStyle": false,        
-        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-        "headline": "Lorem Ipsum",        
-        "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "callToActionText": "Ver Productos",
-        "callToactionUrl": "#",
-        "blockClass": "info-card-promoBannerOne",
-        "textAlignment": "center",
-        "textPosition": "right"
-    }
-  },
-  "info-card#promo-banner-two":{
-    "props":{
-      "isFullModeStyle": false,      
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Lorem Ipsum",        
-      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "callToActionText": "Ver Productos",
-      "callToactionUrl": "#",
-      "blockClass": "info-card-promoBannerOne",
-      "textAlignment": "center",
-      "textPosition": "left"
-    }
-  },  
-  "rich-text#featured-products-title":{
-    "props": {
-      "text": "## Productos Destacados",
-      "textAligment": "LEFT",
-      "textPosition": "LEFT"
-    }
-  }  
+  "responsive-layout.mobile#home-mobile":{
+    "children":[
+      "flex-layout.row#categories-row",      
+      "flex-layout.row#featured-products-row__mobile",
+      "flex-layout.row#new-collection-row__mobile",
+      "info-card#promo-banner-one",
+      "info-card#promo-banner-two"            
+    ]
+  }
 }
