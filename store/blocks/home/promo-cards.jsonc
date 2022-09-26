@@ -1,0 +1,28 @@
+{
+    "info-card#promo-banner-one": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "headline": "Lorem Ipsum",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "callToactionUrl": "#",
+            "blockClass": "info-card-promoBannerOne",
+            "textAlignment": "center",
+            "textPosition": "right"
+        }
+    },
+    "info-card#promo-banner-two": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "headline": "Lorem Ipsum",
+            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver Productos",
+            "callToactionUrl": "#",
+            "blockClass": "info-card-promoBannerOne",
+            "textAlignment": "center",
+            "textPosition": "left"
+        }
+    }
+}
