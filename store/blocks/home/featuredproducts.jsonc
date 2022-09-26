@@ -1,13 +1,34 @@
 {
-    "flex-layout.row#featured-products-row":{
+    "flex-layout.row#featured-products-row__desktop":{
         "props":{
             "paddingTop": 4,
             "paddingBottom": 8            
         },
         "children": [
+            "flex-layout.col#featured-products-col__desktop"
+        ]
+    },
+    "flex-layout.col#featured-products-col__desktop":{
+        "children":[
+            "flex-layout.row#featured-products-title-row__desktop",
             "list-context.product-list#featured-products-context"
         ]
     },
+    "flex-layout.row#featured-products-title-row__desktop":{
+        "props":{
+            "horizontalAlign": "center"
+        },
+        "children":[
+            "rich-text#featured-products-title__desktop"            
+        ]
+    },    
+    "rich-text#featured-products-title__desktop":{
+        "props": {
+          "text": "## Productos Destacados",
+          "textAligment": "LEFT",
+          "textPosition": "LEFT"
+        }
+    },    
     "list-context.product-list#featured-products-context":{
         "blocks":[
             "product-summary.shelf#featured-products-shelf"
@@ -47,6 +68,29 @@
             "fullWidth": false,
             "showNavigationArrows": "desktopOnly",
             "blockClass": "caruosel"
+        }
+    },
+    "flex-layout.row#featured-products-row__mobile":{
+        "children":[
+            "flex-layout.col#featured-products-col__mobile"
+        ]
+    },
+    "flex-layout.col#featured-products-col__mobile":{
+        "children":[
+            "flex-layout.row#featured-products-title-row__mobile",
+            "list-context.product-list#featured-products-context"
+        ]
+    },
+    "flex-layout.row#featured-products-title-row__mobile":{
+        "children":[
+            "rich-text#featured-products-title__mobile"        
+        ]
+    },
+    "rich-text#featured-products-title__mobile":{
+        "props": {
+          "text": "## Productos Destacados",
+          "textAligment": "CENTER",
+          "textPosition": "CENTER"
         }
     }
 }
