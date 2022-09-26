@@ -130,22 +130,22 @@
   },
   "tab-list.item#shipping-information":{
     "props":{
-      "tabId": "shipping-information",
-      "label": "Envío"
+      "tabId": "measure-table",
+      "label": "Tabla de Medidas"
     }
   },
   "tab-list.item#payment-methods":{
     "props":{
-      "tabId": "payment-methods",
-      "label": "Métodos de pago"
+      "tabId": "shipping-warranty",
+      "label": "Envíos y Devoluciones"
     }
   },
   "tab-content#tabs-content__product-detailed-information":{
     "children":[
       "tab-content.item#description",
       "tab-content.item#product-information",
-      "tab-content.item#shipping-information",
-      "tab-content.item#payment-methods"
+      "tab-content.item#measure-table",
+      "tab-content.item#shipping-warranty"
     ]
   },
   "tab-content.item#description":{
@@ -164,20 +164,20 @@
       "tabId": "product-information"
     }
   },
-  "tab-content.item#shipping-information":{
+  "tab-content.item#measure-table":{
     "children":[
-      "rich-text#content__shipping-information"
+      "rich-text#content__measure-table"
     ],
     "props":{
-      "tabId": "shipping-information"
+      "tabId": "measure-table"
     }
   },
-  "tab-content.item#payment-methods":{
+  "tab-content.item#shipping-warranty":{
     "children":[
-      "rich-text#content__payment-methods"
+      "rich-text#content__shipping-warranty"
     ],
     "props":{
-      "tabId": "payment-methods"
+      "tabId": "shipping-warranty"
     }
   },
   "product-description":{
@@ -192,12 +192,12 @@
       "text": "#### Información de producto"      
     }
   },
-  "rich-text#content__shipping-information":{
+  "rich-text#content__measure-table":{
     "props":{
       "text": "#### Tabla de medidas"      
     }
   },
-  "rich-text#content__payment-methods":{
+  "rich-text#content__shipping-warranty":{
     "props":{
       "text": "#### Envío & Devoluciones"
     }
