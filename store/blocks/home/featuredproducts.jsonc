@@ -44,18 +44,10 @@
         "children":[
             "product-summary-image",
             "product-summary-name",
-            //"product-rating-inline",
-            "product-summary-sku-selector#featured-products-selector",
             "product-summary-space",
             "product-summary-price",
             "product-summary-buy-button"
         ]
-    },
-    "product-summary-sku-selector#featured-products-selector":{
-        "props":{            
-            "thumbnailImage": "skuvariation",                     
-            "visibility": "more-than-one"
-        }
     },
     "slider-layout#featured-products-slider-shelf":{
         "props":{
