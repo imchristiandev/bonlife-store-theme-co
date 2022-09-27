@@ -4,12 +4,12 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer-desktop",
+      "flex-layout.row#footer-main",
       "flex-layout.row#footer-logistic-information",
-      "flex-layout.row#copyright"
+      "flex-layout.row#copyright__desktop"
     ]
   },  
-  "flex-layout.row#footer-desktop":{
+  "flex-layout.row#footer-main":{
     "props":{
       "paddingTop": 6,
       "paddingBottom": 8      
@@ -24,7 +24,9 @@
   "flex-layout.col#left-col__footer":{    
     "props":{
       "verticalAlign": "middle",
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "paddingLeft": 4,
+      "paddingRight": 4
     },
     "children":[
       "image#logo__left-col__footer",
@@ -49,7 +51,9 @@
   //
   "flex-layout.col#right-col__footer":{
     "props":{
-      "verticalAlign": "top"      
+      "verticalAlign": "top",
+      "paddingLeft": 4,
+      "paddingRight": 4
     },
     "children":[
       "flex-layout.row#newsletter-row",
@@ -132,10 +136,9 @@
   },  
   "flex-layout.row#footer-logistic-information":{
     "props":{
-      "paddingBottom": 8,
-      "paddingTop": 6,
+      "paddingBottom": 3,
+      "paddingTop": 4,
       "horizontalAlign": "center"
-      // "preventHorizontalStretch": true
     },
     "children":[
       "flex-layout.col#payment-methods-col",
@@ -173,7 +176,7 @@
     }
   },
   //
-  "flex-layout.row#copyright":{
+  "flex-layout.row#copyright__desktop":{
     "children":[
       "flex-layout.col#copyright-text-left-col",
       "flex-layout.row#copyright-logos-right-col"
@@ -197,7 +200,8 @@
   "flex-layout.row#copyright-logos-right-col":{
     "props":{
       "paddingTop": 3,
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
     },
     "children":[
       "image#onewaylogo",
@@ -207,19 +211,61 @@
   "image#onewaylogo":{
     "props":{
       "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "30px"
+      "height": "40px"
     }
   },
   "image#vtexlogo":{
     "props":{
       "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "30px"
+      "height": "40px"
     }
   },
+
+
   "footer-layout.mobile": { 
     "children": [
       "flex-layout.row#footer-mobile"
     ]
   },
-  "flex-layout.row#footer-mobile":{}
+  "flex-layout.row#footer-mobile":{
+    "children":[
+      "flex-layout.row#footer-main",
+      "flex-layout.row#footer-logistic-information",
+      "flex-layout.row#copyright__mobile"
+    ]
+  },
+  "flex-layout.row#copyright__mobile":{
+    "children":[
+      "flex-layout.col#copyright-text-col__mobile",
+      "flex-layout.row#copyright-logos-row__mobile"
+    ]
+  },
+  "flex-layout.col#copyright-text-col__mobile":{
+    "props":{
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#copyright-text-col__mobile"
+    ]
+  },
+  "rich-text#copyright-text-col__mobile":{
+    "props":{
+      "text": "Todos los derechos reservados",
+      "textAligment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#copyright-logos-row__mobile":{
+    "props":{
+      "paddingTop": 3,
+      "paddingBottom": 5,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "image#onewaylogo",
+      "image#vtexlogo"
+    ]
+  }
 }
