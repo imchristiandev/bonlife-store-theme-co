@@ -3,7 +3,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#product-detailed-information"      
+      "responsive-layout.desktop#product-detailed-information-section__desktop",
+      "responsive-layout.mobile#product-detailed-information-section__mobile"      
     ]
   },
   "flex-layout.row#product-breadcrumb":{
@@ -90,116 +91,6 @@
         "Pinterest": true,
         "Twitter": true
       }
-    }
-  },
-  "flex-layout.row#product-detailed-information":{
-    "props":{
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true
-    },
-    "children":[
-      "tab-layout#tabs__product-detailed-information"
-    ]
-  },
-  "tab-layout#tabs__product-detailed-information":{
-    "children":[
-      "tab-list#tabs-list__product-detailed-information",
-      "tab-content#tabs-content__product-detailed-information"
-    ]
-  },
-  "tab-list#tabs-list__product-detailed-information":{
-    "children":[
-      "tab-list.item#description",
-      "tab-list.item#product-information",
-      "tab-list.item#shipping-information",
-      "tab-list.item#payment-methods"
-    ]
-  },
-  "tab-list.item#description":{
-    "props":{
-      "tabId": "description",
-      "label": "Descripción",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#product-information":{
-    "props":{
-      "tabId": "product-information",
-      "label": "Información de producto"
-    }
-  },
-  "tab-list.item#shipping-information":{
-    "props":{
-      "tabId": "measure-table",
-      "label": "Tabla de Medidas"
-    }
-  },
-  "tab-list.item#payment-methods":{
-    "props":{
-      "tabId": "shipping-warranty",
-      "label": "Envíos y Devoluciones"
-    }
-  },
-  "tab-content#tabs-content__product-detailed-information":{
-    "children":[
-      "tab-content.item#description",
-      "tab-content.item#product-information",
-      "tab-content.item#measure-table",
-      "tab-content.item#shipping-warranty"
-    ]
-  },
-  "tab-content.item#description":{
-    "children":[
-      "product-description"
-    ],
-    "props":{
-      "tabId": "description"
-    }
-  },
-  "tab-content.item#product-information":{
-    "children":[
-      "rich-text#content__product-information"
-    ],
-    "props":{
-      "tabId": "product-information"
-    }
-  },
-  "tab-content.item#measure-table":{
-    "children":[
-      "rich-text#content__measure-table"
-    ],
-    "props":{
-      "tabId": "measure-table"
-    }
-  },
-  "tab-content.item#shipping-warranty":{
-    "children":[
-      "rich-text#content__shipping-warranty"
-    ],
-    "props":{
-      "tabId": "shipping-warranty"
-    }
-  },
-  "product-description":{
-    "props":{
-      "collapseContent": true,
-      "showTitle": true,
-      "title": "Descripción"
-    }
-  },
-  "rich-text#content__product-information":{
-    "props":{
-      "text": "#### Información de producto"      
-    }
-  },
-  "rich-text#content__measure-table":{
-    "props":{
-      "text": "#### Tabla de medidas"      
-    }
-  },
-  "rich-text#content__shipping-warranty":{
-    "props":{
-      "text": "#### Envío & Devoluciones"
     }
   }
 }
