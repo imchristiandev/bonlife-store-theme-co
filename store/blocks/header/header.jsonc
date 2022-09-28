@@ -59,8 +59,8 @@
       "flex-layout.col#spacer",
       "flex-layout.col#search-bar-col",
       "locale-switcher",      
-      "minicart.v2",
-      "login"
+      "login",
+      "minicart.v2"
     ]
   },
   "flex-layout.col#spacer": {
@@ -78,8 +78,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://www.logodesign.net/logo-new/text-under-swoosh-9385ld.png?size=1&industry=All&bg=0",
-      "height": "70"
+      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "height": "50"
     }
   },
   "flex-layout.col#category-menu":{
@@ -130,6 +130,13 @@
       "search-bar"
     ]
   },
+  "login":{
+    "props":{
+      "showIconProfile": true,      
+      "iconLabel": "Mi cuenta",      
+      "logInButtonBehavior": "popover"
+    }
+  },
 
 
   "header-layout.mobile": {
@@ -140,23 +147,23 @@
   "sticky-layout#mobile": {
     "children": [
       "flex-layout.row#main-actions__mobile",
-      "flex-layout.row#search-bar-login-row__mobile"
+      "flex-layout.row#search-bar-row__mobile"
     ]
   },
   "flex-layout.row#main-actions__mobile": {    
     "children": [
       "flex-layout.col#menu-drawer-col",
-      "flex-layout.col#spacer",
       "flex-layout.col#logo-mobile-col",
-      "flex-layout.col#spacer",
-      "flex-layout.col#cart-col"
+      // "flex-layout.col#login-col",
+      "flex-layout.col#login-cart-col"
     ],
     "props": {
       "horizontalAlign": "center",
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "colGap": 0
     }
   },
   "flex-layout.col#menu-drawer-col":{
@@ -168,6 +175,9 @@
       "drawer"
     ]
   },
+  "drawer": {
+    "children": []
+  },
   "flex-layout.col#logo-mobile-col":{
     "props":{
       "verticalAlign": "middle",
@@ -176,38 +186,28 @@
     "children":[
       "logo#mobile"
     ]
-  },  
-  "flex-layout.col#cart-col":{
-    "props":{
-      "verticalAlign": "middle",
-      "horizontalAlign": "center"
-    },
-    "children":[
-      "minicart.v2"
-    ]
-  },
-  "drawer": {
-    "children": []
   },
   "logo#mobile":{
     "props":{
       "title": "Logo",
       "href": "/",
-      "url": "https://www.logodesign.net/logo-new/text-under-swoosh-9385ld.png?size=1&industry=All&bg=0",
-      "height": "50"
+      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "height": "35"
     }
-  },  
-  "flex-layout.row#search-bar-login-row__mobile":{
+  },
+  "flex-layout.col#login-cart-col":{
+    "children":[
+      "flex-layout.row#login-cart-row"
+    ]
+  },
+  "flex-layout.row#login-cart-row":{
     "props":{
-      "horizontalAlign": "between",
-      "blockClass": "search-bar-login-mobile",
-      "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "colGap": 1
     },
     "children":[
-      "flex-layout.col#login-col",
-      "flex-layout.col#search-bar-col__mobile"
+      "login#mobile",
+      "minicart.v2"
     ]
   },
   "flex-layout.col#login-col":{
@@ -222,8 +222,30 @@
   "login#mobile":{
     "props":{
       "showIconProfile": true,      
+      "hideIconLabel": true,
       "logInButtonBehavior": "popover"
     }
+  },
+  "flex-layout.col#cart-col":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.row#search-bar-row__mobile":{
+    "props":{
+      "horizontalAlign": "center",
+      "blockClass": "search-bar-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children":[
+      "flex-layout.col#search-bar-col__mobile"
+    ]
   },
   "flex-layout.col#search-bar-col__mobile" :{
     "props":{
