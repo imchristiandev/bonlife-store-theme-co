@@ -120,6 +120,9 @@
         ]
     },
     "flex-layout.row#product-detailed-information-row__disclosure": {
+        "props":{
+            "paddingBottom": 7
+        },
         "children": [
             "flex-layout.col#product-detailed-information-col__disclosure"
         ]
