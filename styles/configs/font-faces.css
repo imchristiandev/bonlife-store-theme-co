@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'DinBold';
+    src: url(assets/fonts/DIN-Bold.ttf), url(assets/fonts/DIN-Bold_1.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'DinLight';
+    src: url(assets/fonts/DIN-Light.ttf), url(assets/fonts/DIN-Light_1.woff);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DinRegular';
+    src: url(assets/fonts/DIN-Regular.ttf), url(assets/fonts/DIN-Regular_1.woff);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'DinMedium';
+    src: url(assets/fonts/DIN-Medium.ttf), url(assets/fonts/DIN-Medium_1.woff);
+    font-style: normal;
+    font-weight: 600;
+}
