@@ -56,7 +56,7 @@
   },
   "search-result-layout.desktop":{
     "children":[
-      "flex-layout.row#promo-banner",
+      "flex-layout.row#promo-banner__desktop",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -67,12 +67,12 @@
       "defaultGalleryLayout": "grid"
     }
   },
-  "flex-layout.row#promo-banner":{
+  "flex-layout.row#promo-banner__desktop":{
     "children": [
-      "image#promo-banner"
+      "image#promo-banner__desktop"
     ]
   },
-  "image#promo-banner":{
+  "image#promo-banner__desktop":{
     "props":{
       "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
       "height": 300
@@ -188,6 +188,7 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "flex-layout.row#promo-banner__mobile",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
@@ -204,13 +205,17 @@
       "defaultGalleryLayout": "grid"
     }
   },
-  "flex-layout.row#contentmobile": {
-    "children": ["search-content"],
-    "props": {
-      "preserveLayoutOnMobile": true
+  "flex-layout.row#promo-banner__mobile":{
+    "children":[
+      "image#promo-banner__mobile"
+    ]
+  },
+  "image#promo-banner__mobile":{
+    "props":{
+      "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png",
+      "width": "100%"
     }
   },
-
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
@@ -223,21 +228,12 @@
       "colJustify": "around"
     }
   },
-
   "flex-layout.col#orderByMobile": {
     "children": ["order-by.v2"],
     "props": {
       "blockClass": "orderByMobileCol"
     }
   },
-
-  "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
-    "props": {
-      "blockClass": "productCountMobileRow"
-    }
-  },
-
   "flex-layout.col#filterMobile": {
     "children": ["filter-navigator.v3"],
     "props": {
@@ -248,6 +244,18 @@
     "children": ["gallery-layout-switcher"],
     "props": {
       "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
     }
   },
   "search-not-found-layout": {
