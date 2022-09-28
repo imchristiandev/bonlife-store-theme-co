@@ -29,14 +29,16 @@
       "paddingRight": 4
     },
     "children":[
-      "image#logo__left-col__footer",
+      "logo#logo__left-col__footer",
       "social-networks"
     ]
   },
-  "image#logo__left-col__footer":{
+  "logo#logo__left-col__footer":{
     "props":{
-      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "200px"
+      "title": "Logo",
+      "href": "/",
+      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "height": "70px"
     }
   },
   "social-networks":{
