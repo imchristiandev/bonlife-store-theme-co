@@ -13,6 +13,7 @@
   },
   "flex-layout.row#promo-topbar":{
     "props":{
+      "blockClass": "promo-topbar-row",
       "horizontalAlign": "center",
       "paddingTop": 4,
       "paddingBottom": 4,
@@ -33,6 +34,7 @@
   },
   "link#promo-link__promo-topbar":{
     "props":{
+      "blockClass": "promo-topbar-link",
       "label": "Lorem ipsum dolor 50% sit amet, consectetur adipiscing elit. Duis suscipit suscipit nisl, vel semper elit.",
       "href": "#",
       "target": "_blank"
@@ -51,7 +53,9 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "paddingTop": 4,
+      "paddingBottom": 4
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -119,7 +123,8 @@
             "text": "Hombre"
           }
         }
-      ]
+      ],
+      "blockClass": "header-departments-menu"
     }
   },
   "flex-layout.col#search-bar-col":{
