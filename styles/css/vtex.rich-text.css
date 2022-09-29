@@ -1,0 +1,11 @@
+.paragraph--highlights-title{
+    font-family: 'DinMedium';
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.paragraph--highlights-description{
+    font-family: 'DinLight';
+    margin-top: 10px;
+}
