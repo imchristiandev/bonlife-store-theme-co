@@ -1,3 +1,15 @@
 .flexRow--promo-topbar-row{
     background-color: #000;
 }
+.flexRow--highlightRow{
+    background-color: #d8d9da;
+}
+.flexRow--highlightRow .stretchChildrenWidth{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.flexRow--highlightRow .flexCol{
+    background-color: #fafafa;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
