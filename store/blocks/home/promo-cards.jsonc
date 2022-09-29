@@ -7,7 +7,7 @@
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "callToactionUrl": "#",
-            "blockClass": "info-card-promoBannerOne",
+            "blockClass": "info-card-promoBanner",
             "textAlignment": "center",
             "textPosition": "right"
         }
@@ -20,7 +20,7 @@
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "callToactionUrl": "#",
-            "blockClass": "info-card-promoBannerOne",
+            "blockClass": "info-card-promoBanner",
             "textAlignment": "center",
             "textPosition": "left"
         }

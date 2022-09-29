@@ -66,7 +66,7 @@
             "text":"Envío<br>Gratis",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-heading-6",
+            // "font": "t-heading-6",
             "blockClass": "highlights-title"
         }
     },
@@ -84,7 +84,7 @@
             "text":"Compras<br>Seguras",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-heading-6",
+            // "font": "t-heading-6",
             "blockClass": "highlights-title"
         }
     },
@@ -102,7 +102,7 @@
             "text":"Medios de<br>Pago",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-heading-6",
+            // "font": "t-heading-6",
             "blockClass": "highlights-title"
         }
     },
@@ -117,10 +117,10 @@
     },
     "rich-text#highlight4-title":{
         "props":{
-            "text":"Devolución<br>Sin Costo",
+            "text":"Devolución<br>sin Costo",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-heading-6",
+            // "font": "t-heading-6",
             "blockClass": "highlights-title"
         }
     },
