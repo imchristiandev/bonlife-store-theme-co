@@ -34,18 +34,19 @@
       "blockClass": "mainSlider"
     },
     "children":[
-      "video#main-slide-video"
+      // "video#main-slide-video"
     ]
   },
   "video#main-slide-video":{
     "props":{
       "width": "100%",
-      "height": 600,
-      "loop": false,
-      "autoPlay": true,
+      "height": "700px",
+      "loop": true,
+      "autoPlay": false,
       "muted": false,
       "src": "https://www.youtube.com/watch?v=2Vg6P59HGTs",
-      "blockClass": "videoEl"
+      "poster": "https://bonlife.com.co/docs/slide/ori_es_1213432796_2022-09-28_soretex-web-header.jpg",
+      "blockClass": "videoSlide"
     }
   }
 }
