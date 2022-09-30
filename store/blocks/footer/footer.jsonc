@@ -12,7 +12,8 @@
   "flex-layout.row#footer-main":{
     "props":{
       "paddingTop": 6,
-      "paddingBottom": 8      
+      "paddingBottom": 8,
+      "blockClass": "footer-main"
     },
     "children":[
       "flex-layout.col#left-col__footer",      
@@ -140,7 +141,8 @@
     "props":{
       "paddingBottom": 3,
       "paddingTop": 4,
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": "footer-logistic-information"
     },
     "children":[
       "flex-layout.col#payment-methods-col",

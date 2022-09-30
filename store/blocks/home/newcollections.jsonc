@@ -2,7 +2,8 @@
     "flex-layout.row#new-collection-row__desktop": {
         "props": {
             "paddingTop": 4,
-            "paddingBottom": 8
+            "paddingBottom": 8,
+            "blockClass": "new-collection-section"
         },
         "children": [
             "flex-layout.col#new-collection-col__desktop"
