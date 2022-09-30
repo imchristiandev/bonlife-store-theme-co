@@ -105,7 +105,7 @@
           "highlight": false,
           "itemProps":{
             "type": "internal",
-            "href": "#",
+            "href": "/mujer",
             "noFollow": false,
             "tagTitle": "Mujer",
             "text": "Mujer"
@@ -117,10 +117,34 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/hombre",
             "noFollow": false,
             "tagTitle": "Hombre",
             "text": "Hombre"
+          }
+        },
+        {
+          "id": "menu-item-accesories",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/accesorios",
+            "noFollow": false,
+            "tagTitle": "Accesorios",
+            "text": "Accesorios"
+          }
+        },
+        {
+          "id": "menu-item-sale",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sale",
+            "text": "Sale"
           }
         }
       ],
