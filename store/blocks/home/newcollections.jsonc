@@ -21,6 +21,7 @@
     },
     "rich-text#new-collections-title": {
         "props": {
+            "blockClass": "section-title-h2",
             "text": "## Nueva Colección",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -28,6 +29,7 @@
     },
     "rich-text#new-collections-description": {
         "props": {
+            "blockClass": "section-description",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -41,7 +43,8 @@
             "slider-layout#new-collection-slider"
         ],
         "props": {
-            //"category": "2/15",
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "137",
             "hideUnavailableItems": false
         }
     },
@@ -55,24 +58,37 @@
             "product-summary-buy-button"
         ]
     },
+    "product-summary-image":{
+        "props":{
+            "showBadge": true,
+            "showCollections": true,
+            "width": "300",
+            "height": "400",
+            "hoverImage":{
+                "criteria": "index",
+                "index": 1
+            }
+        }
+    },
     "slider-layout#new-collection-slider": {
         "props": {
             "itemsPerPage": {
-                "desktop": 4,
+                "desktop": 3,
                 "tablet": 3,
                 "phone": 1
             },
             "infinite": true,
             "fullWidth": false,
             "showNavigationArrows": "desktopOnly",
-            "blockClass": "caruosel"
+            "showPaginationDots": "never",
+            "blockClass": "new-collection-caruosel"
         }
     },    
     "flex-layout.row#new-collection-button-row__desktop": {
         "props": {
             "horizontalAlign": "center",
-            "paddingTop": 8,
-            "paddingBottom": 6,
+            "paddingTop": "8",
+            "paddingBottom": "6",
             "preventHorizontalStretch": true
         },
         "children": [

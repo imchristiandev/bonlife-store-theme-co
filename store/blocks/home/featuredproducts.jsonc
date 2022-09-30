@@ -37,6 +37,8 @@
             "slider-layout#featured-products-slider-shelf"
         ],
         "props":{           
+            "orderBy": "OrderByPriceDESC",
+            "category": "2/11",
             "hideUnavailableItems": false
         }
     },
