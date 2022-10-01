@@ -3,6 +3,7 @@
         "props": {
             "paddingTop": 4,
             "paddingBottom": 8,
+            "fullWidth": true,
             "blockClass": "new-collection-section"
         },
         "children": [
@@ -46,14 +47,18 @@
         "props": {
             "orderBy": "OrderByTopSaleDESC",
             "collection": "137",
+            "maxItems": 20,
             "hideUnavailableItems": false
         }
     },
     "product-summary.shelf#summary__new-collection-shelf": {
+        "props":{
+            "blockClass": "new-collection-shelf"
+        },
         "children": [
             "product-summary-image",
             "product-summary-space",
-            "product-summary-brand",
+            // "product-summary-brand",
             "product-summary-name",      
             "product-summary-price",
             "product-summary-buy-button"
@@ -63,8 +68,7 @@
         "props":{
             "showBadge": true,
             "showCollections": true,
-            "width": "300",
-            "height": "400",
+            "aspectRatio": "3:4",
             "hoverImage":{
                 "criteria": "index",
                 "index": 1
@@ -90,7 +94,8 @@
             "horizontalAlign": "center",
             "paddingTop": "8",
             "paddingBottom": "6",
-            "preventHorizontalStretch": true
+            "preventHorizontalStretch": true,
+            "blockClass": "new-collection-button-row"
         },
         "children": [
             "link#collection-button"
@@ -101,7 +106,10 @@
             "label": "Ver Colección",
             "href": "#",
             "target": "_blank",
-            "displayMode": "button"
+            "displayMode": "button",
+            "buttonProps":{
+                "size": "large"
+            }
         }
     },
     "flex-layout.row#new-collection-row__mobile": {
@@ -138,7 +146,8 @@
     "flex-layout.col#new-collection-button-col__mobile":{
         "props":{
             "verticalAlign": "middle",
-            "horizontalAlign": "center"
+            "horizontalAlign": "center",
+            "blockClass": "new-collection-button-row"
         },
         "children":[
             "link#collection-button"

@@ -1,0 +1,17 @@
+.sliderLayoutContainer--new-collection-caruosel{
+    background-color: #ffffff;
+}
+
+.sliderTrackContainer--new-collection-caruosel{
+    background-color: #ffffff;
+}
+
+.sliderArrows--new-collection-caruosel{
+    color: #000000;
+}
+
+.slideChildrenContainer--new-collection-caruosel{
+    /* border-right: 1px solid rgba(255, 255, 255, 0.6); */
+    border-right: 1px solid #eae9e9;
+    padding-top: 12%;
+}
