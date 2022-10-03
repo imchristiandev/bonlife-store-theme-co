@@ -1,0 +1,15 @@
+.currencyContainer--selling-price{
+    font-family: 'DinMedium';
+    font-size: 1.4rem;
+}
+.sellingPrice--selling-price{
+    margin: 10px 0px;
+}
+.listPrice--list-price{
+    margin: 5px 0px;
+}
+.currencyContainer--list-price{
+    font-family: 'DinRegular';
+    font-size: 1.2rem;
+    color: #999;
+}

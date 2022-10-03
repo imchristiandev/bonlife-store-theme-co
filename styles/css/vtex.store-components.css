@@ -12,3 +12,14 @@
 .infoCardImage--info-card-promoBanner{
     box-shadow: 1px 1px 2px #cecece;
 }
+
+.discountInsideContainer{
+    z-index: 1000;
+    background-color: #999999;
+    font-family: 'DinBold';
+    font-size: 1.2rem;
+    border-radius: 30px;
+    left: 15px;
+    top: 15px;
+    right: 70%;
+}
