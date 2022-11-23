@@ -1,5 +1,10 @@
 .link--promo-topbar-link{
-    font-family: 'DinMedium';
+    font-family: 'PoppinsMedium';
     color: #fafafa;
+    font-size: 0.875rem;
     text-decoration: none;
+}
+
+.buttonLink{
+    border-radius: 0;
 }

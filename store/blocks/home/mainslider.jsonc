@@ -9,14 +9,14 @@
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png",
-          "description": "Promo #1"
+          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-homeslider-1.jpg",
+          "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-1.jpg",
+          "description": "Bonlife Main Banner #1"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png",
-          "description": "Promo #2"
+          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-homeslider-2.jpg",
+          "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-2.jpg",
+          "description": "Bonlife Main Banner #2"
         }
       ]
     }

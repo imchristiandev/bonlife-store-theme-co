@@ -8,7 +8,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#promo-topbar",
-      "sticky-layout#desktop"
+      "flex-layout.row#main-header-row"
     ]
   },
   "flex-layout.row#promo-topbar":{
@@ -40,6 +40,17 @@
       "target": "_blank"
     }
   },
+  "flex-layout.row#main-header-row":{
+    "children":[
+      "flex-layout.col#main-header-col"
+    ]
+  },
+  "flex-layout.col#main-header-col":{
+    "children":[
+      // "flex-layout.row#desktop",
+      "sticky-layout#desktop"
+    ]
+  },
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -58,14 +69,34 @@
       "paddingBottom": 4
     },
     "children": [
+      // "flex-layout.col#trigger-mega-menu",
+      // "flex-layout.row#main-menu",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "flex-layout.col#search-bar-col",
-      "locale-switcher",      
+      "locale-switcher",
       "login",
       "minicart.v2"
     ]
+  },
+  "flex-layout.col#trigger-mega-menu":{
+    "props":{
+      "blockClass": "trigger-mega-menu.col",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "paddingLeft": 3,
+      "paddingRight": 3
+    },
+    "children":[
+      "mega-menu-trigger-btn"
+    ]
+  },
+  "mega-menu-trigger-btn":{
+    "props":{
+      "Drawer": "drawer",
+      "size": 25
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -86,94 +117,39 @@
       "height": "50"
     }
   },
-  "flex-layout.col#category-menu":{
-    "props":{
-      "blockClass": "main-departments",
-      "horizontalAlign": "center",
-      "verticalAlign": "middle"
-    },
-    "children":[
-      "vtex.menu@2.x:menu#departments"
-    ]
-  },
-  "vtex.menu@2.x:menu#departments":{
-    "props":{
-      "items":[
-        {
-          "id": "menu-item-woman",
-          "type": "custom",
-          "highlight": false,
-          "itemProps":{
-            "type": "internal",
-            "href": "/mujer",
-            "noFollow": false,
-            "tagTitle": "Mujer",
-            "text": "Mujer"
-          }
-        },
-        {
-          "id": "menu-item-man",
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/hombre",
-            "noFollow": false,
-            "tagTitle": "Hombre",
-            "text": "Hombre"
-          }
-        },
-        {
-          "id": "menu-item-accesories",
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/accesorios",
-            "noFollow": false,
-            "tagTitle": "Accesorios",
-            "text": "Accesorios"
-          }
-        },
-        {
-          "id": "menu-item-sale",
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Sale",
-            "text": "Sale"
-          }
-        }
-      ],
-      "blockClass": "header-departments-menu"
-    }
-  },
   "flex-layout.col#search-bar-col":{
     "props":{
+      "blockClass": "search-bar-col",
       "verticalAlign": "middle"
     },
     "children":[
       "search-bar"
     ]
   },
+  "search-bar":{
+    "props":{
+      "blockClass": "search-bar-header"
+    }
+  },
   "login":{
     "props":{
-      "showIconProfile": true,      
+      "blockClass": "login-header",
+      "showIconProfile": false,
       "iconLabel": "Mi cuenta",      
       "logInButtonBehavior": "popover"
     }
   },
 
-
+//MOBILE
   "header-layout.mobile": {
     "children": [
       "sticky-layout#mobile"      
     ]
   },
   "sticky-layout#mobile": {
+    "props":{
+      "blockClass": "sticky-header-mobile"
+    },
     "children": [
       "flex-layout.row#main-actions__mobile",
       "flex-layout.row#search-bar-row__mobile"
@@ -182,21 +158,24 @@
   "flex-layout.row#main-actions__mobile": {    
     "children": [
       "flex-layout.col#menu-drawer-col",
+      "locale-switcher",
       "flex-layout.col#logo-mobile-col",
       // "flex-layout.col#login-col",
       "flex-layout.col#login-cart-col"
     ],
     "props": {
-      "horizontalAlign": "center",
       "blockClass": "main-header-mobile",
+      "horizontalAlign": "around",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
-      "colGap": 0
+      "colGap": 0,
+      "paddingTop": 3
     }
   },
   "flex-layout.col#menu-drawer-col":{
     "props":{
+      "blockClass": "menu-drawer-col",
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     },
@@ -204,11 +183,9 @@
       "drawer"
     ]
   },
-  "drawer": {
-    "children": []
-  },
   "flex-layout.col#logo-mobile-col":{
     "props":{
+      "blockClass": "logo-mobile-col",
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     },
@@ -218,29 +195,41 @@
   },
   "logo#mobile":{
     "props":{
+      "blockClass": "logo-mobile",
       "title": "Logo",
       "href": "/",
       "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
-      "height": "35"
+      "height": "40"
     }
   },
   "flex-layout.col#login-cart-col":{
+    "props":{
+      "blockClass": "login-cart-col",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
     "children":[
       "flex-layout.row#login-cart-row"
     ]
   },
   "flex-layout.row#login-cart-row":{
     "props":{
+      "blockClass": "login-cart-row",
       "preserveLayoutOnMobile": true,
-      "colGap": 1
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
     },
     "children":[
-      "login#mobile",
-      "minicart.v2"
+      "flex-layout.col#login-col",
+      "flex-layout.col#cart-col"
+      // "login#mobile",
+      // "minicart.v2"
     ]
   },
   "flex-layout.col#login-col":{
     "props":{
+      "blockClass": "login-col",
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     },
@@ -250,6 +239,7 @@
   },
   "login#mobile":{
     "props":{
+      "blockClass": "login-mobile",
       "showIconProfile": true,      
       "hideIconLabel": true,
       "logInButtonBehavior": "popover"
@@ -257,6 +247,7 @@
   },
   "flex-layout.col#cart-col":{
     "props":{
+      "blockClass": "cart-col",
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     },
@@ -266,11 +257,12 @@
   },
   "flex-layout.row#search-bar-row__mobile":{
     "props":{
-      "horizontalAlign": "center",
       "blockClass": "search-bar-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "horizontalAlign": "center",      
+      // "preventHorizontalStretch": true,
+      // "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "paddingBottom": 5
     },
     "children":[
       "flex-layout.col#search-bar-col__mobile"
@@ -278,8 +270,10 @@
   },
   "flex-layout.col#search-bar-col__mobile" :{
     "props":{
+      "blockClass": "search-bar-col-mobile",
       "verticalAlign": "middle",
       "horizontalAlign": "center",
+      "paddingLeft": 4,
       "paddingRight": 4
     },
     "children":[

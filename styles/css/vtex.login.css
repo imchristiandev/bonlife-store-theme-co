@@ -1,4 +1,8 @@
 .label{
-    font-family: 'DinRegular', 'sans-serif';
+    font-family: 'PoppinsLight', 'sans-serif';
     text-transform: capitalize;
 }
+
+/* :global(.vtex-button):hover{
+    background-color: transparent;
+} */

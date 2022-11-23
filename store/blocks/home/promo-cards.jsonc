@@ -2,7 +2,7 @@
     "info-card#promo-banner-one": {
         "props": {
             "isFullModeStyle": false,
-            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "imageUrl": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg",
             "headline": "Lorem Ipsum",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
@@ -15,7 +15,7 @@
     "info-card#promo-banner-two": {
         "props": {
             "isFullModeStyle": false,
-            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "imageUrl": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg",
             "headline": "Lorem Ipsum",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",

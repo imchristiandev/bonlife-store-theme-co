@@ -7,6 +7,19 @@
     "flex-layout.row#product-detailed-information-row__tabs": {
         "props": {
             "horizontalAlign": "center",
+            "fullWidth": true,
+            "marginBottom": 6
+        },
+        "children": [
+            "flex-layout.col#product-detailed-information-col-pdp"
+            // "tab-layout#tabs__product-detailed-information"
+        ]
+    },
+    "flex-layout.col#product-detailed-information-col-pdp": {
+        "props": {
+            "blockClass": "product-detailed-information-col-pdp",
+            "paddingLeft": 7,
+            "paddingRight": 6,
             "preventHorizontalStretch": true
         },
         "children": [
@@ -14,21 +27,28 @@
         ]
     },
     "tab-layout#tabs__product-detailed-information": {
+        "props": {
+            "blockClass": "tabs-product-detailed-information-pdp"
+        },
         "children": [
             "tab-list#tabs-list__product-detailed-information",
             "tab-content#tabs-content__product-detailed-information"
         ]
     },
     "tab-list#tabs-list__product-detailed-information": {
+        "props": {
+            "blockClass": "tabs-list-product-detailed-information-pdp"
+        },
         "children": [
             "tab-list.item#description",
-            "tab-list.item#product-information",
+            // "tab-list.item#product-information",
             "tab-list.item#shipping-information",
             "tab-list.item#payment-methods"
         ]
     },
     "tab-list.item#description": {
         "props": {
+            "blockClass": "tab-list-item-pdp",
             "tabId": "description",
             "label": "Descripción",
             "defaultActiveTab": true
@@ -36,26 +56,32 @@
     },
     "tab-list.item#product-information": {
         "props": {
+            "blockClass": "tab-list-item-pdp",
             "tabId": "product-information",
             "label": "Información de producto"
         }
     },
     "tab-list.item#shipping-information": {
         "props": {
+            "blockClass": "tab-list-item-pdp",
             "tabId": "measure-table",
             "label": "Tabla de Medidas"
         }
     },
     "tab-list.item#payment-methods": {
         "props": {
+            "blockClass": "tab-list-item-pdp",
             "tabId": "shipping-warranty",
             "label": "Envíos y Devoluciones"
         }
     },
     "tab-content#tabs-content__product-detailed-information": {
+        "props": {
+            "blockClass": "tabs-content-product-detailed-information-pdp"
+        },
         "children": [
             "tab-content.item#description",
-            "tab-content.item#product-information",
+            // "tab-content.item#product-information",
             "tab-content.item#measure-table",
             "tab-content.item#shipping-warranty"
         ]
@@ -65,6 +91,7 @@
             "product-description"
         ],
         "props": {
+            "blockClass": "tabs-content-item-product-detailed-information-pdp",
             "tabId": "description"
         }
     },
@@ -73,14 +100,17 @@
             "rich-text#content__product-information"
         ],
         "props": {
+            "blockClass": "tabs-content-item-product-detailed-information-pdp",
             "tabId": "product-information"
         }
     },
     "tab-content.item#measure-table": {
         "children": [
-            "rich-text#content__measure-table"
+            // "rich-text#content__measure-table",
+            "image#measure-table-image"
         ],
         "props": {
+            "blockClass": "tabs-content-item-product-detailed-information-pdp",
             "tabId": "measure-table"
         }
     },
@@ -89,38 +119,49 @@
             "rich-text#content__shipping-warranty"
         ],
         "props": {
+            "blockClass": "tabs-content-item-product-detailed-information-pdp",
             "tabId": "shipping-warranty"
         }
     },
     "product-description": {
         "props": {
+            "blockClass": "product-description-pdp",
             "collapseContent": true,
-            "showTitle": true,
-            "title": "Descripción"
+            "showTitle": false
+            // "title": "Descripción"
         }
     },
     "rich-text#content__product-information": {
         "props": {
-            "text": "#### Información de producto"
+            "text": "Información de producto"
         }
     },
     "rich-text#content__measure-table": {
         "props": {
-            "text": "#### Tabla de medidas"
+            "text": "Tabla de medidas"
+        }
+    },
+    "image#measure-table-image": {
+        "props": {
+            "blockClass": "measure-table-image",
+            "src": "assets/images/pdp/bonlife-co-desktop-images-product-detail-size-chart.jpg",
+            "alt": "Tabla de medidas bonlife"
         }
     },
     "rich-text#content__shipping-warranty": {
         "props": {
-            "text": "#### Envío & Devoluciones"
+            "text": "Envío y devoluciones"
         }
     },
+    //DISCLOSURE
     "responsive-layout.mobile#product-detailed-information-section__mobile": {
         "children": [
             "flex-layout.row#product-detailed-information-row__disclosure"
         ]
     },
     "flex-layout.row#product-detailed-information-row__disclosure": {
-        "props":{
+        "props": {
+            "blockClass": "product-detailed-information-row-disclosure",
             "paddingBottom": 7
         },
         "children": [
@@ -129,6 +170,7 @@
     },
     "flex-layout.col#product-detailed-information-col__disclosure": {
         "props": {
+            "blockClass": "product-detailed-information-col-disclosure",
             "paddingLeft": 5,
             "padingRight": 5
         },
@@ -138,17 +180,19 @@
     },
     "disclosure-layout-group#group": {
         "props": {
+            "blockClass": "disclosure-layout-group-pdp",
             "maxVisible": "one"
         },
         "children": [
             "disclosure-layout#description",
-            "disclosure-layout#product-information",
+            // "disclosure-layout#product-information",
             "disclosure-layout#measure-table",
             "disclosure-layout#shipping-warranty"
         ]
     },
     "disclosure-layout#description": {
         "props": {
+            "blockClass": "disclosure-layout-title-pdp",
             "initialVisibility": "visible"
         },
         "children": [
@@ -158,7 +202,7 @@
     },
     "disclosure-trigger#description": {
         "props": {
-            "blockClass": "question",
+            "blockClass": "disclosure-product-detailed-info-title",
             "as": "div"
         },
         "children": [
@@ -168,16 +212,21 @@
     },
     "rich-text#description-title": {
         "props": {
-            "text": "#### Descripción"
+            "blockClass": "product-detailed-info-title",
+            "text": "Descripción"
         }
     },
     "disclosure-content#description": {
+        "props": {
+            "blockClass": "disclosure-content-pdp"
+        },
         "children": [
             "product-description"
         ]
     },
     "disclosure-layout#product-information": {
         "props": {
+            "blockClass": "disclosure-layout-title-pdp",
             "initialVisibility": "hidden"
         },
         "children": [
@@ -187,7 +236,7 @@
     },
     "disclosure-trigger#product-information": {
         "props": {
-            "blockClass": "question",
+            "blockClass": "disclosure-product-detailed-info-title",
             "as": "div"
         },
         "children": [
@@ -197,16 +246,21 @@
     },
     "rich-text#product-information-title": {
         "props": {
-            "text": "#### Información de producto"
+            "blockClass": "product-detailed-info-title",
+            "text": "Información de producto"
         }
     },
     "disclosure-content#product-information": {
+        "props": {
+            "blockClass": "disclosure-content-pdp"
+        },
         "children": [
             "rich-text#content__product-information"
         ]
     },
     "disclosure-layout#measure-table": {
         "props": {
+            "blockClass": "disclosure-layout-title-pdp",
             "initialVisibility": "hidden"
         },
         "children": [
@@ -216,7 +270,7 @@
     },
     "disclosure-trigger#measure-table": {
         "props": {
-            "blockClass": "question",
+            "blockClass": "disclosure-product-detailed-info-title",
             "as": "div"
         },
         "children": [
@@ -226,16 +280,29 @@
     },
     "rich-text#measure-table-title": {
         "props": {
-            "text": "#### Tabla de medidas"
+            "blockClass": "product-detailed-info-title",
+            "text": "Tabla de medidas"
         }
     },
     "disclosure-content#measure-table": {
+        "props": {
+            "blockClass": "disclosure-content-pdp"
+        },
         "children": [
-            "rich-text#content__measure-table"
+            // "rich-text#content__measure-table",
+            "image#measure-table-image-mobile"
         ]
+    },
+    "image#measure-table-image-mobile": {
+        "props": {
+            "blockClass": "measure-table-image-mobile",
+            "src": "assets/images/pdp/bonlife-co-mobile-images-product-detail-size-chart.png",
+            "alt": "Tabla de medidas bonlife"
+        }
     },
     "disclosure-layout#shipping-warranty": {
         "props": {
+            "blockClass": "disclosure-layout-title-pdp",
             "initialVisibility": "hidden"
         },
         "children": [
@@ -245,7 +312,7 @@
     },
     "disclosure-trigger#shipping-warranty": {
         "props": {
-            "blockClass": "question",
+            "blockClass": "disclosure-product-detailed-info-title",
             "as": "div"
         },
         "children": [
@@ -255,28 +322,34 @@
     },
     "rich-text#shipping-warranty-title": {
         "props": {
-            "text": "#### Envío & Devoluciones"
+            "blockClass": "product-detailed-info-title",
+            "text": "Envío y devoluciones"
         }
     },
     "disclosure-content#shipping-warranty": {
+        "props": {
+            "blockClass": "disclosure-content-pdp"
+        },
         "children": [
             "rich-text#content__shipping-warranty"
         ]
     },
     "disclosure-state-indicator": {
         "props": {
-            "Show": "icon-caret#down",
-            "Hide": "icon-caret#up"
+            "Show": "icon-plus#down",
+            "Hide": "icon-minus#up"
         }
     },
-    "icon-caret#down": {
+    "icon-plus#down": {
         "props": {
-            "orientation": "down"
+            "orientation": "down",
+            "size": 12
         }
     },
-    "icon-caret#up": {
+    "icon-minus#up": {
         "props": {
-            "orientation": "up"
+            "orientation": "up",
+            "size": 12
         }
     }
 }

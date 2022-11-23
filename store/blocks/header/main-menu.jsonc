@@ -1,0 +1,409 @@
+{
+    "flex-layout.col#category-menu": {
+        "props": {
+            "blockClass": "main-departments",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#departments"
+        ]
+    },
+    "vtex.menu@2.x:menu#departments": {
+        "children": [
+            "menu-item#woman",
+            "menu-item#man"
+            // "menu-item#sale"
+        ],
+        "props": {
+            "blockClass": "header-departments-menu"
+        }
+    },
+    //WOMAN
+    "menu-item#woman": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Mujer"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#woman"
+        ]
+    },
+    "vtex.menu@2.x:submenu#woman": {
+        "props": {
+            "blockClass": "woman-submenu-menu"
+        },
+        "children": [
+            "flex-layout.row#woman-submenu-row"
+        ]
+    },
+    "flex-layout.row#woman-submenu-row": {
+        "props": {
+            "blockClass": "woman-submenu-row",
+            "horizontalAlign": "center",
+            "colSizing": "equal",
+            "fullWidth": true,
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#woman-submenu-col-left",
+            "flex-layout.col#woman-submenu-col-right",
+            "flex-layout.col#woman-submenu-col-featured-banner"
+        ]
+    },
+    "flex-layout.col#woman-submenu-col-left": {
+        "props": {
+            "blockClass": "woman-submenu-col-left",
+            "verticalAlign": "top",
+            "paddingLeft": 5,
+            "paddingRight": 5
+        },
+        "children": [
+            "vtex.menu@2.x:menu#woman-submenu-left-menu"
+        ]
+    },
+    "vtex.menu@2.x:menu#woman-submenu-left-menu": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "woman-submenu-left-menu"
+        },
+        "children": [
+            "menu-item#woman-first-subcategory",
+            "menu-item#woman-second-subcategory",
+            "menu-item#woman-third-subcategory",
+            "menu-item#woman-fourth-subcategory",
+            "menu-item#woman-fifth-subcategory"
+        ]
+    },
+    "menu-item#woman-first-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 4,
+                "text": "Blusas"
+            }
+        }
+    },
+    "menu-item#woman-second-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 5,
+                "text": "Chaquetas"
+            }
+        }
+    },
+    "menu-item#woman-third-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 24,
+                "text": "Enterizos"
+            }
+        }
+    },
+    "menu-item#woman-fourth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 8,
+                "text": "Faldas"
+            }
+        }
+    },
+    "menu-item#woman-fifth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 9,
+                "text": "Joggers"
+            }
+        }
+    },
+    "flex-layout.col#woman-submenu-col-right": {
+        "props": {
+            "blockClass": "woman-submenu-col-right",
+            "verticalAlign": "top",
+            "paddingLeft": 5,
+            "paddingRight": 5
+        },
+        "children": [
+            "vtex.menu@2.x:menu#woman-submenu-right-menu"
+        ]
+    },
+    "vtex.menu@2.x:menu#woman-submenu-right-menu": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "woman-submenu-right-menu"
+        },
+        "children": [
+            "menu-item#woman-sixth-subcategory",
+            "menu-item#woman-seventh-subcategory",
+            "menu-item#woman-eighth-subcategory",
+            "menu-item#woman-ninth-subcategory"
+        ]
+    },
+    "menu-item#woman-sixth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 6,
+                "text": "Leggings"
+            }
+        }
+    },
+    "menu-item#woman-seventh-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 7,
+                "text": "Shorts"
+            }
+        }
+    },
+    "menu-item#woman-eighth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 3,
+                "text": "Tops"
+            }
+        }
+    },
+    "menu-item#woman-ninth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 25,
+                "text": "Vestidos"
+            }
+        }
+    },
+    "flex-layout.col#woman-submenu-col-featured-banner": {
+        "props": {
+            "blockClass": "woman-submenu-col-featured-banner",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingLeft": 5,
+            "paddingRight": 5
+        },
+        "children": [
+            "image#woman-featured-banner"
+        ]
+    },
+    "image#woman-featured-banner": {
+        "props": {
+            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg"
+        }
+    },
+    // MAN
+    "menu-item#man": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Hombre"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#man"
+        ]
+    },
+    "vtex.menu@2.x:submenu#man": {
+        "props": {
+            "blockClass": "man-submenu-menu"
+        },
+        "children": [
+            "flex-layout.row#man-submenu-row"
+        ]
+    },
+    "flex-layout.row#man-submenu-row": {
+        "props": {
+            "blockClass": "man-submenu-row",
+            "horizontalAlign": "center",
+            "colSizing": "equal",
+            "fullWidth": true,
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#man-submenu-col-left",
+            // "flex-layout.col#man-submenu-col-right",
+            "flex-layout.col#man-submenu-col-featured-banner"
+        ]
+    },
+    "flex-layout.col#man-submenu-col-left": {
+        "props": {
+            "blockClass": "man-submenu-col-left",
+            "verticalAlign": "top",
+            "width": "30%",
+            "paddingLeft": 5,
+            "paddingRight": 5
+        },
+        "children": [
+            "vtex.menu@2.x:menu#man-submenu-left-menu"
+        ]
+    },
+    "vtex.menu@2.x:menu#man-submenu-left-menu": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "man-submenu-left-menu"
+        },
+        "children": [
+            "menu-item#man-first-subcategory",
+            "menu-item#man-second-subcategory",
+            "menu-item#man-third-subcategory",
+            "menu-item#man-fourth-subcategory",
+            "menu-item#man-fifth-subcategory",
+            "menu-item#man-sixth-subcategory"
+        ]
+    },
+    "menu-item#man-first-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 11,
+                "text": "Camisetas"
+            }
+        }
+    },
+    "menu-item#man-second-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 13,
+                "text": "Hoodies"
+            }
+        }
+    },
+    "menu-item#man-third-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 15,
+                "text": "Joggers"
+            }
+        }
+    },
+    "menu-item#man-fourth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 16,
+                "text": "Licras"
+            }
+        }
+    },
+    "menu-item#man-fifth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 14,
+                "text": "Shorts"
+            }
+        }
+    },
+    // "flex-layout.col#man-submenu-col-right": {
+    //     "props": {
+    //         "blockClass": "man-submenu-col-right",
+    //         "verticalAlign": "top",
+    //         "paddingLeft": 5,
+    //         "paddingRight": 5
+    //     },
+    //     "children": [
+    //         "vtex.menu@2.x:menu#man-submenu-right-menu"
+    //     ]
+    // },
+    // "vtex.menu@2.x:menu#man-submenu-right-menu": {
+    //     "props": {
+    //         "orientation": "vertical",
+    //         "blockClass": "man-submenu-right-menu"
+    //     },
+    //     "children": [
+    //         "menu-item#man-fourth-subcategory",
+    //         "menu-item#man-fifth-subcategory",
+    //         "menu-item#man-sixth-subcategory",
+    //         "menu-item#man-seventh-subcategory",
+    //         "menu-item#man-eighth-subcategory",
+    //         "menu-item#man-ninth-subcategory"
+    //     ]
+    // },
+    "menu-item#man-sixth-subcategory": {
+        "props": {
+            "type": "category",
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 12,
+                "text": "Tank Tops"
+            }
+        }
+    },
+    // "menu-item#man-seventh-subcategory": {
+    //     "props": {
+    //         "type": "category",
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "categoryId": 7,
+    //             "text": "Shorts"
+    //         }
+    //     }
+    // },
+    // "menu-item#man-eighth-subcategory": {
+    //     "props": {
+    //         "type": "category",
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "categoryId": 3,
+    //             "text": "Tops"
+    //         }
+    //     }
+    // },
+    // "menu-item#man-ninth-subcategory": {
+    //     "props": {
+    //         "type": "category",
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "categoryId": 25,
+    //             "text": "Vestidos"
+    //         }
+    //     }
+    // },
+    "flex-layout.col#man-submenu-col-featured-banner": {
+        "props": {
+            "blockClass": "man-submenu-col-featured-banner",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%",
+            "paddingLeft": 5,
+            "paddingRight": 5
+        },
+        "children": [
+            "image#man-featured-banner"
+        ]
+    },
+    "image#man-featured-banner": {
+        "props": {
+            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg"
+        }
+    }
+}

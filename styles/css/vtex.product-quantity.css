@@ -1,0 +1,29 @@
+.quantitySelectorTitle--product-quantity-pdp{
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.quantitySelectorStepper--product-quantity-pdp :global(.vtex-numeric-stepper__plus-button){
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.quantitySelectorStepper--product-quantity-pdp :global(.vtex-numeric-stepper__minus-button){
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.quantitySelectorStepper--product-quantity-pdp :global(.vtex-numeric-stepper__minus-button__text), 
+.quantitySelectorStepper--product-quantity-pdp :global(.vtex-numeric-stepper__plus-button__text){
+    color: #000;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .quantitySelectorTitle--product-quantity-pdp{
+        text-align: center;
+    }
+
+    .quantitySelectorStepper--product-quantity-pdp :global(.vtex-numeric-stepper-container){
+        justify-content: center;
+    }
+}

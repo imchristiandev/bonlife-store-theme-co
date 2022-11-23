@@ -1,10 +1,10 @@
 .infoCardHeadline--info-card-promoBanner{
-    font-family: 'DinBold';
+    font-family: 'PoppinsMedium';
     text-transform: uppercase;
 }
 
 .infoCardSubhead--info-card-promoBanner{
-    font-family: 'DinRegular';
+    font-family: 'PoppinsLight';
     font-size: 1.25rem;
     color: #464544;
 }
@@ -13,13 +13,212 @@
     box-shadow: 1px 1px 2px #cecece;
 }
 
+.infoCardContainer--infocard-featured-categories{
+    height: 600px;
+    width: auto;
+    align-items: end;
+    border: 1px solid #000;
+}
+
+.infoCardTextContainer--infocard-featured-categories{
+    width: 60%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.infoCardCallActionContainer--infocard-featured-categories :global(.vtex-button){
+    border-radius: 0px;
+}
+
 .discountInsideContainer{
-    z-index: 1000;
-    background-color: #999999;
-    font-family: 'DinBold';
-    font-size: 1.2rem;
-    border-radius: 30px;
+    z-index: 998;
+    background-color: #999;
+    font-family: 'PoppinsBold';
+    font-size: 1rem;
     left: 15px;
     top: 15px;
     right: 70%;
 }
+
+.heading--infocard-featured-categories{
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+    text-shadow: 2px 1px 2px #fafafa;
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1em;
+}
+
+.paragraph--infocard-featured-categories{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.InfoCardCallActionContainer--infocard-featured-categories :global(.vtex-button):hover{
+    background-color: #fafafa !important;
+}
+
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix){
+    background-color: transparent;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group), .autoCompleteOuterContainer :global(.vtex-input-prefix__group):hover{
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #000;
+}
+
+/* .productImagesThumbCaret--product-images-product-main .caretIcon{
+    color: #000;
+} */
+
+/* .productNameContainer--product-name-pdp{
+    margin-bottom: 30px;
+} */
+
+.productBrand--product-name-pdp{
+    font-family: 'PoppinsLight';
+    font-size: 1.8rem;
+}
+
+.skuSelectorContainer--sku-selector-pdp .skuSelectorTextContainer{
+    margin-bottom: 12px;
+}
+
+.skuSelectorContainer--sku-selector-pdp .skuSelectorName{
+    font-family: 'PoppinsLight';
+    font-size: 1rem;
+}
+
+.skuSelectorContainer--sku-selector-pdp .frameAround--sku-selector-pdp{
+    border-radius: 0;
+}
+
+.skuSelectorItem--sku-selector-pdp{
+    height: 25px;
+}
+
+.caretIcon--product-images-product-main{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: #fafafa;
+}
+
+.productImage--product-images-product-main, .figure--product-images-product-main{
+    /* border: 1px solid #e6e6e6; */
+    border: 1px solid #000;
+}
+
+.content--product-description-pdp{
+    text-align: justify;
+}
+
+.shippingContainer :global(.vtex-button){
+    border-radius: 0;
+}
+
+/* PRODUCT IMAGES LIST */
+
+.productImage--product-images-product-main{
+    text-align: center;
+}
+
+.productImage--product-images-product-main:nth-child(even){
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.productImage--product-images-product-main:nth-child(odd){
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.productImage--product-images-product-main:first-child{
+    width: 98%;
+    display: block;
+    margin: 1%;
+}
+
+/* SHARE */
+
+.shareLabel{
+    text-align: center;
+}
+
+.shareButtons{
+    justify-content: center;
+}
+
+/* PRODUCT DETAILED IMAGE ZOOM */
+
+.productNameContainer--product-name-detailed-image-zoom{
+    margin-bottom: 10px;
+}
+
+.productBrand--product-name-detailed-image-zoom{
+    font-family: 'PoppinsLight';
+    font-size: 1.8rem;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .infoCardSubhead--info-card-promoBanner{
+        font-size: 1rem;
+        line-height: 1.2em;
+    }
+
+    .infoCardCallActionContainer--info-card-promoBanner :global(.vtex-button){
+        border-radius: 0px;
+    }
+
+    .infoCardContainer--info-card-promoBanner{
+        padding-bottom: 50px;
+    }
+
+    .discountInsideContainer{
+        top: 5px;
+        right: 60%;
+    }
+
+    .productNameContainer--product-name-pdp{
+        text-align: center;
+    }
+
+    .skuSelectorTextContainer{
+        text-align: center;
+    }
+
+    .skuSelectorOptionsList{
+        justify-content: center;
+    }
+
+    .shippingContainer{
+        margin-bottom: 20px;
+    }
+
+    .shippingContainer :global(.vtex-dropdown__label){
+        text-align: center;
+    }
+
+    .shareContainer{
+        margin: 15px auto;
+    }
+
+    .logoContainer--logo-mobile{
+        padding: 0px;
+    }
+}
+
+/* .skuSelectorItem--sku-selector-pdp--selected {
+    background-color: #666;
+}
+
+.skuSelectorItem--sku-selector-pdp--selected .skuSelectorItemTextValue--sku-selector-pdp{
+    color: #fafafa;
+} */

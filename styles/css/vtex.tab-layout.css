@@ -1,0 +1,13 @@
+.listItem--tab-list-item-pdp :global(.vtex-button){
+    border-radius: 0;
+    background-color: #999;
+    color: #fafafa;
+}
+
+.listItemActive--tab-list-item-pdp :global(.vtex-button){
+    background-color: #000;
+}
+
+.contentContainer--tabs-content-product-detailed-information-pdp{
+    padding: 2% 5%;
+}

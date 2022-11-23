@@ -1,0 +1,100 @@
+{
+    "flex-layout.row#cross-selling-pdp-row":{
+        "props":{
+            "blockClass": "cross-selling-pdp-row",
+            "paddingTop": 5,
+            "paddingBottom": 10
+        },
+        "children":[
+            "flex-layout.col#cross-selling-pdp-main-col"
+        ]
+    },
+    "flex-layout.col#cross-selling-pdp-main-col":{
+        "props":{
+            "blockClass": "cross-selling-pdp-main-col",
+            "verticalAlign": "middle"
+        },
+        "children":[
+            "flex-layout.row#section-title-pdp-row",
+            "flex-layout.row#list-context-pdp-row"
+        ]
+    },
+    "flex-layout.row#section-title-pdp-row":{
+        "props":{
+            "blockClass": "section-title-pdp-row",
+            "fullWidth": true,
+            "marginBottom": 5
+        },
+        "children":[
+            "rich-text#cross-selling-title"
+        ]
+    },
+    "rich-text#cross-selling-title":{
+        "props":{
+            "blockClass": "cross-selling-title",
+            "text": "### También te puede interesar",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "flex-layout.row#list-context-pdp-row":{
+        "props":{
+            "blockClass": "list-context-pdp-row"
+        },
+        "children":[
+            "list-context.product-list#cross-selling-list-context"
+        ]
+    },
+    "list-context.product-list#cross-selling-list-context":{
+        "blocks":[
+            "product-summary.shelf#cross-selling-product-summary"
+        ],
+        "children":[
+            "slider-layout#slider-shelf-cross-selling-shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByNameDESC",
+            "maxItems": 5
+        }
+    },
+    "product-summary.shelf#cross-selling-product-summary":{
+        "props":{
+            "blockClass": "cross-selling-product-summary"
+        },
+        "children":[
+            "product-summary-image",
+            // "product-summary-brand",
+            "product-summary-name",
+            // "product-summary-sku-selector",
+            "product-summary-space",
+            "product-list-price#cross-selling-list-price-pdp",
+            "product-selling-price#cross-selling-selling-price"
+            // "add-to-cart-button#add-to-cart-cross-selling-pdp"
+        ]
+    },
+    "product-list-price#cross-selling-list-price-pdp":{
+        "props":{
+            "blockClass": "cross-selling-list-price-pdp"
+        }
+    },
+    "product-selling-price#cross-selling-selling-price":{
+        "props":{
+            "blockClass": "cross-selling-selling-price"
+        }
+    },
+    "slider-layout#slider-shelf-cross-selling-shelf":{
+        "props":{
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "navigationStep": 1,
+            "blockClass": "cross-selling-carousel"
+        }
+    }
+}

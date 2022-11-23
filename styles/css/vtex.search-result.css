@@ -1,0 +1,133 @@
+.searchResultContainer{
+    padding-top: 0;
+}
+
+.galleryTitle--layout{
+    font-family: 'PoppinsBold';
+    font-size: 2.25rem;
+}
+
+.filters--layout{
+    background-color: #f5f5f5;
+    padding: 2% 6%;
+    border-radius: 10px;
+}
+
+.filterTitle--filter-navigator{
+    font-family: 'PoppinsMedium';
+    font-size: 1.2rem;
+    display: flex;
+    text-transform: lowercase;
+}
+
+.filterTitle--filter-navigator .filterTitleSpan--filter-navigator::first-letter{
+    text-transform: uppercase !important;
+}
+
+.filterTitleSpan--filter-navigator :global(.vtex-tag){
+    background: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.filterItem--filter-navigator :global(.vtex-checkbox__label){
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.totalProducts--layout{
+    font-family: 'PoppinsLight';
+    text-align: left;
+    text-transform: lowercase;
+    color: #000;
+}
+
+.totalProductsMessage{
+    color: #000;
+}
+
+.showingProducts--product-count-search{
+    font-family: 'PoppinsLight';
+    padding: 0 15%;
+    text-align: left;
+    color: #000;
+}
+
+.orderByButton{
+    background-color: #e6e6e6;
+    padding: 10px 0 10px 10px;
+}
+
+.orderByButton .filterPopupTitle{
+    text-transform: lowercase;
+}
+
+.orderByButton .filterPopupTitle::first-letter{
+    text-transform: uppercase;
+}
+
+.orderByButton .orderByText{
+    text-transform: lowercase;
+    color: #000;
+}
+
+.orderByButton .orderByText::first-letter{
+    text-transform: uppercase;
+}
+
+.orderByOptionsContainer .orderByOptionItem{
+    font-family: "PoppinsRegular";
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.filterTemplateOverflow--filter-navigator :global(.vtex-slider__values-container){
+    display: flex;
+    justify-content: center;
+}
+
+.filterTemplateOverflow--filter-navigator :global(.vtex-slider__left-value),
+.filterTemplateOverflow--filter-navigator :global(.vtex-slider__right-value),
+.filterTemplateOverflow--filter-navigator :global(.vtex-slider__dash){
+    color: #000;
+}
+
+.filterSelectedFilters--filter-navigator{
+    font-family: 'PoppinsLight';
+    margin: 10px 0;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+/* .filterSelectedFilters--filter-navigator::first-letter{
+    text-transform: uppercase;
+} */
+
+.filter__container--clearAllFilters{
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.filter__container--clearAllFilters :global(.vtex-button){
+    border-radius: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .showingProducts--product-count-search{
+        text-align: center;
+    }
+
+    .galleryItem--gallery-search-page{
+        padding: 0.35rem;
+    }
+
+    .searchResultContainer--search-result-layout-mobile{
+        padding: 0;
+    }
+}

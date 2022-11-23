@@ -1,12 +1,12 @@
 .paragraph--highlights-title{
-    font-family: 'DinMedium';
+    font-family: 'PoppinsMedium';
     font-size: 1.4rem;
     line-height: 1.2em;
     margin-bottom: 10px;
 }
 
 .paragraph--highlights-description{
-    font-family: 'DinLight';
+    font-family: 'PoppinsLight';
     margin-top: 10px;
 }
 
@@ -15,8 +15,52 @@
 }
 
 .paragraph--section-description{
-    font-family:'DinRegular';
+    font-family:'PoppinsLight';
     font-size: 1.25rem;
     margin-top: 1%;
     margin-bottom: 8%;
+}
+
+.container--layout-option{
+    margin-left: 5px;
+}
+
+.paragraph--copyright-text{
+    font-size: 0.875rem;
+}
+
+.heading--product-detailed-info-title{
+    margin: 10px 0;
+}
+
+.heading--product-detailed-info-title{
+    color: #fafafa;
+}
+
+.headingLevel4--product-detailed-info-title{
+    font-family: 'PoppinsLight';
+    font-size: 1rem;
+    text-transform: lowercase;
+    color: #000;
+}
+
+.headingLevel4--product-detailed-info-title::first-letter{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .heading-level-2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .paragraph--section-description{
+        font-size: 1rem;
+        line-height: 1.2em;
+        margin-top: 15px;
+    }
+
+    .headingLevel3--cross-selling-title{
+        text-align: center;
+    }
 }

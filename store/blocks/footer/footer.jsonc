@@ -13,7 +13,8 @@
     "props":{
       "paddingTop": 6,
       "paddingBottom": 8,
-      "blockClass": "footer-main"
+      "blockClass": "footer-main",
+      "fullWidth": true
     },
     "children":[
       "flex-layout.col#left-col__footer",      
@@ -24,6 +25,8 @@
   //
   "flex-layout.col#left-col__footer":{    
     "props":{
+      "blockClass": "left-col-footer",
+      "width": "40%",
       "verticalAlign": "middle",
       "horizontalAlign": "center",
       "paddingLeft": 4,
@@ -54,6 +57,8 @@
   //
   "flex-layout.col#right-col__footer":{
     "props":{
+      "blockClass": "right-col-footer",
+      "width": "60%",
       "verticalAlign": "top",
       "paddingLeft": 4,
       "paddingRight": 4
@@ -64,11 +69,13 @@
     ]
   },  
   "flex-layout.row#newsletter-row":{
-    "props":{      
+    "props":{
+      "blockClass": "newsletter-row",
+      "fullWidth": true,
       "paddingTop": 6,
-      "paddingBottom": 5,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "paddingBottom": 5
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true
     },
     "children":[
       "flex-layout.col#newsletter-col"
@@ -76,8 +83,10 @@
   },
   "flex-layout.col#newsletter-col":{
     "props":{
+      "blockClass": "newsletter-col",
       "verticalAlign": "middle",
-      "horizontalAlign": "left"
+      "horizontalAlign": "left",
+      "width": "90%"
     },
     "children":[
       "rich-text#newletter-title",
@@ -92,6 +101,9 @@
     }
   } , 
   "newsletter-form":{
+    "props":{
+      "blockClass": "newsletter-form"
+    },
     "children":[
       "newsletter-input-email",
       "newsletter-submit"
@@ -139,10 +151,12 @@
   },  
   "flex-layout.row#footer-logistic-information":{
     "props":{
-      "paddingBottom": 3,
       "paddingTop": 4,
+      "paddingBottom": 7,
       "horizontalAlign": "center",
-      "blockClass": "footer-logistic-information"
+      "fullWidth": true,
+      "blockClass": "footer-logistic-information",
+      "preserveLayoutOnMobile": false
     },
     "children":[
       "flex-layout.col#payment-methods-col",
@@ -152,7 +166,9 @@
   "flex-layout.col#payment-methods-col":{
     "props":{
       "verticalAlign": "middle",
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "paddingLeft": 4,
+      "paddingRight": 4
     },
     "children":[
       "image#payment-methods-img"
@@ -161,7 +177,9 @@
   "flex-layout.col#carriers-col":{
     "props":{
       "verticalAlign": "middle",
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "paddingLeft": 4,
+      "paddingRight": 4
     },
     "children":[
       "image#carriers-img"
@@ -169,18 +187,24 @@
   },
   "image#payment-methods-img":{
     "props":{
-      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "100px"
+      "src": "assets/images/footer/bonlife-co-desktop-images-business-payments.png",
+      "height": "100px",
+      "width": "auto"
     }
   },
   "image#carriers-img":{
     "props":{
-      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "100px"
+      "src": "assets/images/footer/bonlife-co-desktop-images-business-couriers.png",
+      "height": "100px",
+      "width": "auto"
     }
   },
   //
   "flex-layout.row#copyright__desktop":{
+    "props":{
+      "fullWidth": true,
+      "blockClass": "footer-copyright"
+    },
     "children":[
       "flex-layout.col#copyright-text-left-col",
       "flex-layout.row#copyright-logos-right-col"
@@ -196,7 +220,8 @@
   },
   "rich-text#copyright-text":{
     "props":{
-      "text": "Todos los derechos reservados",
+      "blockClass": "copyright-text",
+      "text": "Copyright © 2022 Bonlife - Derechos reservados",
       "textAligment": "LEFT",
       "textPosition": "LEFT"
     }
@@ -205,7 +230,8 @@
     "props":{
       "paddingTop": 3,
       "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true
+      "preserveLayoutOnMobile": true,
+      "colGap": 4
     },
     "children":[
       "image#onewaylogo",
@@ -214,14 +240,14 @@
   },
   "image#onewaylogo":{
     "props":{
-      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "40px"
+      "src": "assets/images/copyright/logo-owi.png",
+      "height": "30px"
     }
   },
   "image#vtexlogo":{
     "props":{
-      "src": "https://www.logodesign.net/logo/eye-and-house-5806ld.png?size=2&industry=All",
-      "height": "40px"
+      "src": "assets/images/copyright/logo-vtex.png",
+      "height": "30px"
     }
   },
 
@@ -232,6 +258,10 @@
     ]
   },
   "flex-layout.row#footer-mobile":{
+    "props":{
+      "blockClass": "footer-mobile-row",
+      "fullWidth": true
+    },
     "children":[
       "flex-layout.row#footer-main",
       "flex-layout.row#footer-logistic-information",
@@ -239,6 +269,9 @@
     ]
   },
   "flex-layout.row#copyright__mobile":{
+    "props":{
+      "blockClass": "footer-copyright"
+    },
     "children":[
       "flex-layout.col#copyright-text-col__mobile",
       "flex-layout.row#copyright-logos-row__mobile"
@@ -246,6 +279,7 @@
   },
   "flex-layout.col#copyright-text-col__mobile":{
     "props":{
+      "blockClass": "copyright-text-col-mobile",
       "verticalAlign": "middle"
     },
     "children":[
@@ -254,13 +288,15 @@
   },
   "rich-text#copyright-text-col__mobile":{
     "props":{
-      "text": "Todos los derechos reservados",
+      "blockClass": "copyright-text-mobile",
+      "text": "Copyright © 2022 Bonlife - Derechos reservados",
       "textAligment": "CENTER",
       "textPosition": "CENTER"
     }
   },
   "flex-layout.row#copyright-logos-row__mobile":{
     "props":{
+      "blockClass": "copyright-logos-row-mobile",
       "paddingTop": 3,
       "paddingBottom": 5,
       "preventHorizontalStretch": true,

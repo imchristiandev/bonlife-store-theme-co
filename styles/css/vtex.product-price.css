@@ -1,15 +1,93 @@
-.currencyContainer--selling-price{
-    font-family: 'DinMedium';
-    font-size: 1.4rem;
-}
-.sellingPrice--selling-price{
+.sellingPrice--featured-products-selling-price{
     margin: 10px 0px;
 }
-.listPrice--list-price{
+
+.listPrice--featured-module-list-price,
+.listPrice--grid-layout-list-price,
+.sellingPrice--grid-layout-selling-price{
     margin: 5px 0px;
 }
-.currencyContainer--list-price{
-    font-family: 'DinRegular';
+
+.currencyContainer--featured-module-list-price,
+.currencyContainer--grid-layout-list-price{
+    font-family: 'PoppinsRegular';
     font-size: 1.2rem;
     color: #999;
+}
+.currencyContainer--new-collections-module-selling-price, 
+.currencyContainer--featured-products-selling-price,
+.currencyContainer--grid-layout-selling-price{
+    font-family: 'PoppinsMedium';
+    font-size: 1.4rem;
+}
+
+.savings--grid-layout-savings{
+    background-color: #000;
+    color: #fafafa;
+    width: 35%;
+    font-family: 'PoppinsMedium';
+    line-height: 1.6em;
+    font-size: 0.875rem;
+    margin: 10px auto;
+}
+
+.savings--savings-product-price-list-layout{
+    background-color: #000;
+    color: #fafafa;
+    width: 40% !important;
+    font-family: 'PoppinsMedium';
+    line-height: 1.6em;
+    font-size: 0.875rem;
+    margin: 10px auto;
+}
+
+.currencyContainer--product-selling-price-pdp{
+    font-family: 'PoppinsMedium';
+    font-size: 2.4rem;
+}
+
+.savingsPercentage--product-savings-pdp{
+    font-family: 'PoppinsMedium';
+    font-size: 1.2rem;
+}
+
+.savings--product-savings-pdp{
+    font-family: 'PoppinsMedium';
+    font-size: 0.875rem;
+}
+
+.listPrice--product-list-price-pdp{
+    font-family: 'PoppinsLight';
+    font-size: 1rem;
+    line-height: 1.2em;
+    color: #999;
+}
+
+.currencyContainer--product-list-price-pdp{
+    font-size: 1.4rem;
+    line-height: 1.6em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){    
+    .currencyContainer--featured-products-selling-price,
+    .currencyContainer--new-collections-module-selling-price{
+        font-size: 1.6rem;
+    }
+
+    .sellingPrice--featured-products-selling-price,
+    .sellingPrice--new-collections-module-selling-price{
+        margin: 0px;
+    }
+
+    .savings--grid-layout-savings{
+        width: 80%;
+    }
+
+    .sellingPrice--grid-layout-selling-price{
+        margin: 0;
+    }
+
+    /* .savings--savings-product-price-list-layout{
+        width: 40% !important;
+    } */
 }

@@ -1,0 +1,11 @@
+.link, .term {
+    font-family: 'PoppinsRegular';
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.homeIcon {
+    width: 22px;
+    height: auto;
+    margin-top: 4px;
+}

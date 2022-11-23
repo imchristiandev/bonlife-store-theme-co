@@ -28,15 +28,15 @@
       "product-summary-name",
       "product-rating-inline",
       "product-summary-space",
-      "product-list-price",
+      "product-list-price#default",
       "product-selling-price",
       "product-identifier.summary",
       "add-to-cart-button"
     ]
   },
-  "product-list-price":{
+  "product-list-price#default":{
     "props":{
-      "blockClass": "list-price"
+      "blockClass": "list-price-default"
     }
   },
   "product-selling-price":{

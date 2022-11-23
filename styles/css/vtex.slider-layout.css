@@ -1,5 +1,11 @@
 .sliderLayoutContainer--new-collection-caruosel{
     background-color: #ffffff;
+    /* background-color: transparent; */
+}
+
+.caretIcon--mainSlider{
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .sliderTrackContainer--new-collection-caruosel{
@@ -7,16 +13,71 @@
 }
 
 .sliderArrows--new-collection-caruosel{
-    color: #000000;
+    background: rgba(0,0,0, 0.6) !important;
+    padding: 10px;
+    color: #fafafa;
+}
+
+/* .slide--new-collection-caruosel{
+    border: 1px solid #eae9e9;
 }
 
 .slideChildrenContainer--new-collection-caruosel{
-    /* border-right: 1px solid rgba(255, 255, 255, 0.6); */
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
     border-right: 1px solid #eae9e9;
     padding-top: 12%;
-}
+} */
 
 .slideChildrenContainer--featured-products-caruosel{
-    border: 1px solid #eae9e9;
+    /* border: 1px solid #eae9e9; */
     margin: 0px 25px;
+}
+
+.slideChildrenContainer--categories-featured-slider{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.sliderArrows--categories-featured-slider .caretIcon--categories-featured-slider{
+    background: rgba(255, 255, 255, 0.6);
+    color: #000;
+    padding: 10px;
+}
+
+.sliderArrows--cross-selling-carousel,
+.sliderArrows--featured-products-caruosel {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #fafafa;
+    padding: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .sliderLayoutContainer--featured-products-caruosel,
+    .sliderLayoutContainer--new-collection-caruosel{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .slideChildrenContainer--featured-products-caruosel{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .slideChildrenContainer--categories-featured-slider{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .sliderLayoutContainer--cross-selling-carousel{
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    .slide--cross-selling-carousel{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    /* .slideChildrenContainer--featured-products-caruosel{
+        border: none;
+    } */
 }

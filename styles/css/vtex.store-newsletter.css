@@ -1,0 +1,12 @@
+.newsletterForm--newsletter-form{
+    display: flex;
+}
+
+.newsletterForm--newsletter-form .emailInputContainer{
+    width: -webkit-fill-available;
+    margin-right: 15px;
+}
+
+.emailInputContainer :global(.vtex-input-prefix__group){ 
+    background-color: #fafafa;
+}

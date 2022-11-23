@@ -1,8 +1,10 @@
 {
     "flex-layout.row#categories-row":{
         "props":{
+            "blockClass": "categories-row",
             "paddingTop": 6,
-            "paddingBottom": 8            
+            "paddingBottom": 10,
+            "fullWidth": true
         },
         "children": [
             "slider-layout#categories-featured-slider"
@@ -18,24 +20,28 @@
             "info-card#category-six"
         ],
         "props":{
-            "autoplay": {
-                "timeout": 2500,
-                "stopOnHover": true
-            },
+            "blockClass": "categories-featured-slider",
+            // "autoplay": {
+            //     "timeout": 2500,
+            //     "stopOnHover": true
+            // },
             "itemsPerPage":{
                 "desktop": 3,
                 "tablet": 2,
                 "phone": 1
             },
-            "navigationStep": 1
+            "navigationStep": 1,
+            "infinite": true,
+            "showPaginationDots": false
         }
     },
     "info-card#category-one":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-left.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category One",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
@@ -43,10 +49,11 @@
     },
     "info-card#category-two":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-middle.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category Two",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
@@ -54,10 +61,11 @@
     },
     "info-card#category-three":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-right.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category Three",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
@@ -65,10 +73,11 @@
     },
     "info-card#category-four":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-left.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category Four",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
@@ -76,10 +85,11 @@
     },
     "info-card#category-five":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-middle.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category Five",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
@@ -87,10 +97,11 @@
     },
     "info-card#category-six":{
         "props":{
-            "imageUrl": "#",
+            "blockClass": "infocard-featured-categories",
+            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-right.jpg",
             "isFullModeStyle": true,
             "textMode": "rich-text",
-            "headline": "### Category Featured",
+            "headline": "## Category",
             "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "callToActionText": "Ver Productos",
             "textPosition": "center"
