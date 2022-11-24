@@ -1,3 +1,11 @@
+.autoCompleteOuterContainer--search-bar-header :global(.vtex-styleguide-9-x-input){
+    color: #fafafa;
+}
+
+.searchIcon--search-bar-header{
+    color: #fafafa;
+}
+
 .infoCardHeadline--info-card-promoBanner{
     font-family: 'PoppinsMedium';
     text-transform: uppercase;
@@ -69,16 +77,8 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fafafa;
 }
-
-/* .productImagesThumbCaret--product-images-product-main .caretIcon{
-    color: #000;
-} */
-
-/* .productNameContainer--product-name-pdp{
-    margin-bottom: 30px;
-} */
 
 .productBrand--product-name-pdp{
     font-family: 'PoppinsLight';

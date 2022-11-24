@@ -1,0 +1,75 @@
+{
+    "flex-layout.row#promo-topbar": {
+        "props": {
+            "blockClass": "promo-topbar-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#col__promo-topbar"
+        ]
+    },
+    "flex-layout.col#col__promo-topbar": {
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "slider-layout#notification-bar-slider"
+            // "link#promo-link__promo-topbar"
+        ]
+    },
+    "slider-layout#notification-bar-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "notification-bar-slider",
+            "slideTransition ": {
+                "speed": 600,
+                "delay": 400,
+                "timing": "ease-out"
+            },
+            "autoplay": {
+                "timeout": 8000,
+                "stopOnHover": true
+            }
+        },
+        "children":[
+            "link#first-promo-link__promo-topbar",
+            "link#second-promo-link__promo-topbar",
+            "link#third-promo-link__promo-topbar"
+        ]
+    },
+    "link#first-promo-link__promo-topbar": {
+        "props": {
+            "blockClass": "promo-topbar-link",
+            "label": "ENVÍO GRATIS POR COMPRAS SUPERIORES A $150 000",
+            "href": "#",
+            "target": "_blank"
+        }
+    },
+    "link#second-promo-link__promo-topbar":{
+        "props": {
+            "blockClass": "promo-topbar-link",
+            "label": "DEVOLUCIÓN SIN COSTO POR COMPRAS DESDE $300.000",
+            "href": "#",
+            "target": "_blank"
+        }
+    },
+    "link#third-promo-link__promo-topbar":{
+        "props": {
+            "blockClass": "promo-topbar-link",
+            "label": "PAGA CON TU MEDIO DE PAGO FAVORITO A TRAVÉS DE PAYU",
+            "href": "#",
+            "target": "_blank"
+        }
+    }
+}

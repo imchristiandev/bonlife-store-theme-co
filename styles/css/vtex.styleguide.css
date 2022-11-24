@@ -2,3 +2,9 @@
     background-color: transparent;
     color: #000;
 }
+
+.input::placeholder{
+    font-family: 'PoppinsLight';
+    font-size: 1rem;
+    color: #fafafa;
+}

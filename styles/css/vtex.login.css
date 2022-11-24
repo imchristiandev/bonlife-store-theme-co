@@ -1,8 +1,17 @@
 .label{
     font-family: 'PoppinsLight', 'sans-serif';
     text-transform: capitalize;
+    color: #fafafa;
+    padding-left: 0;
 }
 
-/* :global(.vtex-button):hover{
+:global(.vtex-button):hover,
+:global(.vtex-button):focus{
     background-color: transparent;
-} */
+}
+
+:global(.vtex-button):hover .label,
+:global(.vtex-button):focus .label{
+    color: #e7e7e7;
+    text-decoration: underline;
+}

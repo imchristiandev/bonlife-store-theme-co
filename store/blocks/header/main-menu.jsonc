@@ -12,8 +12,10 @@
     "vtex.menu@2.x:menu#departments": {
         "children": [
             "menu-item#woman",
-            "menu-item#man"
-            // "menu-item#sale"
+            "menu-item#pushup",
+            "menu-item#man",
+            "menu-item#sale",
+            "menu-item#new"
         ],
         "props": {
             "blockClass": "header-departments-menu"
@@ -87,6 +89,14 @@
             "itemProps": {
                 "categoryId": 4,
                 "text": "Blusas"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -97,6 +107,14 @@
             "itemProps": {
                 "categoryId": 5,
                 "text": "Chaquetas"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -107,6 +125,14 @@
             "itemProps": {
                 "categoryId": 24,
                 "text": "Enterizos"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -117,6 +143,14 @@
             "itemProps": {
                 "categoryId": 8,
                 "text": "Faldas"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -127,6 +161,14 @@
             "itemProps": {
                 "categoryId": 9,
                 "text": "Joggers"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -160,6 +202,14 @@
             "itemProps": {
                 "categoryId": 6,
                 "text": "Leggings"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -170,6 +220,14 @@
             "itemProps": {
                 "categoryId": 7,
                 "text": "Shorts"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -180,6 +238,14 @@
             "itemProps": {
                 "categoryId": 3,
                 "text": "Tops"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -190,6 +256,14 @@
             "itemProps": {
                 "categoryId": 25,
                 "text": "Vestidos"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -208,6 +282,20 @@
     "image#woman-featured-banner": {
         "props": {
             "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg"
+        }
+    },
+    /*PUSHUP*/
+    "menu-item#pushup":{
+        "props": {
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Pushup",
+                "text": "Pushup"
+            }
         }
     },
     // MAN
@@ -280,6 +368,14 @@
             "itemProps": {
                 "categoryId": 11,
                 "text": "Camisetas"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -290,6 +386,14 @@
             "itemProps": {
                 "categoryId": 13,
                 "text": "Hoodies"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -300,6 +404,14 @@
             "itemProps": {
                 "categoryId": 15,
                 "text": "Joggers"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -310,6 +422,14 @@
             "itemProps": {
                 "categoryId": 16,
                 "text": "Licras"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
@@ -320,34 +440,17 @@
             "itemProps": {
                 "categoryId": 14,
                 "text": "Shorts"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
-    // "flex-layout.col#man-submenu-col-right": {
-    //     "props": {
-    //         "blockClass": "man-submenu-col-right",
-    //         "verticalAlign": "top",
-    //         "paddingLeft": 5,
-    //         "paddingRight": 5
-    //     },
-    //     "children": [
-    //         "vtex.menu@2.x:menu#man-submenu-right-menu"
-    //     ]
-    // },
-    // "vtex.menu@2.x:menu#man-submenu-right-menu": {
-    //     "props": {
-    //         "orientation": "vertical",
-    //         "blockClass": "man-submenu-right-menu"
-    //     },
-    //     "children": [
-    //         "menu-item#man-fourth-subcategory",
-    //         "menu-item#man-fifth-subcategory",
-    //         "menu-item#man-sixth-subcategory",
-    //         "menu-item#man-seventh-subcategory",
-    //         "menu-item#man-eighth-subcategory",
-    //         "menu-item#man-ninth-subcategory"
-    //     ]
-    // },
     "menu-item#man-sixth-subcategory": {
         "props": {
             "type": "category",
@@ -355,39 +458,17 @@
             "itemProps": {
                 "categoryId": 12,
                 "text": "Tank Tops"
+            },
+            "iconProps":{
+                // "id": "mpa-eyesight--outline--off",
+                "id": "nav-caret--right",
+                "size": 10,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "black",
+                "mutedClassName": "c-action-primary"
             }
         }
     },
-    // "menu-item#man-seventh-subcategory": {
-    //     "props": {
-    //         "type": "category",
-    //         "highlight": false,
-    //         "itemProps": {
-    //             "categoryId": 7,
-    //             "text": "Shorts"
-    //         }
-    //     }
-    // },
-    // "menu-item#man-eighth-subcategory": {
-    //     "props": {
-    //         "type": "category",
-    //         "highlight": false,
-    //         "itemProps": {
-    //             "categoryId": 3,
-    //             "text": "Tops"
-    //         }
-    //     }
-    // },
-    // "menu-item#man-ninth-subcategory": {
-    //     "props": {
-    //         "type": "category",
-    //         "highlight": false,
-    //         "itemProps": {
-    //             "categoryId": 25,
-    //             "text": "Vestidos"
-    //         }
-    //     }
-    // },
     "flex-layout.col#man-submenu-col-featured-banner": {
         "props": {
             "blockClass": "man-submenu-col-featured-banner",
@@ -404,6 +485,34 @@
     "image#man-featured-banner": {
         "props": {
             "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg"
+        }
+    },
+    /*SALE*/
+    "menu-item#sale":{
+        "props": {
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Sale",
+                "text": "Sale"
+            }
+        }
+    },
+    /*NEW*/
+    "menu-item#new":{
+        "props": {
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "New",
+                "text": "New"
+            }
         }
     }
 }

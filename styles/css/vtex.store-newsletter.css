@@ -10,3 +10,7 @@
 .emailInputContainer :global(.vtex-input-prefix__group){ 
     background-color: #fafafa;
 }
+
+.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
+    color: #727273;
+}

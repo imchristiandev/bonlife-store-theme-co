@@ -1,6 +1,17 @@
+/*PROMO TOPBAR*/
 .flexRow--promo-topbar-row{
     background-color: #000;
+    height: 45px;
+    max-height: 45px;
 }
+
+/*HEADER MAIN*/
+.flexRow--main-header-row{
+    position: absolute;
+    width: 100%;
+    top: 45px;
+}
+
 .flexRow--highlightRow, .flexRow--footer-copyright{
     background-color: #eae9e9;
 }

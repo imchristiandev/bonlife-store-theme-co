@@ -11,43 +11,18 @@
       "flex-layout.row#main-header-row"
     ]
   },
-  "flex-layout.row#promo-topbar":{
-    "props":{
-      "blockClass": "promo-topbar-row",
-      "horizontalAlign": "center",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "fullWidth": true     
-    },
-    "children":[
-      "flex-layout.col#col__promo-topbar"      
-    ]
-  },
-  "flex-layout.col#col__promo-topbar":{
-    "props":{
-      "verticalAlign": "middle",
-      "horizontalAlign": "center"
-    },    
-    "children":[
-      "link#promo-link__promo-topbar"
-    ]
-  },
-  "link#promo-link__promo-topbar":{
-    "props":{
-      "blockClass": "promo-topbar-link",
-      "label": "Lorem ipsum dolor 50% sit amet, consectetur adipiscing elit. Duis suscipit suscipit nisl, vel semper elit.",
-      "href": "#",
-      "target": "_blank"
-    }
-  },
   "flex-layout.row#main-header-row":{
+    "props":{
+      "blockClass": "main-header-row",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
     "children":[
       "flex-layout.col#main-header-col"
     ]
   },
   "flex-layout.col#main-header-col":{
     "children":[
-      // "flex-layout.row#desktop",
       "sticky-layout#desktop"
     ]
   },
@@ -55,9 +30,29 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#header-logo-main-actions-desktop-row",
+      "flex-layout.row#header-menu-desktop-row"
+    ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#header-logo-main-actions-desktop-row":{
+    "props": {
+      "blockClass": "header-logo-main-actions-desktop-row",      
+      "horizontalAlign": "around",
+      "verticalAlign": "center",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "fullWidth": true,
+      "paddingTop": 6,
+      "paddingBottom": 4
+    },
+    "children":[
+      "flex-layout.col#search-bar-col",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#login-minicart-col"
+    ]
+  },
+  "flex-layout.row#header-menu-desktop-row": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -69,15 +64,7 @@
       "paddingBottom": 4
     },
     "children": [
-      // "flex-layout.col#trigger-mega-menu",
-      // "flex-layout.row#main-menu",
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "flex-layout.col#search-bar-col",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#category-menu"
     ]
   },
   "flex-layout.col#trigger-mega-menu":{
@@ -105,7 +92,10 @@
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "blockClass": "logo-desktop-col",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "30%"
     },
     "children": ["logo#desktop"]
   },
@@ -113,14 +103,18 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "url": "assets/images/header/bonlife-logo-negative.png",
       "height": "50"
     }
   },
   "flex-layout.col#search-bar-col":{
     "props":{
       "blockClass": "search-bar-col",
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "30%",
+      "paddingLeft": 5,
+      "paddingRight": 5
     },
     "children":[
       "search-bar"
@@ -130,6 +124,27 @@
     "props":{
       "blockClass": "search-bar-header"
     }
+  },
+  "flex-layout.col#login-minicart-col":{
+    "props":{
+      "blockClass": "login-minicart-col",
+      "verticalAlign": "middle",
+      "width": "30%"
+    },
+    "children":[
+      "flex-layout.row#login-minicart-col-row"
+    ]
+  },
+  "flex-layout.row#login-minicart-col-row":{
+    "props":{
+      "blockClass": "login-minicart-col-row",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    },
+    "children":[   
+      "login",
+      "minicart.v2"
+    ]
   },
   "login":{
     "props":{
@@ -158,7 +173,6 @@
   "flex-layout.row#main-actions__mobile": {    
     "children": [
       "flex-layout.col#menu-drawer-col",
-      "locale-switcher",
       "flex-layout.col#logo-mobile-col",
       // "flex-layout.col#login-col",
       "flex-layout.col#login-cart-col"

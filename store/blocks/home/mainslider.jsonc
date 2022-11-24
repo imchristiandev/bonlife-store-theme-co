@@ -5,16 +5,16 @@
     ],
     "props":{
       "name": "Imágenes",
-      "height": 600,
+      "height": 960,
       "preload": true,
       "images": [
         {
-          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-homeslider-1.jpg",
+          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-mainbanner-1-min.png",
           "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-1.jpg",
           "description": "Bonlife Main Banner #1"
         },
         {
-          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-homeslider-2.jpg",
+          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-mainbanner-2-min.png",
           "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-2.jpg",
           "description": "Bonlife Main Banner #2"
         }
@@ -29,24 +29,18 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "desktopOnly",
-      "blockClass": "mainSlider"
-    },
-    "children":[
-      // "video#main-slide-video"
-    ]
-  },
-  "video#main-slide-video":{
-    "props":{
-      "width": "100%",
-      "height": "700px",
-      "loop": true,
-      "autoPlay": false,
-      "muted": false,
-      "src": "https://www.youtube.com/watch?v=2Vg6P59HGTs",
-      "poster": "https://bonlife.com.co/docs/slide/ori_es_1213432796_2022-09-28_soretex-web-header.jpg",
-      "blockClass": "videoSlide"
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "mainSlider",
+      "slideTransition ": {
+        "speed": 600,
+        "delay": 400,
+        "timing": "ease-in"
+      },
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover":  true
+      }
     }
   }
 }

@@ -1,8 +1,9 @@
 .menuContainerNav--header-departments-menu .styledLinkContent{
-    font-family: 'PoppinsMedium', 'sans-serif';
+    font-family: 'PoppinsRegular', 'sans-serif';
     text-transform: uppercase;
-    border-left: 4px solid #000;
+    /* border-left: 4px solid #000; */
     padding-left: 5px;
+    color: #fafafa;
 }
 
 .menuContainerNav--woman-submenu-left-menu .styledLinkContent,
@@ -11,12 +12,23 @@
 .menuContainerNav--man-submenu-right-menu .styledLinkContent{
     font-family: 'PoppinsLight';
     line-height: 2.4em;
-    border: none;
+    color: #000;
+    /* border: none; */
 }
 
 .submenu--woman-submenu-menu,
 .submenu--man-submenu-menu{
     display: block;
+}
+
+.submenu--woman-submenu-menu .styledLinkContent,
+.submenu--man-submenu-menu .styledLinkContent{
+    justify-content: start;
+}
+
+.submenu--woman-submenu-menu .styledLinkIcon,
+.submenu--man-submenu-menu .styledLinkIcon{
+    margin-right: 8px;
 }
 
 
