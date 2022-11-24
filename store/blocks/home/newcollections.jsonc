@@ -15,6 +15,7 @@
         "props": {
             "blockClass": "left-banner-new-collection-col__desktop",
             "verticalAlign": "middle",
+            "horizontalAlign": "center",
             "width": "30%"
         },
         "children": [
