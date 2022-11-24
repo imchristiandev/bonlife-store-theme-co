@@ -1,18 +1,65 @@
 {
     "flex-layout.row#new-collection-row__desktop": {
         "props": {
-            "paddingTop": 4,
+            "blockClass": "new-collection-section",
+            "paddingTop": 8,
             "paddingBottom": 8,
-            "fullWidth": true,
-            "blockClass": "new-collection-section"
+            "fullWidth": true
         },
         "children": [
+            "flex-layout.col#left-banner-new-collection-col__desktop",
             "flex-layout.col#new-collection-col__desktop"
         ]
     },
+    "flex-layout.col#left-banner-new-collection-col__desktop": {
+        "props": {
+            "blockClass": "left-banner-new-collection-col__desktop",
+            "verticalAlign": "middle",
+            "width": "30%"
+        },
+        "children": [
+            "stack-layout#new-collection-stack-layout-banner"
+            // "image#left-banner-new-collection__desktop"
+        ]
+    },
+    "stack-layout#new-collection-stack-layout-banner":{
+        "props":{
+            "blockClass": "new-collection-stack-layout-banner"
+        },
+        "children":[
+            "image#left-banner-new-collection__desktop",
+            "image#banner-badge-new-collection"
+        ]
+    },
+    "image#left-banner-new-collection__desktop": {
+        "props": {
+            "blockClass": "left-banner-new-collection__desktop",
+            "src": "assets/images/home/new-collection/bonlife-video-igreel-20221118-1 1.png",
+            "link": {
+                "url": "#",
+                "attributeNofollow": false,
+                "newTab": true
+            }
+        }
+    },
+    "image#banner-badge-new-collection":{
+        "props":{
+            "blockClass": "banner-badge-new-collection",
+            "src": "assets/images/home/new-collection/instagram-icon.png",
+            "link": {
+                "url": "https://instagram.com",
+                "attributeNofollow": false,
+                "newTab": true
+            }
+        }
+    },
     "flex-layout.col#new-collection-col__desktop": {
         "props": {
-            "verticalAlign": "middle"
+            "blockClass": "new-collection-col__desktop",
+            "verticalAlign": "middle",
+            "width": "70%",
+            "paddingLeft": 5,
+            "paddingRight": 5
         },
         "children": [
             "rich-text#new-collections-title",
@@ -24,7 +71,7 @@
     "rich-text#new-collections-title": {
         "props": {
             "blockClass": "section-title-h2",
-            "text": "## Nueva Colección",
+            "text": "## Es hora de mejorar tu juego",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
         }
@@ -32,7 +79,7 @@
     "rich-text#new-collections-description": {
         "props": {
             "blockClass": "section-description",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "text": "Diseños exclusivos para mujeres que les justa sentirse naturales, fuertes y seguros de si mismas",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
         }
@@ -96,7 +143,7 @@
             },
             "infinite": true,
             "fullWidth": false,
-            "showNavigationArrows": "always",
+            "showNavigationArrows": "desktopOnly",
             "showPaginationDots": "never",
             "blockClass": "new-collection-caruosel"
         }
@@ -115,7 +162,7 @@
     },
     "link#collection-button": {
         "props": {
-            "label": "Ver Colección",
+            "label": "Ver otros productos",
             "href": "#",
             "target": "_blank",
             "displayMode": "button",

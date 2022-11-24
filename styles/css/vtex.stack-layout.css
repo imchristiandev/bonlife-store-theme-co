@@ -1,3 +1,11 @@
 .stackContainer{
     border-bottom: 1px solid #eae9e9;
 }
+
+/*NEW COLLECTION*/
+.stackItem--new-collection-stack-layout-banner--banner-badge-new-collection{
+    margin: 0;
+    top: 90%;
+    left: 40%;
+    transform: translate(-40%, -90%);
+}
