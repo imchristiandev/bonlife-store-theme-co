@@ -1,0 +1,39 @@
+{
+    "flex-layout.row#teaser-full-width-row": {
+        "props": {
+            "blockClass": "teaser-full-width-row",
+            "fullWidth": true,
+            "paddingTop": 6,
+            "paddingBottom": 9
+        },
+        "children": [
+            "flex-layout.col#teaser-full-width-col"
+        ]
+    },
+    "flex-layout.col#teaser-full-width-col": {
+        "props": {
+            "blockClass": "teaser-full-width-col",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "info-card#teaser-full-width-info-card"
+        ]
+    },
+    "info-card#teaser-full-width-info-card": {
+        "props": {
+            "id": "teaser-full-width-info-card",
+            "blockClass": "teaser-full-width-info-card",
+            "isFullModeStyle": true,
+            "imageUrl": "assets/images/home/teasers/teaser-full-width-banner.png",
+            "mobileImageUrl": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-1.jpg",
+            "textPosition": "right",
+            "textMode": "rich-text",
+            "headline": "## **Conjuntos** Deportivos",
+            "callToActionMode": "button",
+            "callToActionText": "Ver Colección Completa",
+            "callToActionUrl": "#",
+            // "callToActionLinkTarget": "_blank",
+            "linkTarget": "_blank"
+        }
+    }
+}

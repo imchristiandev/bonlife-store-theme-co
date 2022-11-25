@@ -6,6 +6,39 @@
     color: #fafafa;
 }
 
+/*TEASER BANNER FULL WIDTH*/
+.infoCardContainer--teaser-full-width-info-card{
+    min-height: 300px;
+}
+
+.headingLevel2--teaser-full-width-info-card{
+    font-family: 'PoppinsLight';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.headingLevel2--teaser-full-width-info-card .strong--teaser-full-width-info-card{
+    color: #000;
+}
+
+.infoCardTextContainer--teaser-full-width-info-card{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCardCallActionContainer--teaser-full-width-info-card :global(.vtex-button){
+    border-radius: 0;
+}
+
+.infoCardCallActionContainer--teaser-full-width-info-card :global(.vtex-button__label){
+    font-family: 'PoppinsLight';
+}
+
+/*TEASER BANNER FULL WIDTH*/
+
 .infoCardHeadline--info-card-promoBanner{
     font-family: 'PoppinsMedium';
     text-transform: uppercase;
