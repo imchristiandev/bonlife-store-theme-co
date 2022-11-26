@@ -9,3 +9,25 @@
     left: 40%;
     transform: translate(-40%, -90%);
 }
+
+/*FEATURED CATEGORIES*/
+.stackItem--featured-category-image{
+    max-width: 400px;
+}
+
+.stackItem--featured-category-call-to-action-row{
+    background-color: #000;
+    border: 1px solid #fff;
+    border-right: 0;
+    top: 75%;
+    left: 40%;
+    max-width: 240px;
+    transition: all .4s ease-in-out;
+}
+
+.stackItem--featured-category-call-to-action-row:hover{
+    background-color: #434445;
+    border: 1px solid #f1f1f1;
+    border-right: 0;
+}
+/*FEATURED CATEGORIES*/

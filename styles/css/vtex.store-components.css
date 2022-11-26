@@ -39,6 +39,18 @@
 
 /*TEASER BANNER FULL WIDTH*/
 
+/*FEATURED CATEGORIES*/
+.imageElement--featured-category-image{
+    -webkit-transition: filter .8s;
+    -o-transition: filter .8s;
+    transition: filter .8s;
+}
+
+.imageElement--featured-category-image:hover{
+    filter: grayscale(80%);
+}
+/*FEATURED CATEGORIES*/
+
 .infoCardHeadline--info-card-promoBanner{
     font-family: 'PoppinsMedium';
     text-transform: uppercase;

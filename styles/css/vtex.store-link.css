@@ -8,3 +8,11 @@
 .buttonLink{
     border-radius: 0;
 }
+
+/*FEATURED CATEGORIES*/
+.link--call-to-action-text{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}

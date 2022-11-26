@@ -1,110 +1,667 @@
 {
-    "flex-layout.row#categories-row":{
-        "props":{
+    "flex-layout.row#categories-row": {
+        "props": {
             "blockClass": "categories-row",
             "paddingTop": 6,
             "paddingBottom": 10,
-            "fullWidth": true
+            "preventHorizontalStretch": true
+            // "fullWidth": true
         },
         "children": [
+            "flex-layout.col#featured-categories-col"
+        ]
+    },
+    "flex-layout.col#featured-categories-col":{
+        "props":{
+            "blockClass": "featured-categories-col",
+            "verticalAlign": "middle"
+        },
+        "children":[
+            "flex-layout.row#featured-categories-title-row",
             "slider-layout#categories-featured-slider"
         ]
     },
-    "slider-layout#categories-featured-slider":{
-        "children":[
-            "info-card#category-one",
-            "info-card#category-two",
-            "info-card#category-three",
-            "info-card#category-four",
-            "info-card#category-five",
-            "info-card#category-six"
-        ],
+    "flex-layout.row#featured-categories-title-row":{
         "props":{
+            "blockClass": "featured-categories-title-row",
+            "marginBottom": 8,
+            "fullWidth": true
+        },
+        "children":[
+            "flex-layout.col#featured-categories-title-col"
+        ]
+    },
+    "flex-layout.col#featured-categories-title-col":{
+        "props":{
+            "blockClass": "featured-categories-title-col",
+            "verticalAlign": "middle"
+        },
+        "children":[
+            "rich-text#featured-categories-headline-light",
+            "rich-text#featured-categories-headline-strong"
+        ]
+    },    
+    "rich-text#featured-categories-headline-light":{
+        "props":{
+            "blockClass": "featured-categories-headline-light",
+            "text": "#### Para quienes deciden explorar",
+            "textAligment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#featured-categories-headline-strong":{
+        "props":{
+            "blockClass": "featured-categories-headline-strong",
+            "text": "#### Más allá de sus límites",
+            "textAligment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "slider-layout#categories-featured-slider": {
+        "children": [
+            "stack-layout#featued-category-one",
+            "stack-layout#featued-category-two",
+            "stack-layout#featued-category-three",
+            "stack-layout#featued-category-four",
+            "stack-layout#featued-category-five",
+            "stack-layout#featued-category-six"
+        ],
+        "props": {
             "blockClass": "categories-featured-slider",
-            // "autoplay": {
-            //     "timeout": 2500,
-            //     "stopOnHover": true
-            // },
-            "itemsPerPage":{
+            "itemsPerPage": {
                 "desktop": 3,
                 "tablet": 2,
                 "phone": 1
             },
+            "slideTransition ": {
+                "speed": 600,
+                "delay": 400,
+                "timing": "ease-in-out"
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
             "navigationStep": 1,
-            "infinite": true,
-            "showPaginationDots": false
+            "infinite": true
         }
     },
-    "info-card#category-one":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-left.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+
+    /*FIRST FEATURED CATEGORY*/
+    "stack-layout#featued-category-one": {
+        "children": [
+            "image#featured-category-image-one",
+            "flex-layout.row#featured-category-one-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-one": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-1.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
         }
     },
-    "info-card#category-two":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-middle.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+    "flex-layout.row#featured-category-one-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-one-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-one-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-one-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-one-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-one-text-col",
+            "flex-layout.col#call-to-action-one-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-one-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-one-text"
+        ]
+    },
+    "link#call-to-action-one-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Faldas Deportivas",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
         }
     },
-    "info-card#category-three":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-right.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+    "flex-layout.col#call-to-action-one-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-one-icon"
+        ]
+    },
+    "icon#call-to-action-one-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
         }
     },
-    "info-card#category-four":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-left.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+
+    /*SECOND FEATURED CATEGORY*/
+    "stack-layout#featued-category-two": {
+        "children": [
+            "image#featured-category-image-two",
+            "flex-layout.row#featured-category-two-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-two": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-2.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
         }
     },
-    "info-card#category-five":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-middle.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+    "flex-layout.row#featured-category-two-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-two-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-two-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-two-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-two-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-two-text-col",
+            "flex-layout.col#call-to-action-two-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-two-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-two-text"
+        ]
+    },
+    "link#call-to-action-two-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Conjuntos Deportivos",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
         }
     },
-    "info-card#category-six":{
-        "props":{
-            "blockClass": "infocard-featured-categories",
-            "imageUrl": "assets/images/home/featured-categories/bonlife-co-desktop-images-homepage-category-right.jpg",
-            "isFullModeStyle": true,
-            "textMode": "rich-text",
-            "headline": "## Category",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "callToActionText": "Ver Productos",
-            "textPosition": "center"
+    "flex-layout.col#call-to-action-two-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-two-icon"
+        ]
+    },
+    "icon#call-to-action-two-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
+        }
+    },
+
+    /*THIRD FEATURED CATEGORY*/
+    "stack-layout#featued-category-three": {
+        "children": [
+            "image#featured-category-image-three",
+            "flex-layout.row#featured-category-three-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-three": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-3.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
+        }
+    },
+    "flex-layout.row#featured-category-three-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-three-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-three-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-three-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-three-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-three-text-col",
+            "flex-layout.col#call-to-action-three-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-three-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-three-text"
+        ]
+    },
+    "link#call-to-action-three-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Shorts Deportivos",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
+        }
+    },
+    "flex-layout.col#call-to-action-three-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-three-icon"
+        ]
+    },
+    "icon#call-to-action-three-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
+        }
+    },
+
+    /*FOURTH FEATURED CATEGORY*/
+    "stack-layout#featued-category-four": {
+        "children": [
+            "image#featured-category-image-four",
+            "flex-layout.row#featured-category-four-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-four": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-1.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
+        }
+    },
+    "flex-layout.row#featured-category-four-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-four-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-four-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-four-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-four-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-four-text-col",
+            "flex-layout.col#call-to-action-four-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-four-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-four-text"
+        ]
+    },
+    "link#call-to-action-four-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Faldas Deportivas",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
+        }
+    },
+    "flex-layout.col#call-to-action-four-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-four-icon"
+        ]
+    },
+    "icon#call-to-action-four-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
+        }
+    },
+
+    /*FIFTH FEATURED CATEGORY*/
+    "stack-layout#featued-category-five": {
+        "children": [
+            "image#featured-category-image-five",
+            "flex-layout.row#featured-category-five-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-five": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-2.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
+        }
+    },
+    "flex-layout.row#featured-category-five-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-five-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-five-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-five-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-five-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-five-text-col",
+            "flex-layout.col#call-to-action-five-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-five-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-five-text"
+        ]
+    },
+    "link#call-to-action-five-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Conjuntos Deportivos",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
+        }
+    },
+    "flex-layout.col#call-to-action-five-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-five-icon"
+        ]
+    },
+    "icon#call-to-action-five-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
+        }
+    },
+
+    /*SIXTH FEATURED CATEGORY*/
+    "stack-layout#featued-category-six": {
+        "children": [
+            "image#featured-category-image-six",
+            "flex-layout.row#featured-category-six-call-to-action-row"
+        ]
+    },
+    "image#featured-category-image-six": {
+        "props": {
+            "blockClass": "featured-category-image",
+            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-3.png",
+            "link": {
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+            //"maxWidth": 400
+        }
+    },
+    "flex-layout.row#featured-category-six-call-to-action-row": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-row",
+            "horizontalAlign": "center",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#featured-category-six-call-to-action-col"
+        ]
+    },
+    "flex-layout.col#featured-category-six-call-to-action-col": {
+        "props": {
+            "blockClass": "featured-category-call-to-action-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        },
+        "children": [
+            "flex-layout.row#call-to-action-six-row"
+        ]
+    },
+    "flex-layout.row#call-to-action-six-row": {
+        "props": {
+            "blockClass": "call-to-action-row"
+            // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#call-to-action-six-text-col",
+            "flex-layout.col#call-to-action-six-icon-col"
+        ]
+    },
+    "flex-layout.col#call-to-action-six-text-col": {
+        "props": {
+            "blockClass": "call-to-action-text-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "70%"
+        },
+        "children": [
+            "link#call-to-action-six-text"
+        ]
+    },
+    "link#call-to-action-six-text": {
+        "props": {
+            "blockClass": "call-to-action-text",
+            "label": "Shorts Deportivos",
+            "href": "#",
+            "target": "_blank",
+            "displayMode": "link",
+            "rel": "Colección Bonlife"
+        }
+    },
+    "flex-layout.col#call-to-action-six-icon-col": {
+        "props": {
+            "blockClass": "call-to-action-icon-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch":true,
+            "width": "30%"
+        },
+        "children": [
+            "icon#call-to-action-six-icon"
+        ]
+    },
+    "icon#call-to-action-six-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "nav-caret--right",
+            "size": 20,
+            "isActive": true,
+            "activeClassName": "grow white",
+            "mutedClassName": "white"
         }
     }
 }
