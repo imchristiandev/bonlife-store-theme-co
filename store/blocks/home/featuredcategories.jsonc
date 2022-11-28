@@ -2,7 +2,7 @@
     "flex-layout.row#categories-row": {
         "props": {
             "blockClass": "categories-row",
-            "paddingTop": 6,
+            "paddingTop": 9,
             "paddingBottom": 10,
             "preventHorizontalStretch": true
             // "fullWidth": true

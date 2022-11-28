@@ -3,8 +3,7 @@
         "props": {
             "blockClass": "teaser-full-width-row",
             "fullWidth": true,
-            "paddingTop": 6,
-            "paddingBottom": 9
+            "paddingTop": 6
         },
         "children": [
             "flex-layout.col#teaser-full-width-col"

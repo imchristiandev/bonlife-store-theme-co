@@ -17,6 +17,11 @@
 /*HEADER MAIN*/
 
 /*FEATURED CATEGORIES*/
+
+.flexRow--categories-row{
+    background-color: #f1f1f1;
+}
+
 .flexRowContent--call-to-action-row .stretchChildrenWidth:nth-child(even) {
     position: absolute;
     -webkit-transition-property: left;
@@ -36,11 +41,30 @@
 
 /*FEATURED CATEGORIES*/
 
+/*TEASER - GIF*/
+
+.flexColChild--teaser-col{
+    overflow: hidden;
+}
+
+.flexColChild--teaser-col :global(.vtex-store-components-3-x-imageElement--teaser-medium-home-page){
+    transform: scale(1);
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.flexColChild--teaser-col:hover :global(.vtex-store-components-3-x-imageElement--teaser-medium-home-page){
+    transform: scale(1.1);
+}
+/*TEASER - GIF*/
+
 .flexRow--highlightRow,
 .flexRow--footer-copyright {
     background-color: #eae9e9;
 }
 
+/*HIGHLIGHTS*/
 .flexRow--highlightRow .stretchChildrenWidth {
     padding-left: 3%;
     padding-right: 3%;
@@ -51,16 +75,23 @@
     padding-top: 4%;
     padding-bottom: 5%;
 }
+/*HIGHLIGHTS*/
 
+/*FEATURED PRODUCTS*/
 .flexRow--featured-products-title-row__desktop {
     padding-left: 5%;
 }
 
+/*FEATURED PRODUCTS*/
+
+/*FOOTER*/
 .flexRowContent--footer-main,
 .flexRowContent--footer-logistic-information {
     background-color: #d9d9d9;
 }
+/*FOOTER*/
 
+/*NEW COLECTION*/
 .flexRow--new-collection-section {
     /* background-color: #eae9e9; */
     padding-left: 1%;
@@ -71,6 +102,7 @@
     background-color: #ffffff;
     padding-bottom: 3%;
 }
+/*NEW COLECTION*/
 
 .flexRow--categories-row {
     padding-left: 3%;
@@ -90,10 +122,6 @@
     padding-left: 3%;
     padding-right: 3%;
 }
-
-/* .flexRow--searchbread-row{
-    background-color: #e6e6e6;
-} */
 
 .flexColChild--summary-right-list-desktop-col {
     margin: 5px;
@@ -125,10 +153,6 @@
 .flexCol--summary-details-list-desktop {
     border-right: 1px solid #e6e6e6;
 }
-
-/* .flexRowContent--summary-list-desktop-row .stretchChildrenWidth{
-    border-left: 1px solid #e6e6e6;
-} */
 
 .flexColChild--product-discount-percentage-col {
     background: #666;

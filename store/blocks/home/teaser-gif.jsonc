@@ -1,0 +1,62 @@
+{
+    "flex-layout.row#teaser-gif-row":{
+        "props":{
+            "blockClass": "teaser-gif-row",
+            "colGap": 6,
+            "paddingTop": 9,
+            "paddingBottom": 8
+        },
+        "children":[
+            "flex-layout.col#teaser-col",
+            "flex-layout.col#gif-col"
+        ]
+    },
+    "flex-layout.col#teaser-col":{
+        "props":{
+            "blockClass": "teaser-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "71%",
+            "preventVerticalStretch": false
+        },
+        "children":[
+            "image#teaser-medium-home-page"
+        ]
+    },
+    "flex-layout.col#gif-col":{
+        "props":{
+            "blockClass": "gif-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "29%",
+            "preventVerticalStretch": false
+        },
+        "children":[
+            "image#gif-medium-home-page"
+        ]
+    },
+    "image#teaser-medium-home-page":{
+        "props":{
+            "blockClass": "teaser-medium-home-page",
+            "src": "assets/images/home/teasers/bonlife-co-teaser-banner-medium-homepage.png",
+            "alt": "teaser promocional bolifeco",
+            "link":{
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+        }
+    },
+    "image#gif-medium-home-page":{
+        "props":{
+            "blockClass": "gif-medium-home-page",
+            "src": "assets/images/home/teasers/bonlife-co-gif-banner-medium-homepage.png",
+            "alt": "gif coleccion bolifeco",
+            "link":{
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            }
+        }
+    }
+}
