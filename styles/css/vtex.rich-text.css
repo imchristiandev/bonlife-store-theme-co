@@ -14,8 +14,13 @@
     font-size: 2.25rem;
     text-transform: lowercase;
 }
-
 /*FEATURED CATEGORIES*/
+
+/*FEATURED PRODUCTS*/
+.headingLevel2--featured-products-title__desktop{
+    font-family: 'PoppinsLight';
+}
+/*FEATURED PRODUCTS*/
 
 .paragraph--highlights-title{
     font-family: 'PoppinsMedium';

@@ -1,15 +1,21 @@
 {
     "flex-layout.row#featured-products-row__desktop":{
         "props":{
-            "paddingTop": 4,
-            "paddingBottom": 8,
-            "blockClass": "featured-products-section"            
+            "blockClass": "featured-products-section",
+            "horizontalAlign": "center",
+            "preventVerticalStretch": false,
+            "paddingTop": 7,
+            "paddingBottom": 10
         },
         "children": [
             "flex-layout.col#featured-products-col__desktop"
         ]
     },
     "flex-layout.col#featured-products-col__desktop":{
+        "props":{
+            "blockClass": "featured-products-col__desktop",
+            "verticalAlign": "middle"
+        },
         "children":[
             "flex-layout.row#featured-products-title-row__desktop",
             "list-context.product-list#featured-products-context"
@@ -18,7 +24,8 @@
     "flex-layout.row#featured-products-title-row__desktop":{
         "props":{
             "blockClass": "featured-products-title-row__desktop",
-            "horizontalAlign": "center"
+            "horizontalAlign": "center",
+            "paddingBottom": 5
         },
         "children":[
             "rich-text#featured-products-title__desktop"            
@@ -26,9 +33,10 @@
     },    
     "rich-text#featured-products-title__desktop":{
         "props": {
+          "blockClass": "featured-products-title__desktop",
           "text": "## Productos Destacados",
-          "textAligment": "LEFT",
-          "textPosition": "LEFT"
+          "textAligment": "CENTER",
+          "textPosition": "CENTER"
         }
     },    
     "list-context.product-list#featured-products-context":{
@@ -92,31 +100,50 @@
                 "tablet": 3,
                 "phone": 1
             },
-            "infinite": true,
-            "fullWidth": false,
+            "blockClass": "featured-products-caruosel",
+            "navigationStep": 1,
             "showNavigationArrows": "always",
             "showPaginationDots": "never",
-            "blockClass": "featured-products-caruosel"
+            "infinite": true,
+            "slideTransition ": {
+                "speed": 600,
+                "delay": 400,
+                "timing": "ease-in-out"
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
         }
     },
     "flex-layout.row#featured-products-row__mobile":{
+        "props":{
+            "blockClass": "featured-products-row__mobile"
+        },
         "children":[
             "flex-layout.col#featured-products-col__mobile"
         ]
     },
     "flex-layout.col#featured-products-col__mobile":{
+        "props":{
+            "blockClass": "featured-products-col__mobile"
+        },
         "children":[
             "flex-layout.row#featured-products-title-row__mobile",
             "list-context.product-list#featured-products-context"
         ]
     },
     "flex-layout.row#featured-products-title-row__mobile":{
+        "props":{
+            "blockClass": "featured-products-title-row__mobile"
+        },
         "children":[
             "rich-text#featured-products-title__mobile"        
         ]
     },
     "rich-text#featured-products-title__mobile":{
         "props": {
+          "blockClass": "featured-products-title__mobile",
           "text": "## Productos Destacados",
           "textAligment": "CENTER",
           "textPosition": "CENTER"
