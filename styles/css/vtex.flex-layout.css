@@ -75,6 +75,51 @@
     padding-top: 4%;
     padding-bottom: 5%;
 }
+
+.flexRow--highlightRow .flexCol--highlight-col-shipping,
+.flexRow--highlightRow .flexCol--highlight-col-safe-shopping,
+.flexRow--highlightRow .flexCol--highlight-col-payment-methods,
+.flexRow--highlightRow .flexCol--highlight-col-refund{
+    border: 1px solid transparent;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.flexRow--highlightRow .flexCol--highlight-col-shipping:hover{
+    background-image: url('assets/images/home/highlights/free-shipping.png');
+    background-position: 100% 2%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px;
+}
+
+.flexRow--highlightRow .flexCol--highlight-col-safe-shopping:hover{
+    background-image: url('assets/images/home/highlights/shield.png');
+    background-position: 100% 2%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px;
+}
+.flexRow--highlightRow .flexCol--highlight-col-payment-methods:hover{
+    background-image: url('assets/images/home/highlights/credit-card.png');
+    background-position: 100% 2%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px;
+}
+.flexRow--highlightRow .flexCol--highlight-col-refund:hover{
+    background-image: url('assets/images/home/highlights/refund.png');
+    background-position: 100% 2%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px;
+} 
+
 /*HIGHLIGHTS*/
 
 /*FEATURED PRODUCTS*/

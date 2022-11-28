@@ -142,11 +142,21 @@
                 "tablet": 3,
                 "phone": 1
             },
+            "blockClass": "new-collection-caruosel",
+            "navigationStep": 1,
             "infinite": true,
-            "fullWidth": false,
             "showNavigationArrows": "desktopOnly",
             "showPaginationDots": "never",
-            "blockClass": "new-collection-caruosel"
+            "slideTransition ": {
+                "speed": 600,
+                "delay": 400,
+                "timing": "ease-in-out"
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
+            
         }
     },
     "flex-layout.row#new-collection-button-row__desktop": {

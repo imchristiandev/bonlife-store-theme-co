@@ -5,9 +5,9 @@
 /*NEW COLLECTION*/
 .stackItem--new-collection-stack-layout-banner--banner-badge-new-collection{
     margin: 0;
-    top: 90%;
-    left: 40%;
-    transform: translate(-40%, -90%);
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-15%);
 }
 
 /*FEATURED CATEGORIES*/

@@ -19,6 +19,7 @@
     },
     "flex-layout.col#highlight1":{
         "props": {
+            "blockClass": "highlight-col-shipping",
             "verticalAlign": "middle",
             "paddingTop": 3,
             "paddingBottom": 3            
@@ -30,6 +31,7 @@
     },    
     "flex-layout.col#highlight2":{
         "props": {
+            "blockClass": "highlight-col-safe-shopping",
             "verticalAlign": "middle",
             "paddingTop": 3,
             "paddingBottom": 3            
@@ -41,6 +43,7 @@
     },    
     "flex-layout.col#highlight3":{
         "props": {
+            "blockClass": "highlight-col-payment-methods",
             "verticalAlign": "middle",
             "paddingTop": 3,
             "paddingBottom": 3
@@ -52,6 +55,7 @@
     },
     "flex-layout.col#highlight4":{
         "props": {
+            "blockClass": "highlight-col-refund",
             "verticalAlign": "middle",
             "paddingTop": 3,
             "paddingBottom": 3            
@@ -63,74 +67,70 @@
     },
     "rich-text#highlight1-title":{
         "props":{
+            "blockClass": "highlights-title",
             "text":"Envío<br>Gratis",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            // "font": "t-heading-6",
-            "blockClass": "highlights-title"
+            "textPosition": "CENTER"
         }
     },
     "rich-text#highlight1-description":{
         "props":{
-            "text": "Por compras<br>desde $000.000",
+            "blockClass": "highlights-description",
+            "text": "Por compras<br>desde $150.000",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-body",
-            "blockClass": "highlights-description"
+            "font": "t-body"
         }
     },
     "rich-text#highlight2-title":{
         "props":{
+            "blockClass": "highlights-title",
             "text":"Compras<br>Seguras",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            // "font": "t-heading-6",
-            "blockClass": "highlights-title"
+            "textPosition": "CENTER"
         }
     },
     "rich-text#highlight2-description":{
         "props":{
+            "blockClass": "highlights-description",
             "text": "Seguridad de<br>principio a fin",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-body",
-            "blockClass": "highlights-description"
+            "font": "t-body"
         }
     },
     "rich-text#highlight3-title":{
         "props":{
+            "blockClass": "highlights-title",
             "text":"Medios de<br>Pago",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            // "font": "t-heading-6",
-            "blockClass": "highlights-title"
+            "textPosition": "CENTER"
         }
     },
     "rich-text#highlight3-description":{
         "props":{
+            "blockClass": "highlights-description",
             "text": "Tarjetas Débito<br>y Crédito",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-body",
-            "blockClass": "highlights-description"
+            "font": "t-body"
         }
     },
     "rich-text#highlight4-title":{
         "props":{
+            "blockClass": "highlights-title",
             "text":"Devolución<br>sin Costo",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            // "font": "t-heading-6",
-            "blockClass": "highlights-title"
+            "textPosition": "CENTER"
         }
     },
     "rich-text#highlight4-description":{
         "props":{
-            "text": "Por compras<br>desde $000.000",
+            "blockClass": "highlights-description",
+            "text": "Por compras<br>desde $300.000",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "font": "t-body",
-            "blockClass": "highlights-description"
+            "font": "t-body"
         }
     }
 }

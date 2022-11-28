@@ -53,9 +53,24 @@
 }
 /*FEATURED CATEGORIES*/
 
+/*PROMO BANNERS*/
+.infoCardImageContainer--info-card-promoBanner{
+    overflow: hidden;
+}
+
+.infoCardImageContainer--info-card-promoBanner :global(.vtex-store-components-3-x-infoCardImage--info-card-promoBanner){
+    -moz-transition: transform .8s;
+    -o-transition: transform .8s;
+    transition: transform .8s;
+}
+
+.infoCardImageContainer--info-card-promoBanner:hover :global(.vtex-store-components-3-x-infoCardImage--info-card-promoBanner){
+    transform: scale(1.1);
+}
+
 .infoCardHeadline--info-card-promoBanner{
-    font-family: 'PoppinsMedium';
-    text-transform: uppercase;
+    font-family: 'PoppinsRegular';
+    /* text-transform: uppercase; */
 }
 
 .infoCardSubhead--info-card-promoBanner{
@@ -68,6 +83,12 @@
     box-shadow: 1px 1px 2px #cecece;
 }
 
+.infoCardCallActionContainer--info-card-promoBanner :global(.vtex-button){
+    border-radius: 0px;
+}
+/*PROMO BANNERS*/
+
+/*FEATURED CATEGORIES*/
 .infoCardContainer--infocard-featured-categories{
     height: 600px;
     width: auto;
@@ -84,6 +105,7 @@
 .infoCardCallActionContainer--infocard-featured-categories :global(.vtex-button){
     border-radius: 0px;
 }
+/*FEATURED CATEGORIES*/
 
 .discountInsideContainer{
     z-index: 998;
@@ -218,10 +240,6 @@
     .infoCardSubhead--info-card-promoBanner{
         font-size: 1rem;
         line-height: 1.2em;
-    }
-
-    .infoCardCallActionContainer--info-card-promoBanner :global(.vtex-button){
-        border-radius: 0px;
     }
 
     .infoCardContainer--info-card-promoBanner{
