@@ -1,7 +1,30 @@
+/*MAIN HEADER*/
+
+/*DEPARTMENTS*/
+.menuContainerNav--header-departments-menu .styledLink{
+    position: relative;
+}
+.menuContainerNav--header-departments-menu .styledLink::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menuContainerNav--header-departments-menu .styledLink:hover::before{
+    transform: scaleX(1);
+}
+
 .menuContainerNav--header-departments-menu .styledLinkContent{
     font-family: 'PoppinsRegular', 'sans-serif';
     text-transform: uppercase;
-    /* border-left: 4px solid #000; */
     padding-left: 5px;
     color: #fafafa;
 }
@@ -13,7 +36,39 @@
     font-family: 'PoppinsLight';
     line-height: 2.4em;
     color: #000;
-    /* border: none; */
+}
+/*DEPARTMENTS*/
+
+/*CATEGORIES*/
+.menuContainerNav--woman-submenu-left-menu .styledLinkContent,
+.menuContainerNav--woman-submenu-right-menu .styledLinkContent,
+.menuContainerNav--man-submenu-left-menu .styledLinkContent,
+.menuContainerNav--man-submenu-right-menu .styledLinkContent{
+    position: relative;
+}
+
+.menuContainerNav--woman-submenu-left-menu .styledLinkContent::before,
+.menuContainerNav--woman-submenu-right-menu .styledLinkContent::before,
+.menuContainerNav--man-submenu-left-menu .styledLinkContent::before,
+.menuContainerNav--man-submenu-right-menu .styledLinkContent::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menuContainerNav--woman-submenu-left-menu .styledLinkContent:hover::before,
+.menuContainerNav--woman-submenu-right-menu .styledLinkContent:hover::before,
+.menuContainerNav--man-submenu-left-menu .styledLinkContent:hover::before,
+.menuContainerNav--man-submenu-right-menu .styledLinkContent:hover::before{
+    transform: scaleX(0.75);
 }
 
 .submenu--woman-submenu-menu,
@@ -30,7 +85,7 @@
 .submenu--man-submenu-menu .styledLinkIcon{
     margin-right: 8px;
 }
-
+/*CATEGORIES*/
 
 @media screen and (min-width: 1000px){
     .submenuWrapper--woman-submenu-menu,
@@ -47,3 +102,4 @@
         justify-content: center;
     }
 }
+/*MAIN HEADER*/

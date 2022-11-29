@@ -65,7 +65,7 @@
 }
 
 .infoCardImageContainer--info-card-promoBanner:hover :global(.vtex-store-components-3-x-infoCardImage--info-card-promoBanner){
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .infoCardHeadline--info-card-promoBanner{

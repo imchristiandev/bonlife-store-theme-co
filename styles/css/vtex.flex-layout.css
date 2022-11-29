@@ -48,14 +48,13 @@
 }
 
 .flexColChild--teaser-col :global(.vtex-store-components-3-x-imageElement--teaser-medium-home-page){
-    transform: scale(1);
     -moz-transition: transform 1s;
     -o-transition: transform 1s;
     transition: transform 1s;
 }
 
 .flexColChild--teaser-col:hover :global(.vtex-store-components-3-x-imageElement--teaser-medium-home-page){
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /*TEASER - GIF*/
 
