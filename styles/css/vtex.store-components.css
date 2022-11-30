@@ -1,10 +1,15 @@
-.autoCompleteOuterContainer--search-bar-header :global(.vtex-styleguide-9-x-input){
+/*SEARCH BAR HEADER*/
+.autoCompleteOuterContainer--search-bar-header :global(.vtex-styleguide-9-x-input),
+.autoCompleteOuterContainer--search-bar-header-pdp-plp :global(.vtex-styleguide-9-x-input){
     color: #fafafa;
 }
 
-.searchIcon--search-bar-header{
+.searchIcon--search-bar-header,
+.searchBarIcon--search-bar-header-pdp-plp{
     color: #fafafa;
 }
+
+/*SEARCH BAR HEADER*/
 
 /*TEASER BANNER FULL WIDTH*/
 .infoCardContainer--teaser-full-width-info-card{

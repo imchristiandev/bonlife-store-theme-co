@@ -1,9 +1,10 @@
+/*PLP*/
 .searchResultContainer{
     padding-top: 0;
 }
 
 .galleryTitle--layout{
-    font-family: 'PoppinsBold';
+    font-family: 'PoppinsRegular';
     font-size: 2.25rem;
 }
 
@@ -13,8 +14,12 @@
     border-radius: 10px;
 }
 
+.searchFilterBar--filter-navigator{
+    margin-bottom: 15px;
+}
+
 .filterTitle--filter-navigator{
-    font-family: 'PoppinsMedium';
+    font-family: 'PoppinsRegular';
     font-size: 1.2rem;
     display: flex;
     text-transform: lowercase;
@@ -35,6 +40,26 @@
 .filterItem--filter-navigator :global(.vtex-checkbox__label){
     font-size: 0.875rem;
     text-transform: uppercase;
+}
+
+.seeMoreButton--filter-navigator{
+    font-family: 'PoppinsRegular';
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 0.875rem;
+}
+
+.priceRangeInputWrapper--filter-navigator{
+    flex-direction: column;
+}
+
+.priceRangeInputWrapper--filter-navigator .priceRangeInput,
+.priceRangeInputWrapper--filter-navigator :global(.vtex-button){
+    margin-bottom: 10px;
+}
+
+.priceRangeInputWrapper--filter-navigator :global(.vtex-styleguide-9-x-input){
+    text-align: center;
 }
 
 .totalProducts--layout{
@@ -101,10 +126,6 @@
     text-transform: uppercase;
     font-size: 0.75rem;
 }
-
-/* .filterSelectedFilters--filter-navigator::first-letter{
-    text-transform: uppercase;
-} */
 
 .filter__container--clearAllFilters{
     display: flex;

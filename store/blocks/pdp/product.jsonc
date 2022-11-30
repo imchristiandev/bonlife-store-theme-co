@@ -1,5 +1,8 @@
 {
   "store.product": {
+    "parent":{
+      "header": "header#pdp-plp"
+    },
     "children": [
       "flex-layout.row#product-breadcrumb-row",
       // "flex-layout.row#product-main",

@@ -1,7 +1,4 @@
-.container--sticky-header-mobile{
-    background-color: #eae9e9;
-}
-
+/*HEADER HOME*/
 .wrapper--sticky-header .container--sticky-header{
     background-color: rgba(255,255,255,0.1);
     transition: background-color .5s ease-in;
@@ -11,3 +8,16 @@
 .wrapper--sticky-header--stuck .container--sticky-header{
     background-color: #222324;
 }
+/*HEADER HOME*/
+
+/*HEADER PDP PLP*/
+.container--sticky-header-pdp-plp{
+    background-color: #222324;
+}
+/*HEADER PDP PLP*/
+
+/*HEADER MOBILE*/
+.container--sticky-header-mobile{
+    background-color: #eae9e9;
+}
+/*HEADER MOBILE*/
