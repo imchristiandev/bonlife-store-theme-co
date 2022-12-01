@@ -28,19 +28,50 @@
     padding-left: 5px;
     color: #fafafa;
 }
+/*DEPARTMENTS*/
 
+/*CATEGORIES*/
 .menuContainerNav--woman-submenu-left-menu .styledLinkContent,
 .menuContainerNav--woman-submenu-right-menu .styledLinkContent,
 .menuContainerNav--man-submenu-left-menu .styledLinkContent,
 .menuContainerNav--man-submenu-right-menu .styledLinkContent{
     font-family: 'PoppinsLight';
-    line-height: 2.4em;
+    line-height: 1.6em;
     color: #000;
 }
-/*DEPARTMENTS*/
 
-/*CATEGORIES*/
-.menuContainerNav--woman-submenu-left-menu .styledLinkContent,
+.menuContainer--woman-submenu-left-menu .styledLinkContainer,
+.menuContainer--man-submenu-left-menu .styledLinkContainer{
+    margin-left: 0;
+}
+
+.menuContainer--woman-submenu-left-menu .menuItem,
+.menuContainer--man-submenu-left-menu .menuItem{
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.menuContainer--woman-submenu-left-menu .menuItem::before,
+.menuContainer--man-submenu-left-menu .menuItem::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menuContainer--woman-submenu-left-menu .menuItem:hover::before,
+.menuContainer--man-submenu-left-menu .menuItem:hover::before{
+    transform: scaleX(1);
+}
+
+/* .menuContainerNav--woman-submenu-left-menu .styledLinkContent,
 .menuContainerNav--woman-submenu-right-menu .styledLinkContent,
 .menuContainerNav--man-submenu-left-menu .styledLinkContent,
 .menuContainerNav--man-submenu-right-menu .styledLinkContent{
@@ -68,8 +99,8 @@
 .menuContainerNav--woman-submenu-right-menu .styledLinkContent:hover::before,
 .menuContainerNav--man-submenu-left-menu .styledLinkContent:hover::before,
 .menuContainerNav--man-submenu-right-menu .styledLinkContent:hover::before{
-    transform: scaleX(0.75);
-}
+    transform: scaleX(1);
+} */
 
 .submenu--woman-submenu-menu,
 .submenu--man-submenu-menu{
@@ -85,17 +116,21 @@
 .submenu--man-submenu-menu .styledLinkIcon{
     margin-right: 8px;
 }
+
+
 /*CATEGORIES*/
 
-@media screen and (min-width: 1000px){
-    .submenuWrapper--woman-submenu-menu,
-    .submenuWrapper--man-submenu-menu{
-        width: 900px;
-        min-width: 800px;
-        height: auto;
-        min-height: 250px;
-    }   
+/*MAIN MENU*/
+.submenuContainer{
+    position: unset;
 }
+
+.submenuWrapper{
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+/*MAIN MENU*/
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     .container{

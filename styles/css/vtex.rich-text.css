@@ -1,3 +1,12 @@
+/*MAIN MENU*/
+.headingLevel2--woman-department-title,
+.headingLevel2--man-department-title{
+    font-size: 1.8rem;
+    margin: 0px 0px 20px 5px;
+    border-bottom: 1px solid #000;
+}
+/*MAIN MENU*/
+
 /*FEATURED CATEGORIES*/
 .headingLevel4--featured-categories-headline-light,
 .headingLevel4--featured-categories-headline-strong{

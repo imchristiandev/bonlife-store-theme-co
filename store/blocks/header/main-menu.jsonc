@@ -12,8 +12,8 @@
     "vtex.menu@2.x:menu#departments": {
         "children": [
             "menu-item#woman",
-            "menu-item#pushup",
             "menu-item#man",
+            "menu-item#pushup",
             "menu-item#sale",
             "menu-item#new"
         ],
@@ -24,6 +24,7 @@
     //WOMAN
     "menu-item#woman": {
         "props": {
+            "blockClass": "woman-menu-item",
             "type": "category",
             "highlight": false,
             "itemProps": {
@@ -47,14 +48,13 @@
         "props": {
             "blockClass": "woman-submenu-row",
             "horizontalAlign": "center",
-            "colSizing": "equal",
-            "fullWidth": true,
+            "preventHorizontalStretch": true,
             "paddingTop": 4,
             "paddingBottom": 4
         },
         "children": [
             "flex-layout.col#woman-submenu-col-left",
-            "flex-layout.col#woman-submenu-col-right",
+            // "flex-layout.col#woman-submenu-col-right",
             "flex-layout.col#woman-submenu-col-featured-banner"
         ]
     },
@@ -66,8 +66,17 @@
             "paddingRight": 5
         },
         "children": [
+            "rich-text#woman-department-title",
             "vtex.menu@2.x:menu#woman-submenu-left-menu"
         ]
+    },
+    "rich-text#woman-department-title":{
+        "props":{
+            "blockClass": "woman-department-title",
+            "text": "## Mujer",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
     },
     "vtex.menu@2.x:menu#woman-submenu-left-menu": {
         "props": {
@@ -79,7 +88,11 @@
             "menu-item#woman-second-subcategory",
             "menu-item#woman-third-subcategory",
             "menu-item#woman-fourth-subcategory",
-            "menu-item#woman-fifth-subcategory"
+            "menu-item#woman-fifth-subcategory",
+            "menu-item#woman-sixth-subcategory",
+            "menu-item#woman-seventh-subcategory",
+            "menu-item#woman-eighth-subcategory",
+            "menu-item#woman-ninth-subcategory"
         ]
     },
     "menu-item#woman-first-subcategory": {
@@ -172,29 +185,29 @@
             }
         }
     },
-    "flex-layout.col#woman-submenu-col-right": {
-        "props": {
-            "blockClass": "woman-submenu-col-right",
-            "verticalAlign": "top",
-            "paddingLeft": 5,
-            "paddingRight": 5
-        },
-        "children": [
-            "vtex.menu@2.x:menu#woman-submenu-right-menu"
-        ]
-    },
-    "vtex.menu@2.x:menu#woman-submenu-right-menu": {
-        "props": {
-            "orientation": "vertical",
-            "blockClass": "woman-submenu-right-menu"
-        },
-        "children": [
-            "menu-item#woman-sixth-subcategory",
-            "menu-item#woman-seventh-subcategory",
-            "menu-item#woman-eighth-subcategory",
-            "menu-item#woman-ninth-subcategory"
-        ]
-    },
+    // "flex-layout.col#woman-submenu-col-right": {
+    //     "props": {
+    //         "blockClass": "woman-submenu-col-right",
+    //         "verticalAlign": "top",
+    //         "paddingLeft": 5,
+    //         "paddingRight": 5
+    //     },
+    //     "children": [
+    //         "vtex.menu@2.x:menu#woman-submenu-right-menu"
+    //     ]
+    // },
+    // "vtex.menu@2.x:menu#woman-submenu-right-menu": {
+    //     "props": {
+    //         "orientation": "vertical",
+    //         "blockClass": "woman-submenu-right-menu"
+    //     },
+    //     "children": [
+    //         "menu-item#woman-sixth-subcategory",
+    //         "menu-item#woman-seventh-subcategory",
+    //         "menu-item#woman-eighth-subcategory",
+    //         "menu-item#woman-ninth-subcategory"
+    //     ]
+    // },
     "menu-item#woman-sixth-subcategory": {
         "props": {
             "type": "category",
@@ -281,7 +294,14 @@
     },
     "image#woman-featured-banner": {
         "props": {
-            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg"
+            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg",
+            "alt": "Banner Especial Mujer",
+            "link":{
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            },
+            "maxHeight": 400
         }
     },
     /*PUSHUP*/
@@ -301,10 +321,11 @@
     // MAN
     "menu-item#man": {
         "props": {
+            "blockClass": "man-menu-item",
             "type": "category",
             "highlight": false,
             "itemProps": {
-                "categoryId": 1,
+                "categoryId": 2,
                 "text": "Hombre"
             }
         },
@@ -325,13 +346,12 @@
             "blockClass": "man-submenu-row",
             "horizontalAlign": "center",
             "colSizing": "equal",
-            "fullWidth": true,
+            "preventHorizontalStretch": true,
             "paddingTop": 4,
             "paddingBottom": 4
         },
         "children": [
             "flex-layout.col#man-submenu-col-left",
-            // "flex-layout.col#man-submenu-col-right",
             "flex-layout.col#man-submenu-col-featured-banner"
         ]
     },
@@ -344,8 +364,17 @@
             "paddingRight": 5
         },
         "children": [
+            "rich-text#man-department-title",
             "vtex.menu@2.x:menu#man-submenu-left-menu"
         ]
+    },
+    "rich-text#man-department-title":{
+        "props":{
+            "blockClass": "man-department-title",
+            "text": "## Hombre",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
     },
     "vtex.menu@2.x:menu#man-submenu-left-menu": {
         "props": {
@@ -484,7 +513,14 @@
     },
     "image#man-featured-banner": {
         "props": {
-            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg"
+            "src": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg",
+            "alt": "Hombre Banner Especial",
+            "link":{
+                "attributeNofollow": false,
+                "newTab": true,
+                "url": "#"
+            },
+            "maxHeight": 400
         }
     },
     /*SALE*/
