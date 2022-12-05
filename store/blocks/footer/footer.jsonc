@@ -39,9 +39,9 @@
   },
   "logo#logo__left-col__footer":{
     "props":{
-      "title": "Logo",
+      "title": "Logo Bonlife",
       "href": "/",
-      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "url": "assets/images/header/logo-bonlife.png",
       "height": "70px"
     }
   },

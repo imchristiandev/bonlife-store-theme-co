@@ -61,10 +61,8 @@
             "product-summary-image#image__featured-products-shelf",
             "product-summary-name",
             "product-summary-space",
-            // "product-summary-sku-selector",
             "product-list-price#featured-module-list-price",
             "product-selling-price#featured-products-selling-price"
-            // "add-to-cart-button"
         ]
     },
     "product-summary-image#image__featured-products-shelf":{
@@ -113,7 +111,13 @@
             "autoplay": {
                 "timeout": 5000,
                 "stopOnHover": true
-            }
+            },
+            "centerMode": {
+                "desktop": "disabled",
+                "tablet": "disabled",
+                "phone": "to-the-left"
+            },
+            "centerModeSlidesGap": 2
         }
     },
     "flex-layout.row#featured-products-row__mobile":{

@@ -5,7 +5,6 @@
             "paddingTop": 9,
             "paddingBottom": 10,
             "preventHorizontalStretch": true
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#featured-categories-col"
@@ -85,7 +84,12 @@
             "showNavigationArrows": "desktopOnly",
             "showPaginationDots": "never",
             "navigationStep": 1,
-            "infinite": true
+            "infinite": true,
+            "centerMode": {
+                "desktop": "disabled",
+                "tablet": "disabled",
+                "phone": "disabled"
+            }
         }
     },
 

@@ -22,6 +22,18 @@
 }
 /*HEADER PDP PLP*/
 
+/*MENU DRAWER MOBILE*/
+.flexColChild--menu-drawer-col :global(.vtex-store-drawer-0-x-menuIcon){
+    color: #fff;
+}
+/*MENU DRAWER MOBILE*/
+
+/*LOGIN COL MOBILE*/
+.flexColChild--login-col :global(.vtex-login-2-x-profileIcon--login-mobile){
+    color: #fff;    
+}
+/*LOGIN COL MOBILE*/
+
 /*FEATURED CATEGORIES*/
 
 .flexRow--categories-row{
@@ -154,6 +166,7 @@
 }
 /*NEW COLECTION*/
 
+/*CATEGORIES*/
 .flexRow--categories-row {
     padding-left: 3%;
     padding-right: 3%;
@@ -267,5 +280,9 @@
 
     .flexCol--product-selling-price-col {
         text-align: center;
+    }
+
+    .flexRowContent--call-to-action-row .stretchChildrenWidth:nth-child(even){
+        width: 35% !important;
     }
 }

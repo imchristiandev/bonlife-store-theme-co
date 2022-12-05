@@ -84,13 +84,8 @@
             "verticalAlign": "middle"
         },
         "children": [
-            "search-bar#search-bar-pdp-plp"
+            "search-bar"
         ]
-    },
-    "search-bar#search-bar-pdp-plp": {
-        "props": {
-            "blockClass": "search-bar-header-pdp-plp"
-        }
     },
     "login#login-pdp-plp": {
         "props": {

@@ -96,4 +96,10 @@
     .headingLevel3--cross-selling-title{
         text-align: center;
     }
+
+    .headingLevel4--featured-categories-headline-strong{
+        font-size: 2rem;
+        text-align: center;
+        margin: 5px 0px;
+    }
 }

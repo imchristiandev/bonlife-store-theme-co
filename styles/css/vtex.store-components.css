@@ -1,6 +1,7 @@
 /*SEARCH BAR HEADER*/
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-styleguide-9-x-input),
-.autoCompleteOuterContainer--search-bar-header-pdp-plp :global(.vtex-styleguide-9-x-input){
+.autoCompleteOuterContainer--search-bar-header-pdp-plp :global(.vtex-styleguide-9-x-input),
+.autoCompleteOuterContainer--search-bar-header :global(.vtex__icon-search){
     color: #fafafa;
 }
 
@@ -248,7 +249,7 @@
     }
 
     .infoCardContainer--info-card-promoBanner{
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     .discountInsideContainer{

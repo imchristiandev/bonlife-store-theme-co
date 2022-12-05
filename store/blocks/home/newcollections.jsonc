@@ -20,7 +20,6 @@
         },
         "children": [
             "stack-layout#new-collection-stack-layout-banner"
-            // "image#left-banner-new-collection__desktop"
         ]
     },
     "stack-layout#new-collection-stack-layout-banner":{
@@ -106,12 +105,9 @@
         "children": [
             "product-summary-image",
             "product-summary-space",
-            // "product-summary-brand",
             "product-summary-name",
-            // "product-summary-sku-selector",
             "product-list-price#new-collections-module-list-price",
             "product-selling-price#new-collections-module-selling-price"
-            // "add-to-cart-button"
         ]
     },
     "product-summary-image": {
@@ -155,7 +151,13 @@
             "autoplay": {
                 "timeout": 5000,
                 "stopOnHover": true
-            }
+            },
+            "centerMode": {
+                "desktop": "disabled",
+                "tablet": "disabled",
+                "phone": "to-the-left"
+            },
+            "centerModeSlidesGap": 2
             
         }
     },

@@ -121,8 +121,35 @@
     ]
   },
   "search-bar":{
+    "blocks":[
+      "autocomplete-result-list.v2"
+    ],
+    "props":{      
+      "blockClass": "search-bar-header",
+      "inputType": "search",
+      "displayMode": "search-button",
+      "emptyPlaceholder": "Intenta con otro término de búsqueda",
+      "minSearchTermLength": 3,
+      "placeholder": "Buscar",
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2":{
+    "blocks":[
+      "product-summary"
+    ],
     "props":{
-      "blockClass": "search-bar-header"
+      // "maxTopSearches": 5,
+      // "maxHistory": 3,
+      // "maxSuggestedProducts": 3,
+      // "maxSuggestedTerms": 3,
+      "autocompleteWidth": 70
+      // "productLayout": "VERTICAL"
+      // "hideTitles": false,
+      // "hideUnavailableItems": false,
+      // "historyFirst": false,
+      // "simulationBehavior": "default"
+      
     }
   },
   "flex-layout.col#login-minicart-col":{
@@ -210,9 +237,9 @@
   "logo#mobile":{
     "props":{
       "blockClass": "logo-mobile",
-      "title": "Logo",
+      "title": "Logo Bonlife",
       "href": "/",
-      "url": "https://bonlife.com.co/images/logo-bonlife-small.png",
+      "url": "assets/images/header/bonlife-logo-negative.png",
       "height": "40"
     }
   },
