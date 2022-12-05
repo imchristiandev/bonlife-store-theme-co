@@ -5,7 +5,6 @@
     },
     "children": [
       "flex-layout.row#product-breadcrumb-row",
-      // "flex-layout.row#product-main",
       "responsive-layout.desktop#product-main-info-desktop",
       "responsive-layout.mobile#product-main-info-mobile",
       // "responsive-layout.desktop#product-detailed-information-section__desktop",
@@ -148,8 +147,7 @@
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
       "flex-layout.row#add-to-cart-button-row-pdp",
-      "flex-layout.row#product-detailed-information-row__disclosure",
-      // "flex-layout.col#shipping-simulator-col",
+      "flex-layout.row#product-detailed-information-row__disclosure",      
       "share#default"
     ],
     "props":{
@@ -338,14 +336,6 @@
       "text": "Comprar"
     }
   },
-  "flex-layout.col#shipping-simulator-col":{
-    "props":{
-      "blockClass": "shipping-simulator-col"
-    },
-    "children":[
-      "shipping-simulator#shipping-simulator-pdp"
-    ]
-  },
   "shipping-simulator#shipping-simulator-pdp":{
     "props":{
       "blockClass": "shipping-simulator-pdp"
@@ -386,8 +376,8 @@
       "flex-layout.row#product-price-row-mobile",
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
-      "flex-layout.row#add-to-cart-button-row-pdp",
-      "flex-layout.col#shipping-simulator-col",
+      "flex-layout.row#add-to-cart-button-row-pdp",      
+      "flex-layout.row#product-detailed-information-row__disclosure",
       "share#default"
     ],
     "props":{
@@ -402,8 +392,19 @@
       "blockClass": "product-images-row-mobile"
     },
     "children":[
-      "product-images"
+      "product-images#product-images-pdp-mobile"
     ]
+  },
+  "product-images#product-images-pdp-mobile":{
+    "props":{
+      "blockClass": "product-images-pdp-mobile",
+      "displayMode": "carousel ",
+      "aspectRatio": "1:1",
+      "maxHeight": 600,      
+      "zoomMode": "open-modal",
+      "ModalZoom": "modal-layout#product-image-detailed-modal",
+      "showPaginationDots": false
+    }
   },
   "flex-layout.row#product-price-row-mobile":{
     "props":{
@@ -419,7 +420,6 @@
     "props":{
       "blockClass": "product-price-col",
       "verticalAlign": "middle"
-      // "paddingLeft": 4
     },
     "children":[
       "flex-layout.col#product-selling-price-col",

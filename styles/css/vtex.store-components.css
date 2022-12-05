@@ -183,8 +183,9 @@
     color: #fafafa;
 }
 
-.productImage--product-images-product-main, .figure--product-images-product-main{
-    /* border: 1px solid #e6e6e6; */
+.productImage--product-images-product-main, 
+.figure--product-images-product-main,
+.productImage--product-images-pdp-mobile{
     border: 1px solid #000;
 }
 
@@ -241,6 +242,11 @@
     font-size: 1.8rem;
 }
 
+/*MOBILE*/
+/*PDP*/
+.caretIcon--product-images-pdp-mobile{
+    color: #979899;
+}
 
 @media screen and (min-width:320px) and (max-width:480px){
     .infoCardSubhead--info-card-promoBanner{

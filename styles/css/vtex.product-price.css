@@ -54,6 +54,9 @@
 .savings--product-savings-pdp{
     font-family: 'PoppinsMedium';
     font-size: 0.875rem;
+    display: block;
+    background-color: #666;
+    padding: 5px;
 }
 
 .listPrice--product-list-price-pdp{

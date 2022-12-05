@@ -1,0 +1,11 @@
+/*PDP*/
+
+/*MODAL ZOOM*/
+.paper--product-image-detailed-modal :global(.vtex-store-components-3-x-productBrand--product-name-detailed-image-zoom){
+    font-size: 1.5rem;
+}
+
+.paper--product-image-detailed-modal :global(.vtex-store-components-3-x-productNameContainer--product-name-detailed-image){
+    text-align: center;
+}
+/*MODAL ZOOM*/

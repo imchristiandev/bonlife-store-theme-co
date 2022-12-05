@@ -217,8 +217,7 @@
     border-right: 1px solid #e6e6e6;
 }
 
-.flexColChild--product-discount-percentage-col {
-    background: #666;
+.flexColChild--product-discount-percentage-col {    
     height: auto;
     text-align: center;
     color: #fafafa;
