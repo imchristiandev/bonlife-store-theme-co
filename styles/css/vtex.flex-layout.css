@@ -14,6 +14,14 @@
     top: 45px;
 }
 
+.flexRowContent--header-logo-main-actions-desktop-row :global(.vtex-search-2-x-biggy-autocomplete){
+    left: 65%;    
+}
+
+.flexRowContent--main-header-row-pdp-plp :global(.vtex-search-2-x-biggy-autocomplete){
+    right: 0;
+}
+
 /*HEADER MAIN*/
 
 /*HEADER PDP PLP*/
