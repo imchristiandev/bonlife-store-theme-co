@@ -110,17 +110,6 @@
             "product-selling-price#new-collections-module-selling-price"
         ]
     },
-    "product-summary-image": {
-        "props": {
-            "showBadge": true,
-            "showCollections": true,
-            "aspectRatio": "3:4",
-            "hoverImage": {
-                "criteria": "index",
-                "index": 1
-            }
-        }
-    },
     "product-list-price#new-collections-module-list-price": {
         "props": {
             "blockClass": "new-collections-module-list-price"
