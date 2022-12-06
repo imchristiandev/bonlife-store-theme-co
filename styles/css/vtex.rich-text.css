@@ -81,6 +81,32 @@
     text-transform: uppercase;
 }
 
+/*DATA TREATMENT, PRIVACY POLICY & PURCHAISING POLICIES*/
+.wrapper--data-treatment-text .heading-level-1,
+.wrapper--privacy-text .heading-level-1,
+.wrapper--purchasing-policies-text .heading-level-1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.wrapper--data-treatment-text .heading-level-2,
+.wrapper--privacy-text .heading-level-2,
+.wrapper--purchasing-policies-text .heading-level-2{
+    font-size: 1.2rem;
+}
+
+.wrapper--data-treatment-text .paragraph,
+.wrapper--data-treatment-text .listItem,
+.wrapper--privacy-text .paragraph,
+.wrapper--privacy-text .listItem, 
+.wrapper--purchasing-policies-text .paragraph,
+.wrapper--purchasing-policies-text .listItem {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6em;
+}
+/*DATA TREATMENT, PRIVACY POLICY & PURCHAISING POLICIES*/
+
 @media screen and (min-width: 320px) and (max-width: 480px){
     .heading-level-2{
         font-size: 2rem;

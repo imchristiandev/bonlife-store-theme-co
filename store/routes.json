@@ -1,0 +1,11 @@
+{
+    "store.custom#data-treatment": {
+        "path": "/legal/politica-de-tratamiento-de-datos"
+    },
+    "store.custom#privacy-policy":{
+        "path": "/legal/privacidad"
+    },
+    "store.custom#purchasing-policies":{
+        "path": "/legal/politicas-de-compra"
+    }
+}
