@@ -263,6 +263,18 @@
     padding-left: 0;
 }
 
+/*RELATED PRODUCTS*/
+.flexRowContent--cross-selling-pdp-row :global(.vtex-shelf-1-x-arrow){
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: #fafafa;
+}
+
+.flexRowContent--cross-selling-pdp-row :global(.vtex-slider-0-x-dotsContainer){
+    display: none;
+}
+/*RELATED PRODUCTS*/
+
 /* MOBILE */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .flexRowContent--categories-row {

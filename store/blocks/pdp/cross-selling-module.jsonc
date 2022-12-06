@@ -16,7 +16,7 @@
         },
         "children":[
             "flex-layout.row#section-title-pdp-row",
-            "flex-layout.row#list-context-pdp-row"
+            "flex-layout.row#shelf-related-products-pdp-row"
         ]
     },
     "flex-layout.row#section-title-pdp-row":{
@@ -37,24 +37,30 @@
             "textPosition": "LEFT"
         }
     },
-    "flex-layout.row#list-context-pdp-row":{
+    "flex-layout.row#shelf-related-products-pdp-row":{
         "props":{
-            "blockClass": "list-context-pdp-row"
+            "blockClass": "shelf-related-products-pdp-row"
         },
         "children":[
-            "list-context.product-list#cross-selling-list-context"
+            "shelf.relatedProducts"
         ]
     },
-    "list-context.product-list#cross-selling-list-context":{
+    "shelf.relatedProducts":{
         "blocks":[
             "product-summary.shelf#cross-selling-product-summary"
         ],
-        "children":[
-            "slider-layout#slider-shelf-cross-selling-shelf"
-        ],
-        "props": {
-            "orderBy": "OrderByNameDESC",
-            "maxItems": 5
+        "props":{
+            "recommendation": "view",
+            "hideOutOfStockItems": true,
+            "productList":{
+                "maxItems": 8,
+                "scroll": "ONE_BY_ONE",
+                "arrows": true,
+                "showTitle": false,
+                "gap": "ph0",
+                "minItemsPerPage": 1.5,
+                "itemsPerPage": 4.5
+            }
         }
     },
     "product-summary.shelf#cross-selling-product-summary":{
@@ -63,13 +69,10 @@
         },
         "children":[
             "product-summary-image",
-            // "product-summary-brand",
             "product-summary-name",
-            // "product-summary-sku-selector",
             "product-summary-space",
             "product-list-price#cross-selling-list-price-pdp",
             "product-selling-price#cross-selling-selling-price"
-            // "add-to-cart-button#add-to-cart-cross-selling-pdp"
         ]
     },
     "product-list-price#cross-selling-list-price-pdp":{
@@ -80,21 +83,6 @@
     "product-selling-price#cross-selling-selling-price":{
         "props":{
             "blockClass": "cross-selling-selling-price"
-        }
-    },
-    "slider-layout#slider-shelf-cross-selling-shelf":{
-        "props":{
-            "itemsPerPage": {
-                "desktop": 4,
-                "tablet": 3,
-                "phone": 2
-            },
-            "infinite": true,
-            "fullWidth": false,
-            "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "never",
-            "navigationStep": 1,
-            "blockClass": "cross-selling-carousel"
         }
     }
 }
