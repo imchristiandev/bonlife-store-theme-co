@@ -8,7 +8,7 @@
       "context":{
         "maxItemsPerPage": 10,
         "orderByField": "OrderByBestDiscountDESC",
-        "hideUnavailableItems": false,
+        "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "default"
@@ -24,7 +24,7 @@
       "context": {
         "maxItemsPerPage": 10,
         "orderByField": "OrderByBestDiscountDESC",
-        "hideUnavailableItems": false,
+        "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "default"
@@ -40,7 +40,7 @@
       "context": {
         "maxItemsPerPage": 10,
         "orderByField": "OrderByBestDiscountDESC",
-        "hideUnavailableItems": false,
+        "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "default"
@@ -56,7 +56,7 @@
       "context": {
         "maxItemsPerPage": 10,
         "orderByField": "OrderByBestDiscountDESC",
-        "hideUnavailableItems": false,
+        "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "default"
@@ -72,7 +72,7 @@
       "context": {
         "maxItemsPerPage": 10,
         "orderByField": "OrderByBestDiscountDESC",
-        "hideUnavailableItems": false,
+        "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "default"
@@ -106,7 +106,8 @@
   },
   "flex-layout.row#promo-banner__desktop":{
     "props":{
-      "blockClass": "promo-banner-row-desktop"
+      "blockClass": "promo-banner-row-desktop",
+      "fullWidth": true
     },
     "children": [
       "image#promo-banner__desktop"
@@ -115,8 +116,7 @@
   "image#promo-banner__desktop":{
     "props":{
       "blockClass": "image-promo-banner-desktop",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-      "height": 300
+      "src": "assets/images/plp/bonlife-co-desktop-images-teaser-full-width-banner.webp"
     }
   },
   "flex-layout.row#searchbread":{
@@ -126,7 +126,8 @@
     "props":{
       "blockClass": "searchbread-row",
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "marginTop": 3
     }
   },
   "flex-layout.row#searchtitle":{
@@ -326,7 +327,7 @@
   "image#promo-banner__mobile":{
     "props":{
       "blockClass": "promo-banner-mobile",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png",
+      "src": "assets/images/plp/bonlife-co-mobile-images-homepage-homeslider-2.webp",
       "width": "100%"
     }
   },

@@ -76,7 +76,7 @@
     "rich-text#highlight1-description":{
         "props":{
             "blockClass": "highlights-description",
-            "text": "Por compras<br>desde $150.000",
+            "text": "Por compras<br>desde $200.000",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "font": "t-body"

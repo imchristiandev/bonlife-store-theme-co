@@ -58,8 +58,8 @@
                 "arrows": true,
                 "showTitle": false,
                 "gap": "ph0",
-                "minItemsPerPage": 1.5,
-                "itemsPerPage": 4.5
+                "minItemsPerPage": 1.3,
+                "itemsPerPage": 4.3
             }
         }
     },

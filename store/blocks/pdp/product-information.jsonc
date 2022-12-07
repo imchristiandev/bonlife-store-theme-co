@@ -65,6 +65,11 @@
             "product-description"
         ]
     },
+    "product-description":{
+        "props":{
+            "showTitle": false
+        }
+    },
     "disclosure-layout#product-information": {
         "props": {
             "blockClass": "disclosure-layout-title-pdp",
@@ -182,7 +187,8 @@
     },
     "rich-text#content__shipping-warranty": {
         "props": {
-            "text": "Envío y devoluciones"
+            "blockClass": "content__shipping-warranty",
+            "text": "**Plazo de Entrega**\nEl plazo de entrega para Cali y alrededores es de máximo 4 días hábiles. Para las siguientes ciudades el plazo de entrega es de máximo 5 días hábiles: Medellín, Bogotá, Pereira y Armenia. Para el resto del país, entregaremos tu pedido en un plazo de máximo 7 días hábiles. El plazo de entrega comenzará a contar a partir de la confirmación de tu pago.\n\n**Entregas internacionales**\nA convenir con el cliente según el país de entrega a través de info@bonlife.com.co"
         }
     },
     "disclosure-state-indicator": {

@@ -18,7 +18,6 @@
         },
         "children": [
             "slider-layout#notification-bar-slider"
-            // "link#promo-link__promo-topbar"
         ]
     },
     "slider-layout#notification-bar-slider": {
@@ -51,7 +50,7 @@
     "link#first-promo-link__promo-topbar": {
         "props": {
             "blockClass": "promo-topbar-link",
-            "label": "ENVÍO GRATIS POR COMPRAS SUPERIORES A $150 000",
+            "label": "ENVÍO GRATIS POR COMPRAS SUPERIORES A $200 000",
             "href": "#",
             "target": "_blank"
         }
