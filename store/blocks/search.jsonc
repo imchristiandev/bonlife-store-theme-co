@@ -92,6 +92,7 @@
     "children":[
       "flex-layout.row#promo-banner__desktop",
       "flex-layout.row#searchbread",
+      "__fold__",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
@@ -295,6 +296,7 @@
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
+      "__fold__",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
     ],

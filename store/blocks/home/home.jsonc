@@ -2,6 +2,7 @@
   "store.home": { 
     "blocks": [            
       "list-context.image-list#home-slider",
+      "__fold__",
       "responsive-layout.desktop#home-desktop",
       "responsive-layout.mobile#home-mobile"
     ]

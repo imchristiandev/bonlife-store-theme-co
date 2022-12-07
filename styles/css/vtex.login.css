@@ -5,6 +5,37 @@
     padding-left: 0;
 }
 
+.profile{
+    font-family: 'PoppinsLight', 'sans-serif';
+    text-transform: capitalize;
+    color: #fafafa;
+}
+
+.accountOptions .button,
+.accountOptions :global(.vtex-button__label){
+    font-family: 'PoppinsLight', 'sans-serif';
+    text-transform: lowercase;
+    color: #000;
+}
+
+.accountOptions .button:hover,
+.accountOptions :global(.vtex-button__label):hover{
+    transition: text-decoration .5s;
+    text-decoration: underline;
+}
+
+.formFooter :global(.vtex-button__label){
+    color: #000;
+}
+
+.sendButton :global(.vtex-button__label){
+    color: #fafafa;
+}
+
+.sendButton :global(.vtex-button__label):hover{
+    color: #000;
+}
+
 :global(.vtex-button):hover,
 :global(.vtex-button):focus{
     background-color: transparent;
