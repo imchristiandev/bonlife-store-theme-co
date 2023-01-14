@@ -92,8 +92,8 @@
     "children":[
       "flex-layout.row#promo-banner__desktop",
       "flex-layout.row#searchbread",
-      "__fold__",
       "flex-layout.row#searchtitle",
+      "__fold__",
       "flex-layout.row#result"
     ],
     "props":{
@@ -107,7 +107,8 @@
   "flex-layout.row#promo-banner__desktop":{
     "props":{
       "blockClass": "promo-banner-row-desktop",
-      "fullWidth": true
+      "fullWidth": true,
+      "paddingBottom": 5
     },
     "children": [
       "image#promo-banner__desktop"
@@ -116,7 +117,7 @@
   "image#promo-banner__desktop":{
     "props":{
       "blockClass": "image-promo-banner-desktop",
-      "src": "assets/images/plp/bonlife-co-desktop-images-teaser-full-width-banner.webp"
+      "src": "assets/images/plp/plp-promotional-banner.jpg"
     }
   },
   "flex-layout.row#searchbread":{
@@ -199,7 +200,6 @@
   },
   "flex-layout.col#productCount": {
     "children": [
-      // "total-products.v2"
       "search-products-count-per-page#product-count-search"
     ],
     "props": {
@@ -327,7 +327,7 @@
   "image#promo-banner__mobile":{
     "props":{
       "blockClass": "promo-banner-mobile",
-      "src": "assets/images/plp/bonlife-co-mobile-images-homepage-homeslider-2.webp",
+      "src": "assets/images/plp/bonlife-co-mobile-images-categoria-1.jpg",
       "width": "100%"
     }
   },

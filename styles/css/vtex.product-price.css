@@ -16,9 +16,14 @@
 }
 .currencyContainer--new-collections-module-selling-price, 
 .currencyContainer--featured-products-selling-price,
-.currencyContainer--grid-layout-selling-price{
+.currencyContainer--grid-layout-selling-price,
+.currencyContainer--cross-selling-selling-price{
     font-family: 'PoppinsMedium';
     font-size: 1.4rem;
+}
+
+.currencyContainer--cross-selling-selling-price{
+    margin-top: 10px;
 }
 
 .savings--grid-layout-savings{
@@ -73,7 +78,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px){    
     .currencyContainer--featured-products-selling-price,
-    .currencyContainer--new-collections-module-selling-price{
+    .currencyContainer--new-collections-module-selling-price,
+    .currencyContainer--cross-selling-selling-price{
         font-size: 1.6rem;
     }
 
@@ -89,8 +95,4 @@
     .sellingPrice--grid-layout-selling-price{
         margin: 0;
     }
-
-    /* .savings--savings-product-price-list-layout{
-        width: 40% !important;
-    } */
 }

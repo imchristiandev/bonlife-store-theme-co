@@ -1,35 +1,71 @@
 {
-    "list-context.image-list#home-slider":{    
+  "flex-layout.row#main-slider-row": {
+    "props":{
+      "blockClass": "main-slider-row",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
     "children":[
+      "list-context.image-list#home-slider"
+    ]
+  },
+  "list-context.image-list#home-slider": {
+    "children": [
       "slider-layout#main-slider__home-slider"
     ],
-    "props":{
+    "props": {
       "name": "Imágenes",
       "height": 960,
       "preload": true,
-      "images": [
+      "images": [  
         {
-          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-mainbanner-1-min.png",
-          "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-1.jpg",
-          "description": "Bonlife Main Banner #1"
+          "image": "assets/images/home/slider/desktop/home-main-banner-slider_1.jpg",
+          "mobileImage": "assets/images/home/slider/mobile/home-main-banner-slider_mobile_1.jpg",
+          "description": "Bonlife Main Banner #1",
+          "link": {
+            "title": "Bonlife Main Banner #1",
+            "url": "mujer/tops",
+            "noFollow": false,
+            "openNewTab": true,
+            "width": "100%"
+          }
         },
         {
-          "image": "assets/images/home/slider/desktop/bonlife-co-desktop-images-homepage-mainbanner-2-min.png",
-          "mobileImage": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-2.jpg",
-          "description": "Bonlife Main Banner #2"
+          "image": "assets/images/home/slider/desktop/home-main-banner-slider_2.jpg",
+          "mobileImage": "assets/images/home/slider/mobile/home-main-banner-slider_mobile_2.jpg",
+          "description": "Bonlife Main Banner #2",
+          "link": {
+            "title": "Bonlife Main Banner #2",
+            "url": "mujer/total-outfits",
+            "noFollow": false,
+            "openNewTab": true,
+            "width": "100%"
+          }
+        },
+        {
+          "image": "assets/images/home/slider/desktop/home-main-banner-slider_3.jpg",
+          "mobileImage": "assets/images/home/slider/mobile/home-main-banner-slider_mobile_3.jpg",
+          "description": "Bonlife Main Banner #3",
+          "link": {
+            "title": "Bonlife Main Banner #3",
+            "url": "mujer/vestidos",
+            "noFollow": false,
+            "openNewTab": true,
+            "width": "100%"
+          }
         }
       ]
     }
   },
-  "slider-layout#main-slider__home-slider":{
-    "props":{
+  "slider-layout#main-slider__home-slider": {
+    "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "never",
+      "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "blockClass": "mainSlider",
       "slideTransition ": {
@@ -37,9 +73,9 @@
         "delay": 400,
         "timing": "ease-in-out"
       },
-      "autoplay":{
+      "autoplay": {
         "timeout": 5000,
-        "stopOnHover":  true
+        "stopOnHover": true
       }
     }
   }

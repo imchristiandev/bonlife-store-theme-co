@@ -121,8 +121,11 @@
         }
     },
     "flex-layout.row#featured-products-row__mobile":{
-        "props":{
-            "blockClass": "featured-products-row__mobile"
+        "props":{            
+            "blockClass": "featured-products-row__mobile",
+            "paddingTop": 6,
+            "paddingBottom": 8,
+            "marginBottom": 3
         },
         "children":[
             "flex-layout.col#featured-products-col__mobile"

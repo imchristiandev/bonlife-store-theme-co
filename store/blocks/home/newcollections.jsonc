@@ -3,8 +3,7 @@
         "props": {
             "blockClass": "new-collection-section",
             "paddingTop": 8,
-            "paddingBottom": 8,
-            "fullWidth": true
+            "paddingBottom": 8
         },
         "children": [
             "flex-layout.col#left-banner-new-collection-col__desktop",
@@ -22,32 +21,33 @@
             "stack-layout#new-collection-stack-layout-banner"
         ]
     },
-    "stack-layout#new-collection-stack-layout-banner":{
-        "props":{
+    "stack-layout#new-collection-stack-layout-banner": {
+        "props": {
             "blockClass": "new-collection-stack-layout-banner"
         },
-        "children":[
-            "image#left-banner-new-collection__desktop",
+        "children": [
+            "video#left-video-new-collection__desktop",
             "image#banner-badge-new-collection"
         ]
     },
-    "image#left-banner-new-collection__desktop": {
-        "props": {
-            "blockClass": "left-banner-new-collection__desktop",
-            "src": "assets/images/home/new-collection/bonlife-video-igreel-20221118-1 1.png",
-            "link": {
-                "url": "#",
-                "attributeNofollow": false,
-                "newTab": true
-            }
+    "video#left-video-new-collection__desktop": {
+        "props": {            
+            "src": "assets/videos/bonlife-video-igreel-20221118.mp4",
+            "blockClass": "left-video-new-collection__desktop",    
+            "width": "100%",
+            "height": "700px",
+            "controlsType": "none",
+            "loop": true,
+            "autoPlay": true,
+            "muted": false
         }
     },
-    "image#banner-badge-new-collection":{
-        "props":{
+    "image#banner-badge-new-collection": {
+        "props": {
             "blockClass": "banner-badge-new-collection",
             "src": "assets/images/home/new-collection/instagram-icon.png",
             "link": {
-                "url": "https://instagram.com",
+                "url": "https://www.instagram.com/bonlife.co/",
                 "attributeNofollow": false,
                 "newTab": true
             }
@@ -147,7 +147,6 @@
                 "phone": "to-the-left"
             },
             "centerModeSlidesGap": 2
-            
         }
     },
     "flex-layout.row#new-collection-button-row__desktop": {
@@ -165,7 +164,7 @@
     "link#collection-button": {
         "props": {
             "label": "Ver otros productos",
-            "href": "#",
+            "href": "/137?map=productClusterIds",
             "target": "_blank",
             "displayMode": "button",
             "buttonProps": {

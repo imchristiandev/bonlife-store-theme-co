@@ -26,7 +26,6 @@
         },
         "children": [
             "disclosure-layout#description",
-            // "disclosure-layout#product-information",
             "disclosure-layout#measure-table",
             "disclosure-layout#shipping-warranty"
         ]
@@ -65,51 +64,11 @@
             "product-description"
         ]
     },
-    "product-description":{
-        "props":{
+    "product-description": {
+        "props": {
             "showTitle": false
         }
-    },
-    "disclosure-layout#product-information": {
-        "props": {
-            "blockClass": "disclosure-layout-title-pdp",
-            "initialVisibility": "hidden"
-        },
-        "children": [
-            "disclosure-trigger#product-information",
-            "disclosure-content#product-information"
-        ]
-    },
-    "disclosure-trigger#product-information": {
-        "props": {
-            "blockClass": "disclosure-product-detailed-info-title",
-            "as": "div"
-        },
-        "children": [
-            "rich-text#product-information-title",
-            "disclosure-state-indicator"
-        ]
-    },
-    "rich-text#product-information-title": {
-        "props": {
-            "blockClass": "product-detailed-info-title",
-            "text": "Información de producto"
-        }
-    },
-    "disclosure-content#product-information": {
-        "props": {
-            "blockClass": "disclosure-content-pdp"
-        },
-        "children": [
-            "rich-text#content__product-information"
-        ]
-    },
-    "rich-text#content__product-information": {
-        "props": {
-            "blockClass": "content-product-information",
-            "text": "Información de producto"
-        }
-    },
+    },    
     "disclosure-layout#measure-table": {
         "props": {
             "blockClass": "disclosure-layout-title-pdp",
@@ -141,8 +100,111 @@
             "blockClass": "disclosure-content-pdp"
         },
         "children": [
+            "modal-trigger#measure-table-modal-trigger-pdp"
+        ]
+    },
+    "modal-trigger#measure-table-modal-trigger-pdp": {
+        "children": [
+            "flex-layout.row#measure-table-modal-trigger-row-pdp",
+            "modal-layout#measure-table-modal-layout-content-pdp"
+        ]
+    },
+    "flex-layout.row#measure-table-modal-trigger-row-pdp": {
+        "props": {
+            "blockClass": "measure-table-modal-trigger-row-pdp",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "flex-layout.col#measure-table-modal-text-col-pdp",
+            "flex-layout.col#measure-table-modal-icon-col-pdp"
+        ]
+    },
+    "flex-layout.col#measure-table-modal-text-col-pdp": {
+        "props": {
+            "blockClass": "measure-table-modal-text-col-pdp",
+            "verticalAlign": "middle",
+            "width": "90%"
+        },
+        "children": [
+            "rich-text#measure-table-modal-trigger-text-pdp"
+        ]
+    },
+    "rich-text#measure-table-modal-trigger-text-pdp": {
+        "props": {
+            "blockClass": "measure-table-modal-trigger-text-pdp",
+            "text": "Guía de tallas",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "flex-layout.col#measure-table-modal-icon-col-pdp": {
+        "props": {
+            "blockClass": "measure-table-modal-icon-col-pdp",
+            "verticalAlign": "middle",
+            "width": "10%"
+        },
+        "children": [
+            "icon#modal-enable-icon"
+        ]
+    },
+    "icon#modal-enable-icon": {
+        "props": {
+            "blockClass": "call-to-action-icon",
+            "id": "mpa-eyesight--outline--on",
+            "size": 16,
+            "isActive": true
+        }
+    },
+    "modal-layout#measure-table-modal-layout-content-pdp": {
+        "props": {
+            "blockClass": "measure-table-modal-layout-content-pdp",
+            "backdrop": true
+        },
+        "children": [
+            "modal-header#measure-table-modal-header-content-pdp",
+            "flex-layout.row#measure-table-modal-content-row-desktop-pdp"
+        ]
+    },
+    "modal-header#measure-table-modal-header-content-pdp": {
+        "props": {
+            "showCloseButton": true,
+            "iconCloseSize": 25
+        }
+    },
+    "flex-layout.row#measure-table-modal-content-row-desktop-pdp": {
+        "props":{
+            "blockClass": "measure-table-modal-content-row-desktop-pdp",
+            "horizontalAlign": "center",
+            "fullWidth": true,            
+            "paddingTop": 7,
+            "paddingBottom": 7
+        },
+        "children": [
+            "flex-layout.col#measure-table-modal-content-col-desktop-pdp"
+        ]
+    },
+    "flex-layout.col#measure-table-modal-content-col-desktop-pdp":{
+        "children":[
+            "responsive-layout.desktop#measure-table-modal-image-desktop-pdp",
+            "responsive-layout.mobile#measure-table-modal-image-mobile-pdp"
+        ]
+    },
+    "responsive-layout.desktop#measure-table-modal-image-desktop-pdp": {
+        "children": [
+            "image#measure-table-image-desktop"
+        ]
+    },
+    "responsive-layout.mobile#measure-table-modal-image-mobile-pdp": {
+        "children": [
             "image#measure-table-image-mobile"
         ]
+    },
+    "image#measure-table-image-desktop": {
+        "props": {
+            "blockClass": "measure-table-image-desktop",
+            "src": "assets/images/pdp/bonlife-co-desktop-images-product-detail-size-chart.jpg",
+            "alt": "Tabla de medidas bonlife"
+        }
     },
     "image#measure-table-image-mobile": {
         "props": {

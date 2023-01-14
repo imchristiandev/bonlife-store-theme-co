@@ -76,7 +76,6 @@
 
 .infoCardHeadline--info-card-promoBanner{
     font-family: 'PoppinsRegular';
-    /* text-transform: uppercase; */
 }
 
 .infoCardSubhead--info-card-promoBanner{
@@ -249,13 +248,28 @@
 }
 
 @media screen and (min-width:320px) and (max-width:480px){
+    .infoCardTextContainer--teaser-full-width-info-card{
+        position: static;
+    }
+
+    .headingLevel2--teaser-full-width-info-card,
+    .headingLevel2--teaser-full-width-info-card .strong--teaser-full-width-info-card{
+        color: #fafafa;
+    }
+    
     .infoCardSubhead--info-card-promoBanner{
         font-size: 1rem;
         line-height: 1.2em;
     }
 
     .infoCardContainer--info-card-promoBanner{
-        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .infoCardHeadline--info-card-promoBanner{
+        font-size: 2rem;
     }
 
     .discountInsideContainer{
@@ -291,11 +305,3 @@
         padding: 0px;
     }
 }
-
-/* .skuSelectorItem--sku-selector-pdp--selected {
-    background-color: #666;
-}
-
-.skuSelectorItem--sku-selector-pdp--selected .skuSelectorItemTextValue--sku-selector-pdp{
-    color: #fafafa;
-} */

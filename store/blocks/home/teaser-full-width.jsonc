@@ -23,15 +23,14 @@
             "id": "teaser-full-width-info-card",
             "blockClass": "teaser-full-width-info-card",
             "isFullModeStyle": true,
-            "imageUrl": "assets/images/home/teasers/teaser-full-width-banner.png",
-            "mobileImageUrl": "assets/images/home/slider/mobile/bonlife-co-mobile-images-homepage-homeslider-1.jpg",
+            "imageUrl": "assets/images/home/teasers/home-parallax-banner.jpg",
+            "mobileImageUrl": "assets/images/home/teasers/home-parallax-banner_mobile.jpg",
             "textPosition": "right",
             "textMode": "rich-text",
             "headline": "## **Conjuntos** Deportivos",
             "callToActionMode": "button",
             "callToActionText": "Ver Colección Completa",
-            "callToActionUrl": "#",
-            // "callToActionLinkTarget": "_blank",
+            "callToActionUrl": "/Mujer/Enterizos",            
             "linkTarget": "_blank"
         }
     }

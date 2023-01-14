@@ -103,13 +103,12 @@
     "image#featured-category-image-one": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-1.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_chaquetas.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Chaquetas"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-one-call-to-action-row": {
@@ -138,7 +137,6 @@
     "flex-layout.row#call-to-action-one-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-one-text-col",
@@ -159,11 +157,11 @@
     "link#call-to-action-one-text": {
         "props": {
             "blockClass": "call-to-action-text",
-            "label": "Faldas Deportivas",
-            "href": "#",
+            "label": "Chaquetas Deportivas",
+            "href": "/Mujer/Chaquetas",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Chaquetas Bonlife"
         }
     },
     "flex-layout.col#call-to-action-one-icon-col": {
@@ -199,13 +197,12 @@
     "image#featured-category-image-two": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-2.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_conjuntos.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Total-Outfits"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-two-call-to-action-row": {
@@ -234,7 +231,6 @@
     "flex-layout.row#call-to-action-two-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-two-text-col",
@@ -256,10 +252,10 @@
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Conjuntos Deportivos",
-            "href": "#",
+            "href": "/Mujer/Total-Outfits",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Conjuntos Bonlife"
         }
     },
     "flex-layout.col#call-to-action-two-icon-col": {
@@ -295,13 +291,12 @@
     "image#featured-category-image-three": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-3.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_enterizos.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Enterizos"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-three-call-to-action-row": {
@@ -330,7 +325,6 @@
     "flex-layout.row#call-to-action-three-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-three-text-col",
@@ -351,11 +345,11 @@
     "link#call-to-action-three-text": {
         "props": {
             "blockClass": "call-to-action-text",
-            "label": "Shorts Deportivos",
-            "href": "#",
+            "label": "Enterizos Deportivos",
+            "href": "/Mujer/Enterizos",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Enterizos Bonlife"
         }
     },
     "flex-layout.col#call-to-action-three-icon-col": {
@@ -391,13 +385,12 @@
     "image#featured-category-image-four": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-1.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_faldas.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Faldas"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-four-call-to-action-row": {
@@ -426,7 +419,6 @@
     "flex-layout.row#call-to-action-four-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-four-text-col",
@@ -448,10 +440,10 @@
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Faldas Deportivas",
-            "href": "#",
+            "href": "/Mujer/Faldas",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Faldas Bonlife"
         }
     },
     "flex-layout.col#call-to-action-four-icon-col": {
@@ -487,13 +479,12 @@
     "image#featured-category-image-five": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-2.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_shorts.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Shorts"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-five-call-to-action-row": {
@@ -522,7 +513,6 @@
     "flex-layout.row#call-to-action-five-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-five-text-col",
@@ -543,11 +533,11 @@
     "link#call-to-action-five-text": {
         "props": {
             "blockClass": "call-to-action-text",
-            "label": "Conjuntos Deportivos",
-            "href": "#",
+            "label": "Shorts Deportivos",
+            "href": "/Mujer/Shorts",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Shorts Bonlife"
         }
     },
     "flex-layout.col#call-to-action-five-icon-col": {
@@ -583,13 +573,12 @@
     "image#featured-category-image-six": {
         "props": {
             "blockClass": "featured-category-image",
-            "src": "assets/images/home/featured-categories/bonlife-co-featured-categories-homepage-banner-3.png",
+            "src": "assets/images/home/featured-categories/home-banner-de-categoria_vestidos.jpg",
             "link": {
                 "attributeNofollow": false,
                 "newTab": true,
-                "url": "#"
+                "url": "/Mujer/Vestidos"
             }
-            //"maxWidth": 400
         }
     },
     "flex-layout.row#featured-category-six-call-to-action-row": {
@@ -618,7 +607,6 @@
     "flex-layout.row#call-to-action-six-row": {
         "props": {
             "blockClass": "call-to-action-row"
-            // "fullWidth": true
         },
         "children": [
             "flex-layout.col#call-to-action-six-text-col",
@@ -639,11 +627,11 @@
     "link#call-to-action-six-text": {
         "props": {
             "blockClass": "call-to-action-text",
-            "label": "Shorts Deportivos",
-            "href": "#",
+            "label": "Vestidos Deportivos",
+            "href": "/Mujer/Vestidos",
             "target": "_blank",
             "displayMode": "link",
-            "rel": "Colección Bonlife"
+            "rel": "Vestidos Bonlife"
         }
     },
     "flex-layout.col#call-to-action-six-icon-col": {

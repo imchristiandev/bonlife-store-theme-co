@@ -1,15 +1,7 @@
 .menuContainerNav--mega-menu-desktop{
     top: 100%;
-    /* background-color: #eae9e9; */
     background-color: rgba(255, 255, 255, 0.6);
 }
-
-/* .styledLinkContent--mega-menu-desktop,
-.caretIcon--mega-menu-desktop,
-.submenuContainerTitle--mega-menu-desktop,
-.seeAllLink--mega-menu-desktop{
-    color: #fafafa;
-} */
 
 .menuContainer .styledLinkText--mega-menu-desktop{
     font-family: 'PoppinsMedium';
@@ -19,17 +11,14 @@
 .submenuContainer .submenuContainerTitle--mega-menu-desktop{
     font-family: 'PoppinsRegular';
     text-transform: uppercase;
-    /* font-size: 1.125rem; */
 }
 
 .submenuContainer .styledLinkText--mega-menu-desktop{
     font-family: 'PoppinsLight';
     text-transform: capitalize;
-    /* font-size: 0.875rem; */
 }
 
 .seeAllLink--mega-menu-desktop{
     font-family: 'PoppinsRegular';
     text-transform: uppercase;
-    /* font-size: 0.75rem; */
 }

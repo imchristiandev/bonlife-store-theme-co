@@ -21,8 +21,6 @@
       "flex-layout.col#right-col__footer"
     ]
   },
-
-  //
   "flex-layout.col#left-col__footer":{    
     "props":{
       "blockClass": "left-col-footer",
@@ -48,13 +46,12 @@
   "social-networks":{
     "props":{
       "socialNetworks":[
-        {"url": "https://facebook.com", "name": "Facebook"},
-        {"url": "https://instagram.com", "name": "Instagram"},
-        {"url": "https://twitter.com", "name": "Twitter"}
+        {"url": "https://www.facebook.com/bonlife.co", "name": "Facebook"},
+        {"url": "https://www.instagram.com/bonlife.co/", "name": "Instagram"},
+        {"url": "https://www.youtube.com/@bonlife7171", "name": "Youtube"}
       ]      
     }
-  },
-  //
+  },  
   "flex-layout.col#right-col__footer":{
     "props":{
       "blockClass": "right-col-footer",
@@ -74,8 +71,6 @@
       "fullWidth": true,
       "paddingTop": 6,
       "paddingBottom": 5
-      // "preventHorizontalStretch": true,
-      // "preventVerticalStretch": true
     },
     "children":[
       "flex-layout.col#newsletter-col"
@@ -119,7 +114,6 @@
       "submitButtonLabel": "Suscribirme"
     }
   },
-  //
   "flex-layout.row#contact-info-row":{
     "children":[
       "flex-layout.col#contact-col",
@@ -137,8 +131,7 @@
       "rich-text#col-title__policy-col",
       "vtex.menu@2.x:menu#legal"      
     ]
-  },  
-  //
+  },
   "rich-text#col-title__contact-col":{
     "props":{
       "text": "#### Contáctenos"
@@ -199,7 +192,6 @@
       "width": "auto"
     }
   },
-  //
   "flex-layout.row#copyright__desktop":{
     "props":{
       "fullWidth": true,
@@ -250,7 +242,6 @@
       "height": "30px"
     }
   },
-
 
   "footer-layout.mobile": { 
     "children": [

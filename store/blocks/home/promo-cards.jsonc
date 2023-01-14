@@ -2,11 +2,12 @@
     "info-card#promo-banner-one": {
         "props": {
             "isFullModeStyle": false,
-            "imageUrl": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-left.jpg",
-            "headline": "Lorem Ipsum",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "imageUrl": "assets/images/home/teasers/home-lifestyle-infocard-banner_women.jpg ",
+            "headline": "Ropa Deportiva Femenina",
+            "subhead": "Entrena con la mejor tecnología y diseños exclusivos.",
             "callToActionText": "Ver Productos",
-            "callToactionUrl": "#",
+            "callToActionUrl": "/mujer",
+            "linkTarget": "_blank",
             "blockClass": "info-card-promoBanner",
             "textAlignment": "center",
             "textPosition": "right"
@@ -15,11 +16,12 @@
     "info-card#promo-banner-two": {
         "props": {
             "isFullModeStyle": false,
-            "imageUrl": "assets/images/home/teasers/bonlife-co-desktop-images-homepage-teaser-right.jpg",
-            "headline": "Lorem Ipsum",
-            "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "imageUrl": "assets/images/home/teasers/home-lifestyle-infocard-banner_men.jpg",
+            "headline": "Ropa Deportiva para Hombres",
+            "subhead": "Telas inteligentes que ofrecen resistencia y seguridad en tus entrenamientos",
             "callToActionText": "Ver Productos",
-            "callToactionUrl": "#",
+            "callToActionUrl": "/hombre",
+            "linkTarget": "_blank",
             "blockClass": "info-card-promoBanner",
             "textAlignment": "center",
             "textPosition": "left"

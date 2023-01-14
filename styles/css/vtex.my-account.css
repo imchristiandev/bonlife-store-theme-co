@@ -1,3 +1,10 @@
 .boxContainerFooter :global(.vtex-button){
     color: #3f3f40;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .addressBox{
+        display: flex;
+        flex-direction: column;
+    }
+}

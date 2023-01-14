@@ -7,7 +7,6 @@
       "stack-layout#prodsum",
       "product-summary-name",
       "product-summary-space",
-      // "product-summary-sku-selector#grid-layout-sku-selector",
       "product-price-savings#grid-layout-savings",
       "product-list-price#grid-layout-list-price",
       "product-selling-price#grid-layout-selling-price"
