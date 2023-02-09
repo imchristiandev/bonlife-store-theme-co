@@ -34,25 +34,30 @@
 .menuContainerNav--woman-submenu-left-menu .styledLinkContent,
 .menuContainerNav--woman-submenu-right-menu .styledLinkContent,
 .menuContainerNav--man-submenu-left-menu .styledLinkContent,
-.menuContainerNav--man-submenu-right-menu .styledLinkContent{
+.menuContainerNav--man-submenu-right-menu .styledLinkContent,
+.menuContainerNav--accesories-submenu-left-menu .styledLinkContent,
+.menuContainerNav--accesories-submenu-right-menu .styledLinkContent{
     font-family: 'PoppinsLight';
     line-height: 1.6em;
     color: #000;
 }
 
 .menuContainer--woman-submenu-left-menu .styledLinkContainer,
-.menuContainer--man-submenu-left-menu .styledLinkContainer{
+.menuContainer--man-submenu-left-menu .styledLinkContainer,
+.menuContainer--accesories-submenu-left-menu .styledLinkContainer{
     margin-left: 0;
 }
 
 .menuContainer--woman-submenu-left-menu .menuItem,
-.menuContainer--man-submenu-left-menu .menuItem{
+.menuContainer--man-submenu-left-menu .menuItem,
+.menuContainer--accesories-submenu-left-menu .menuItem{
     position: relative;
     margin-bottom: 6px;
 }
 
 .menuContainer--woman-submenu-left-menu .menuItem::before,
-.menuContainer--man-submenu-left-menu .menuItem::before{
+.menuContainer--man-submenu-left-menu .menuItem::before,
+.menuContainer--accesories-submenu-left-menu .menuItem::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -67,22 +72,26 @@
 }
 
 .menuContainer--woman-submenu-left-menu .menuItem:hover::before,
-.menuContainer--man-submenu-left-menu .menuItem:hover::before{
+.menuContainer--man-submenu-left-menu .menuItem:hover::before,
+.menuContainer--accesories-submenu-left-menu .menuItem:hover::before{
     transform: scaleX(1);
 }
 
 .submenu--woman-submenu-menu,
-.submenu--man-submenu-menu{
+.submenu--man-submenu-menu,
+.submenu--accesories-submenu-menu{
     display: block;
 }
 
 .submenu--woman-submenu-menu .styledLinkContent,
-.submenu--man-submenu-menu .styledLinkContent{
+.submenu--man-submenu-menu .styledLinkContent,
+.submenu--accesories-submenu-menu .styledLinkContent{
     justify-content: start;
 }
 
 .submenu--woman-submenu-menu .styledLinkIcon,
-.submenu--man-submenu-menu .styledLinkIcon{
+.submenu--man-submenu-menu .styledLinkIcon,
+.submenu--accesories-submenu-menu .styledLinkIcon{
     margin-right: 8px;
 }
 

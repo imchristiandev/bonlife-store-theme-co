@@ -1,6 +1,7 @@
 /*MAIN MENU*/
 .headingLevel2--woman-department-title,
-.headingLevel2--man-department-title{
+.headingLevel2--man-department-title,
+.headingLevel2--accesories-department-title{
     font-size: 1.8rem;
     margin: 0px 0px 20px 5px;
     border-bottom: 1px solid #000;
@@ -10,6 +11,7 @@
 /*FEATURED CATEGORIES*/
 .headingLevel4--featured-categories-headline-light,
 .headingLevel4--featured-categories-headline-strong{
+    text-align: center;
     margin: 10px 0 5px 0;
 }
 

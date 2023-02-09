@@ -1,4 +1,27 @@
 {
+    "flex-layout.row#promo-cards-row":{
+        "props":{
+            "title": "Promo Cards Row",
+            "blockClass": "promo-cards-row",
+            "fullWidth": false,
+            "paddingTop": 3,
+            "paddingBottom": 8
+        },
+        "children":[
+            "flex-layout.col#promo-cards-col"
+        ]
+    },
+    "flex-layout.col#promo-cards-col":{
+        "props":{
+            "title": "Promo Cards Col",
+            "blockClass": "promo-cards-col",
+            "verticalAlign": "middle"
+        },
+        "children":[
+            "info-card#promo-banner-one",
+            "info-card#promo-banner-two"
+        ]
+    },
     "info-card#promo-banner-one": {
         "props": {
             "isFullModeStyle": false,

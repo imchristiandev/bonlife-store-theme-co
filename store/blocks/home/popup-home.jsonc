@@ -1,0 +1,159 @@
+{
+    "modal-trigger#popup-home-trigger":{
+        "props":{
+            "trigger": "load"
+        },
+        "children":[
+            "modal-layout#popup-home-layout"
+        ]
+    },
+    "modal-layout#popup-home-layout":{
+        "props":{
+            "scroll": "content",
+            "blockClass": "popup-home-layout",
+            "disableEscapeKeyDown": true,
+            "fullScreen": false,
+            "backdrop": "clickable"
+        },
+        "children":[
+            "modal-header#popup-home-modal-header",
+            "modal-content#popup-home-modal-content"
+        ]
+    },
+    "modal-header#popup-home-modal-header":{
+        "props":{
+            "blockClass": "popup-home-modal-header",
+            "showCloseButton": true,
+            "iconCloseSize": 16
+        }
+    },
+    "modal-content#popup-home-modal-content":{
+        "props":{
+            "blockClass": "popup-home-modal-content"
+        },
+        "children":[
+            "flex-layout.row#popup-home-modal-content-row"
+        ]
+    },
+    "flex-layout.row#popup-home-modal-content-row":{
+        "props":{
+            "blockClass": "popup-home-modal-content-row",
+            "fullWidth": true,
+            "horizontalAlign": "center"
+        },
+        "children":[
+            "flex-layout.col#popup-home-modal-content-image-col",
+            "flex-layout.col#popup-home-modal-content-description-col"
+        ]
+    },
+    "flex-layout.col#popup-home-modal-content-image-col":{
+        "props":{
+            "blockClass": "popup-home-modal-content-image-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "50%"
+        },
+        "children":[
+            "image#popup-image"
+        ]
+    },
+    "image#popup-image":{
+        "props": {
+            "src": "assets/images/plp/bonlife-co-mobile-plp-default.jpg",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#popup-home-modal-content-description-col":{
+        "props":{
+            "blockClass": "popup-home-modal-content-description-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "50%",
+            "paddingLeft": 7,
+            "paddingRight": 7
+        },
+        "children":[
+            "flex-layout.row#popup-description-row"
+        ]
+    },
+    "flex-layout.row#popup-description-row":{
+        "props":{
+            "blockClass": "popup-description-row",
+            "horizontalAlign": "center",
+            "paddingBottom": 7,
+            "preserveLayoutOnMobile": false
+        },
+        "children": [
+            "flex-layout.col#popup-description-col"
+        ]
+    },
+    "flex-layout.col#popup-description-col":{
+        "props":{
+            "blockClass": "popup-description-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+        },
+        "children":[
+            "rich-text#popup-title",
+            "rich-text#popup-description",
+            "rich-text#popup-featured-text",
+            "rich-text#popup-newsletter-cta",
+            "newsletter-form#popup-form"
+        ]
+    },
+    "rich-text#popup-title":{
+        "props":{
+            "blockClass": "popup-title",
+            "text": "# 10% OFF",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#popup-description":{
+        "props":{
+            "blockClass": "popup-description",
+            "text": "**¡Estamos de lanzamiento!** Obtén tu **10% de descuento** ingresando el siguiente código en el checkout de tu compra.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#popup-featured-text":{
+        "props":{
+            "blockClass": "popup-featured-text",
+            "text": "**bonlifeponal23**",
+            "font": "t-heading-4",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#popup-newsletter-cta":{
+        "props":{
+            "blockClass": "popup-newsletter-cta",
+            "text": "**Suscríbete** y se la primera en enterarte de todas las novedades.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "newsletter-form#popup-form":{
+        "props":{
+            "blockClass": "popup-form"
+        },
+        "children":[
+            "newsletter-input-email#email-input-form",
+            "newsletter-submit#submit-button-form"
+        ]
+    },
+    "newsletter-input-email#email-input-form":{
+        "props":{
+            "blockClass": "popup-email-input-form",
+            "placeholderText": "Tu email",
+            "errorMessage": "Dirección de correo inválida"
+        }
+    },
+    "newsletter-submit#submit-button-form":{
+        "props":{
+            "blockClass": "popup-submit-button-form",
+            "submitButtonLabel": "Suscribirme"
+        }
+    }
+}

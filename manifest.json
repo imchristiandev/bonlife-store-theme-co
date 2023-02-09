@@ -59,7 +59,8 @@
     "vtex.store-video": "1.x",
     "vtex.my-cards": "1.x",
     "vtex.my-authentication": "1.x",
-    "vtex.store-media": "0.x"
+    "vtex.store-media": "0.x",
+    "vtex.condition-layout": "2.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x"

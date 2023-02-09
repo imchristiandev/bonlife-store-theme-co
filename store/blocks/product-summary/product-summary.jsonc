@@ -6,16 +6,16 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "product-summary-space",
       "product-price-savings#grid-layout-savings",
       "product-list-price#grid-layout-list-price",
-      "product-selling-price#grid-layout-selling-price"
+      "product-selling-price#grid-layout-selling-price",
+      "product-summary-space"
     ]
   },
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection"
+      "product-summary-image#shelf"
+      // "vtex.product-highlights@2.x:product-highlights#collection"
       // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },

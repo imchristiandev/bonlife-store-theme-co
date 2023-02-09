@@ -21,7 +21,8 @@
     border-right: 0;
     top: 75%;
     left: 40%;
-    max-width: 240px;
+    width: 240px;
+    /* max-width: 240px; */
     transition: all .4s ease-in-out;
 }
 
@@ -31,3 +32,10 @@
     border-right: 0;
 }
 /*FEATURED CATEGORIES*/
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .stackItem--featured-category-call-to-action-row{
+        left: 30%;
+        width: 180px;
+    }
+}

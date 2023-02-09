@@ -7,28 +7,28 @@
     ]
   },  
   "responsive-layout.desktop#home-desktop":{
-    "children":[
-      "__fold__",
+    "children":[      
       "flex-layout.row#new-collection-row__desktop",
+      "modal-trigger#popup-home-trigger",
+      "__fold__",
       "flex-layout.row#teaser-full-width-row",
       "flex-layout.row#categories-row",
       "flex-layout.row#teaser-gif-row",
       "flex-layout.row#featured-products-row__desktop",
-      "info-card#promo-banner-one",
-      "info-card#promo-banner-two",
-      "flex-layout.row#highlights"      
+      "flex-layout.row#promo-cards-row",
+      "flex-layout.row#highlights"
     ]
   },
   "responsive-layout.mobile#home-mobile":{
     "children":[
-      "__fold__",
       "flex-layout.row#new-collection-row__mobile",
+      "modal-trigger#popup-home-trigger",
+      "__fold__",
       "flex-layout.row#teaser-full-width-row",
       "flex-layout.row#categories-row",
       "flex-layout.row#teaser-gif-row-mobile",
       "flex-layout.row#featured-products-row__mobile",
-      "info-card#promo-banner-one",
-      "info-card#promo-banner-two"            
+      "flex-layout.row#promo-cards-row"
     ]
   }
 }

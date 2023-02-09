@@ -3,9 +3,12 @@
     "flex-layout.row#teaser-gif-row":{
         "props":{
             "blockClass": "teaser-gif-row",
-            "colGap": 2,
+            "colGap": 1,
             "paddingTop": 9,
-            "paddingBottom": 8
+            "paddingBottom": 8,            
+            "fullWidth": false,
+            "colSizing": "auto",
+            "horizontalAlign": "around"
         },
         "children":[
             "flex-layout.col#teaser-col",
@@ -17,7 +20,6 @@
             "blockClass": "teaser-col",
             "verticalAlign": "middle",
             "horizontalAlign": "center",
-            "width": "64%",
             "preventVerticalStretch": false
         },
         "children":[
@@ -29,7 +31,6 @@
             "blockClass": "teaser-medium-home-page",
             "src": "assets/images/home/teasers/home-teaser-banner_paradise.jpg",
             "alt": "teaser promocional bolifeco",
-            "height": "300px",
             "link":{
                 "attributeNofollow": false,
                 "newTab": true,
@@ -42,7 +43,7 @@
             "blockClass": "gif-col",
             "verticalAlign": "middle",
             "horizontalAlign": "center",
-            "width": "36%",
+            "width": "grow",
             "preventVerticalStretch": false
         },
         "children":[
@@ -51,10 +52,10 @@
     },
     "video#gif-medium-home-page-desktop": {
         "props": {            
-            "src": "assets/videos/bonlife-video-happiness-20221031.mp4",
-            "blockClass": "gif-medium-home-page-desktop",    
-            "width": "100%",
-            "height": "300px",
+            "src": "https://www.youtube.com/watch?v=l60sI0WGywQ",
+            "blockClass": "gif-medium-home-page-desktop",
+            "width": 532,
+            "height": 300,
             "controlsType": "none",
             "loop": true,
             "autoPlay": true,
@@ -69,11 +70,12 @@
         "props":{
             "blockClass": "teaser-gif-row",
             "paddingTop": 5,
-            "paddingBottom": 6
+            "paddingBottom": 6,
+            "fullWidth": true
         },
         "children":[
             "flex-layout.col#teaser-col-mobile",
-            "flex-layout.col#gif-col"
+            "flex-layout.col#gif-col-mobile"
         ]
     },
     "flex-layout.col#teaser-col-mobile":{
@@ -97,6 +99,31 @@
                 "newTab": true,
                 "url": "/Mujer/Leggings"
             }
+        }
+    },
+    "flex-layout.col#gif-col-mobile":{
+        "props":{
+            "blockClass": "gif-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "100%",
+            "preventVerticalStretch": false
+        },
+        "children":[
+            "video#gif-medium-home-page-mobile"
+        ]
+    },
+    "video#gif-medium-home-page-mobile": {
+        "props": {            
+            "src": "https://www.youtube.com/watch?v=l60sI0WGywQ",
+            "blockClass": "gif-medium-home-page-mobile",
+            "width": "100%",
+            "controlsType": "none",
+            "loop": true,
+            "autoPlay": true,
+            "muted": false,
+            "name": "Colección Fascination",
+            "description": "Colección Fascination Bonlife"
         }
     }
 }

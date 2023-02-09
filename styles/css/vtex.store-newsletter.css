@@ -14,3 +14,43 @@
 .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
     color: #727273;
 }
+
+/*POPUP HOME*/
+.newsletterForm--popup-form{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    margin-top: 15px;
+}
+
+.emailInputContainer--popup-email-input-form :global(.vtex-styleguide-9-x-input),
+.emailInputContainer--popup-email-input-form :global(.vtex-styleguide-9-x-input)::placeholder,
+.formSubmitContainer--popup-submit-button-form :global(.vtex-button__label){
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.emailInputContainer--popup-email-input-form :global(.vtex-input-prefix__group){
+    height: 2rem;
+}
+
+.formSubmitContainer--popup-submit-button-form :global(.vtex-button){
+    min-height: 2rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+    .newsletterForm--popup-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        margin-top: 12px;
+    }
+
+    .emailInputContainer--popup-email-input-form :global(.vtex-styleguide-9-x-input),
+    .formSubmitContainer--popup-submit-button-form :global(.vtex-button){
+        width: 100%;
+    }
+}
+/*POPUP HOME*/

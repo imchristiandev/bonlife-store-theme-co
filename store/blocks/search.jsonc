@@ -111,10 +111,101 @@
       "paddingBottom": 5
     },
     "children": [
-      "image#promo-banner__desktop"
+      "flex-layout.col#promo-banner-col__desktop"
     ]
   },
-  "image#promo-banner__desktop":{
+  "flex-layout.col#promo-banner-col__desktop":{
+    "props":{
+      "blockClass": "promo-banner-col__desktop",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "condition-layout.category#women-banner-condition"
+    ]
+  },
+  "condition-layout.category#women-banner-condition":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["1"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["26","4","5","24","8","9","6","7","3","10","25"]
+          }
+        }        
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-women__desktop",
+      "Else": "condition-layout.category#men-banner-condition"
+    }
+  },
+  "condition-layout.category#men-banner-condition":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["2"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["11","13","15","16","14","12","17"]
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-men__desktop",
+      "Else": "condition-layout.category#accesories-banner-condition"
+    }
+  },
+  "condition-layout.category#accesories-banner-condition":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["18"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["22","20","23","19","21"]
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-accesories__desktop",
+      "Else": "image#promo-banner-default__desktop"
+    }
+  },
+  "image#promo-banner-women__desktop":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-women-plp-banner.jpg"
+    }
+  },
+  "image#promo-banner-men__desktop":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-men-plp-banner.jpg"
+    }
+  },
+  "image#promo-banner-accesories__desktop":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-accesories-plp-banner.jpg"
+    }
+  },
+  "image#promo-banner-default__desktop":{
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/plp-promotional-banner.jpg"
@@ -321,13 +412,109 @@
       "marginBottom": 6
     },
     "children":[
-      "image#promo-banner__mobile"
+      "flex-layout.col#promo-banner-col__mobile"
     ]
   },
-  "image#promo-banner__mobile":{
+  "flex-layout.col#promo-banner-col__mobile":{
+    "props":{
+      "blockClass": "promo-banner-col__mobile",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center",
+      "width": "100%"
+    },
+    "children":[
+      "condition-layout.category#women-banner-condition-mobile"
+    ]
+  },
+  "condition-layout.category#women-banner-condition-mobile":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["1"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["26","4","5","24","8","9","6","7","3","10","25"]
+          }
+        }        
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-women__mobile",
+      "Else": "condition-layout.category#men-banner-condition-mobile"
+    }
+  },
+  "condition-layout.category#men-banner-condition-mobile":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["2"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["11","13","15","16","14","12","17"]
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-men__mobile",
+      "Else": "condition-layout.category#accesories-banner-condition-mobile"
+    }
+  },
+  "condition-layout.category#accesories-banner-condition-mobile":{
+    "props":{
+      "conditions":[
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["18"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["22","20","23","19","21"]
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "image#promo-banner-accesories__mobile",
+      "Else": "image#promo-banner-default__mobile"
+    }
+  },
+  "image#promo-banner-women__mobile":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-co-mobile-plp-women.jpg",
+      "width": "100%"
+    }
+  },
+  "image#promo-banner-men__mobile":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-co-mobile-plp-men.jpg",
+      "width": "100%"
+    }
+  },
+  "image#promo-banner-accesories__mobile":{
+    "props":{
+      "blockClass": "image-promo-banner-desktop",
+      "src": "assets/images/plp/bonlife-co-mobile-plp-accesories.jpg",
+      "width": "100%"
+    }
+  },
+  "image#promo-banner-default__mobile":{
     "props":{
       "blockClass": "promo-banner-mobile",
-      "src": "assets/images/plp/bonlife-co-mobile-images-categoria-1.jpg",
+      "src": "assets/images/plp/bonlife-co-mobile-plp-default.jpg",
       "width": "100%"
     }
   },

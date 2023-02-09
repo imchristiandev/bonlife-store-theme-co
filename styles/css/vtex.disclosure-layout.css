@@ -34,3 +34,7 @@
     font-size: 0.875rem;
     text-align: justify;
 }
+
+.content--disclosure-content-pdp :global(.vtex-store-components-3-x-productDescriptionContainer){
+    text-align: justify;
+}
