@@ -1,5 +1,6 @@
 {
     "flex-layout.row#promo-cards-row":{
+        "title": "Cards Promocionales",
         "props":{
             "title": "Promo Cards Row",
             "blockClass": "promo-cards-row",
@@ -23,6 +24,7 @@
         ]
     },
     "info-card#promo-banner-one": {
+        "title": "Cards Promocionales | Card Uno",
         "props": {
             "isFullModeStyle": false,
             "imageUrl": "assets/images/home/teasers/home-lifestyle-infocard-banner_women.jpg ",
@@ -37,6 +39,7 @@
         }
     },
     "info-card#promo-banner-two": {
+        "title": "Cards Promocionales | Card Dos",
         "props": {
             "isFullModeStyle": false,
             "imageUrl": "assets/images/home/teasers/home-lifestyle-infocard-banner_men.jpg",

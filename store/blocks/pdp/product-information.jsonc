@@ -1,6 +1,7 @@
 {
     //DISCLOSURE
     "flex-layout.row#product-detailed-information-row__disclosure": {
+        "title": "Acordeón Información de Producto",
         "props": {
             "blockClass": "product-detailed-information-row-disclosure",
             "paddingBottom": 7
@@ -51,6 +52,7 @@
         ]
     },
     "rich-text#description-title": {
+        "title": "Acordeón Información de Producto | Título Tab",
         "props": {
             "blockClass": "product-detailed-info-title",
             "text": "Descripción"
@@ -65,6 +67,7 @@
         ]
     },
     "product-description": {
+        "title": "Acordeón Información de Producto | Descripción Producto",
         "props": {
             "showTitle": false
         }
@@ -90,6 +93,7 @@
         ]
     },
     "rich-text#measure-table-title": {
+        "title": "Acordeón Información de Producto | Título Tab",
         "props": {
             "blockClass": "product-detailed-info-title",
             "text": "Tabla de medidas"
@@ -130,6 +134,7 @@
         ]
     },
     "rich-text#measure-table-modal-trigger-text-pdp": {
+        "title": "Acordeón Información de Producto | Título Tab",
         "props": {
             "blockClass": "measure-table-modal-trigger-text-pdp",
             "text": "Guía de tallas",
@@ -156,6 +161,7 @@
         }
     },
     "modal-layout#measure-table-modal-layout-content-pdp": {
+        "title": "Acordeón Información de Producto | Popup Tabla Medidas",
         "props": {
             "blockClass": "measure-table-modal-layout-content-pdp",
             "backdrop": true
@@ -200,6 +206,7 @@
         ]
     },
     "image#measure-table-image-desktop": {
+        "title": "Acordeón Información de Producto | Popup Tabla Medidas | Imagen Desktop",
         "props": {
             "blockClass": "measure-table-image-desktop",
             "src": "assets/images/pdp/bonlife-co-desktop-images-product-detail-size-chart.jpg",
@@ -207,6 +214,7 @@
         }
     },
     "image#measure-table-image-mobile": {
+        "title": "Acordeón Información de Producto | Popup Tabla Medidas | Imagen Mobile",
         "props": {
             "blockClass": "measure-table-image-mobile",
             "src": "assets/images/pdp/bonlife-co-mobile-images-product-detail-size-chart.png",
@@ -234,6 +242,7 @@
         ]
     },
     "rich-text#shipping-warranty-title": {
+        "title": "Acordeón Información de Producto | Título Tab",
         "props": {
             "blockClass": "product-detailed-info-title",
             "text": "Envío y devoluciones"
@@ -248,6 +257,7 @@
         ]
     },
     "rich-text#content__shipping-warranty": {
+        "title": "Acordeón Información de Producto | Contenido Tab",
         "props": {
             "blockClass": "content__shipping-warranty",
             "text": "**Plazo de Entrega**\nEl plazo de entrega para Cali y alrededores es de máximo 4 días hábiles. Para las siguientes ciudades el plazo de entrega es de máximo 5 días hábiles: Medellín, Bogotá, Pereira y Armenia. Para el resto del país, entregaremos tu pedido en un plazo de máximo 7 días hábiles. El plazo de entrega comenzará a contar a partir de la confirmación de tu pago.\n\n**Entregas internacionales**\nA convenir con el cliente según el país de entrega a través de info@bonlife.com.co"

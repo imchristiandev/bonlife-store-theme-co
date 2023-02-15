@@ -1,5 +1,6 @@
 {  
   "product-summary.shelf#grid-layout": {
+    "title": "Galería de Productos | Grid de Productos",
     "props":{
       "blockClass": "product-summary-grid-layout"
     },
@@ -20,6 +21,7 @@
     ]
   },
   "product-summary-image#shelf": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Imágen",
     "props": {
       "showBadge": true,
       "showCollections": true,
@@ -31,6 +33,7 @@
     }
   },
   "vtex.product-highlights@2.x:product-highlights#collection": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Highlight",
     "props": {
       "type": "collection"
     },
@@ -52,6 +55,7 @@
     }
   },
   "product-summary-sku-selector#grid-layout-sku-selector": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Selector SKU",
     "props": {
       "showVariationsLabels": ["false"],
       "displayMode": "slider",
@@ -77,6 +81,7 @@
     }
   },
   "product-price-savings#grid-layout-savings": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Descuento",
     "props": {
       "markers": [
         "discount"
@@ -88,11 +93,13 @@
     }
   },  
   "product-list-price#grid-layout-list-price": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Precio de lista",
     "props": {
       "blockClass": "grid-layout-list-price"
     }
   },
   "product-selling-price#grid-layout-selling-price": {
+    "title": "Galería de Productos | Grid de Productos | Producto | Precio de venta",
     "props": {
       "blockClass": "grid-layout-selling-price"
     }

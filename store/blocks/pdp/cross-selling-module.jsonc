@@ -1,5 +1,6 @@
 {
     "flex-layout.row#cross-selling-pdp-row":{
+        "title": "Vitrina Productos Relacionados | Fila Principal",
         "props":{
             "blockClass": "cross-selling-pdp-row",
             "paddingTop": 5,
@@ -30,6 +31,7 @@
         ]
     },
     "rich-text#cross-selling-title":{
+        "title": "Vitrina Productos Relacionados | Título Sección",
         "props":{
             "blockClass": "cross-selling-title",
             "text": "### También te puede interesar",
@@ -46,6 +48,7 @@
         ]
     },
     "shelf.relatedProducts":{
+        "title": "Vitrina Productos Relacionados",
         "blocks":[
             "product-summary.shelf#cross-selling-product-summary"
         ],
@@ -64,6 +67,7 @@
         }
     },
     "product-summary.shelf#cross-selling-product-summary":{
+        "title": "Vitrina Productos Relacionados | Estructura",
         "props":{
             "blockClass": "cross-selling-product-summary"
         },
@@ -76,11 +80,13 @@
         ]
     },
     "product-list-price#cross-selling-list-price-pdp":{
+        "title": "Vitrina Productos Relacionados | Precio de lista",
         "props":{
             "blockClass": "cross-selling-list-price-pdp"
         }
     },
     "product-selling-price#cross-selling-selling-price":{
+        "title": "Vitrina Productos Relacionados | Precio de venta",
         "props":{
             "blockClass": "cross-selling-selling-price"
         }

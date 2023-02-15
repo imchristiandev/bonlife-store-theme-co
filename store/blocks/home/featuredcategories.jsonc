@@ -1,5 +1,6 @@
 {
     "flex-layout.row#categories-row": {
+        "title": "Categorías Destacadas",
         "props": {
             "blockClass": "categories-row",
             "paddingTop": 9,
@@ -20,7 +21,7 @@
             "slider-layout#categories-featured-slider"
         ]
     },
-    "flex-layout.row#featured-categories-title-row":{
+    "flex-layout.row#featured-categories-title-row":{        
         "props":{
             "blockClass": "featured-categories-title-row",
             "marginBottom": 8,
@@ -41,6 +42,7 @@
         ]
     },    
     "rich-text#featured-categories-headline-light":{
+        "title": "Categorías Destacadas | Título Sección",
         "props":{
             "blockClass": "featured-categories-headline-light",
             "text": "#### Para quienes deciden explorar",
@@ -49,6 +51,7 @@
         }
     },
     "rich-text#featured-categories-headline-strong":{
+        "title": "Categorías Destacadas | Subtítulo Sección",
         "props":{
             "blockClass": "featured-categories-headline-strong",
             "text": "#### Más allá de sus límites",
@@ -57,6 +60,7 @@
         }
     },
     "slider-layout#categories-featured-slider": {
+        "title": "Categorías Destacadas | Slider",
         "children": [
             "stack-layout#featued-category-one",
             "stack-layout#featued-category-two",
@@ -95,12 +99,14 @@
 
     /*FIRST FEATURED CATEGORY*/
     "stack-layout#featued-category-one": {
+        "title": "Categorías Destacadas | Categoría Uno",
         "children": [
             "image#featured-category-image-one",
             "flex-layout.row#featured-category-one-call-to-action-row"
         ]
     },
     "image#featured-category-image-one": {
+        "title": "Categorías Destacadas | Categoría Uno | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_chaquetas.jpg",
@@ -155,6 +161,7 @@
         ]
     },
     "link#call-to-action-one-text": {
+        "title": "Categorías Destacadas | Categoría Uno | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Chaquetas Deportivas",
@@ -189,12 +196,14 @@
 
     /*SECOND FEATURED CATEGORY*/
     "stack-layout#featued-category-two": {
+        "title": "Categorías Destacadas | Categoría Dos",
         "children": [
             "image#featured-category-image-two",
             "flex-layout.row#featured-category-two-call-to-action-row"
         ]
     },
     "image#featured-category-image-two": {
+        "title": "Categorías Destacadas | Categoría Dos | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_conjuntos.jpg",
@@ -249,6 +258,7 @@
         ]
     },
     "link#call-to-action-two-text": {
+        "title": "Categorías Destacadas | Categoría Dos | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Conjuntos Deportivos",
@@ -283,12 +293,14 @@
 
     /*THIRD FEATURED CATEGORY*/
     "stack-layout#featued-category-three": {
+        "title": "Categorías Destacadas | Categoría Tres",
         "children": [
             "image#featured-category-image-three",
             "flex-layout.row#featured-category-three-call-to-action-row"
         ]
     },
     "image#featured-category-image-three": {
+        "title": "Categorías Destacadas | Categoría Tres | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_enterizos.jpg",
@@ -343,6 +355,7 @@
         ]
     },
     "link#call-to-action-three-text": {
+        "title": "Categorías Destacadas | Categoría Tres | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Enterizos Deportivos",
@@ -377,12 +390,14 @@
 
     /*FOURTH FEATURED CATEGORY*/
     "stack-layout#featued-category-four": {
+        "title": "Categorías Destacadas | Categoría Cuatro",
         "children": [
             "image#featured-category-image-four",
             "flex-layout.row#featured-category-four-call-to-action-row"
         ]
     },
     "image#featured-category-image-four": {
+        "title": "Categorías Destacadas | Categoría Cuatro | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_faldas.jpg",
@@ -437,6 +452,7 @@
         ]
     },
     "link#call-to-action-four-text": {
+        "title": "Categorías Destacadas | Categoría Cuatro | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Faldas Deportivas",
@@ -471,12 +487,14 @@
 
     /*FIFTH FEATURED CATEGORY*/
     "stack-layout#featued-category-five": {
+        "title": "Categorías Destacadas | Categoría Cinco",
         "children": [
             "image#featured-category-image-five",
             "flex-layout.row#featured-category-five-call-to-action-row"
         ]
     },
     "image#featured-category-image-five": {
+        "title": "Categorías Destacadas | Categoría Cinco | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_shorts.jpg",
@@ -531,6 +549,7 @@
         ]
     },
     "link#call-to-action-five-text": {
+        "title": "Categorías Destacadas | Categoría Cinco | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Shorts Deportivos",
@@ -565,12 +584,14 @@
 
     /*SIXTH FEATURED CATEGORY*/
     "stack-layout#featued-category-six": {
+        "title": "Categorías Destacadas | Categoría Seis",
         "children": [
             "image#featured-category-image-six",
             "flex-layout.row#featured-category-six-call-to-action-row"
         ]
     },
     "image#featured-category-image-six": {
+        "title": "Categorías Destacadas | Categoría Seis | Imagen",
         "props": {
             "blockClass": "featured-category-image",
             "src": "assets/images/home/featured-categories/home-banner-de-categoria_vestidos.jpg",
@@ -625,6 +646,7 @@
         ]
     },
     "link#call-to-action-six-text": {
+        "title": "Categorías Destacadas | Categoría Seis | Link",
         "props": {
             "blockClass": "call-to-action-text",
             "label": "Vestidos Deportivos",

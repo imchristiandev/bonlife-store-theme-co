@@ -33,6 +33,52 @@
 }
 /*FEATURED CATEGORIES*/
 
+/*RESELLER*/
+.stackItem--reseller-main--reseller-background-row{
+    position: relative;
+}
+
+.stackItem--reseller-main--reseller-main-row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.stackItem--reseller-main--reseller-main-row :global(.vtex-rich-text-0-x-paragraph--reseller-description){
+    font-size: 0.875rem; 
+    line-height: 1.5em;   
+    text-align: justify;
+}
+
+.stackItem--reseller-main--reseller-main-row :global(.vtex-flex-layout-0-x-flexColChild--reseller-form-col){
+    width: 100%;
+}
+
+/*RESELLER*/
+
+@media screen and (min-width:320px) and (max-width:640px){
+    .stackItem--reseller-main--reseller-main-row{
+        position: static;
+        transform: none;
+    }
+
+    .stackItem--reseller-main--reseller-main-row :global(.vtex-flex-layout-0-x-flexColChild--form-fields-col){
+        width: 95%;
+    }
+
+    .stackItem--reseller-main--reseller-main-row :global(.vtex-flex-layout-0-x-flexCol--form-fields-col){
+        margin-bottom: 15px;
+    }
+
+    .stackItem--reseller-main--reseller-main-row :global(.vtex-rich-text-0-x-paragraph--reseller-title){
+        font-size: 2rem;
+    }
+}
+
 @media screen and (min-width:320px) and (max-width:480px){
     .stackItem--featured-category-call-to-action-row{
         left: 30%;

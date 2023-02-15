@@ -10,6 +10,7 @@
         ]
     },
     "vtex.menu@2.x:menu#departments": {
+        "title": "Menú Principal",
         "children": [
             "menu-item#woman",
             "menu-item#man",
@@ -24,6 +25,7 @@
     },
     //WOMEN
     "menu-item#woman": {
+        "title": "Menú Principal | Mujer",
         "props": {
             "blockClass": "woman-menu-item",
             "type": "category",
@@ -71,6 +73,7 @@
         ]
     },
     "rich-text#woman-department-title":{
+        "title": "Menú Principal | Mujer | Submenú | Título",
         "props":{
             "blockClass": "woman-department-title",
             "text": "## Mujer",
@@ -79,6 +82,7 @@
         }
     },
     "vtex.menu@2.x:menu#woman-submenu-left-menu": {
+        "title": "Menú Principal | Mujer | Submenú",
         "props": {
             "orientation": "vertical",
             "blockClass": "woman-submenu-left-menu"
@@ -147,7 +151,7 @@
             }
         }
     },
-    "menu-item#woman-fourth-subcategory": {
+    "menu-item#woman-fourth-subcategory": {        
         "props": {
             "type": "category",
             "highlight": false,
@@ -279,6 +283,7 @@
         ]
     },
     "image#woman-featured-banner": {
+        "title": "Menú Principal | Mujer | Submenú | Imagen",
         "props": {
             "src": "assets/images/header/main-menu/menu-banner-promocional.jpg",
             "alt": "Banner Especial Mujer",
@@ -306,6 +311,7 @@
     },
     // MEN
     "menu-item#man": {
+        "title": "Menú Principal | Hombre",
         "props": {
             "blockClass": "man-menu-item",
             "type": "category",
@@ -355,6 +361,7 @@
         ]
     },
     "rich-text#man-department-title":{
+        "title": "Menú Principal | Hombre | Submenú | Título",
         "props":{
             "blockClass": "man-department-title",
             "text": "## Hombre",
@@ -363,6 +370,7 @@
         }
     },
     "vtex.menu@2.x:menu#man-submenu-left-menu": {
+        "title": "Menú Principal | Hombre | Submenú",
         "props": {
             "orientation": "vertical",
             "blockClass": "man-submenu-left-menu"
@@ -492,6 +500,7 @@
         ]
     },
     "image#man-featured-banner": {
+        "title": "Menú Principal | Hombre | Submenú | Imagen",
         "props": {
             "src": "assets/images/header/main-menu/menu-banner-promocional.jpg",
             "alt": "Hombre Banner Especial",
@@ -505,6 +514,7 @@
     },
     /*ACCESORIES*/
     "menu-item#accesories": {
+        "title": "Menú Principal | Accesorios",
         "props": {
             "blockClass": "accesories-menu-item",
             "type": "category",
@@ -526,7 +536,7 @@
             "flex-layout.row#accesories-submenu-row"
         ]
     },
-    "flex-layout.row#accesories-submenu-row": {
+    "flex-layout.row#accesories-submenu-row": {        
         "props": {
             "blockClass": "accesories-submenu-row",
             "horizontalAlign": "center",
@@ -554,6 +564,7 @@
         ]
     },
     "rich-text#accesories-department-title":{
+        "title": "Menú Principal | Accesorios | Submenú | Título",
         "props":{
             "blockClass": "accesories-department-title",
             "text": "## Accesorios",
@@ -562,6 +573,7 @@
         }
     },
     "vtex.menu@2.x:menu#accesories-submenu-left-menu": {
+        "title": "Menú Principal | Accesorios | Submenú",
         "props": {
             "orientation": "vertical",
             "blockClass": "accesories-submenu-left-menu"
@@ -673,6 +685,7 @@
         ]
     },
     "image#accesories-featured-banner": {
+        "title": "Menú Principal | Accesorios | Submenú | Imagen",
         "props": {
             "src": "assets/images/header/main-menu/menu-banner-promocional.jpg",
             "alt": "Hombre Banner Especial",

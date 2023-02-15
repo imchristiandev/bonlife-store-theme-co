@@ -1,6 +1,7 @@
 {
     //DESKTOP
     "flex-layout.row#teaser-gif-row":{
+        "title": "Banner & Video",
         "props":{
             "blockClass": "teaser-gif-row",
             "colGap": 1,
@@ -27,6 +28,7 @@
         ]
     },
     "image#teaser-medium-home-page":{
+        "title": "Banner & Video | Banner",
         "props":{
             "blockClass": "teaser-medium-home-page",
             "src": "assets/images/home/teasers/home-teaser-banner_paradise.jpg",
@@ -51,6 +53,7 @@
         ]
     },
     "video#gif-medium-home-page-desktop": {
+        "title": "Banner & Video | Video",
         "props": {            
             "src": "https://www.youtube.com/watch?v=l60sI0WGywQ",
             "blockClass": "gif-medium-home-page-desktop",
@@ -67,6 +70,7 @@
 
     //MOBILE
     "flex-layout.row#teaser-gif-row-mobile":{
+        "title": "Banner & Video Mobile",
         "props":{
             "blockClass": "teaser-gif-row",
             "paddingTop": 5,
@@ -89,6 +93,7 @@
         ]
     },
     "image#teaser-medium-home-page-mobile":{
+        "title": "Banner & Video Mobile | Imagen",
         "props":{
             "blockClass": "teaser-medium-home-page-mobile",
             "src": "assets/images/home/teasers/home-teaser-banner-mobile.jpg",
@@ -114,6 +119,7 @@
         ]
     },
     "video#gif-medium-home-page-mobile": {
+        "title": "Banner & Video Mobile | Video",
         "props": {            
             "src": "https://www.youtube.com/watch?v=l60sI0WGywQ",
             "blockClass": "gif-medium-home-page-mobile",

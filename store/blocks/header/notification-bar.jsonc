@@ -1,5 +1,6 @@
 {
     "flex-layout.row#promo-topbar": {
+        "title": "Topbar",
         "props": {
             "blockClass": "promo-topbar-row",
             "horizontalAlign": "center",
@@ -21,6 +22,7 @@
         ]
     },
     "slider-layout#notification-bar-slider": {
+        "title": "Topbar | Slider de Notificaciones",
         "props": {
             "itemsPerPage": {
                 "desktop": 1,
@@ -48,6 +50,7 @@
         ]
     },
     "link#first-promo-link__promo-topbar": {
+        "title": "Topbar | Primera Notificación",
         "props": {
             "blockClass": "promo-topbar-link",
             "label": "ENVÍO GRATIS POR COMPRAS SUPERIORES A $200 000",
@@ -56,6 +59,7 @@
         }
     },
     "link#second-promo-link__promo-topbar":{
+        "title": "Topbar | Segunda Notificación",
         "props": {
             "blockClass": "promo-topbar-link",
             "label": "DEVOLUCIÓN SIN COSTO POR COMPRAS DESDE $300.000",
@@ -64,6 +68,7 @@
         }
     },
     "link#third-promo-link__promo-topbar":{
+        "title": "Topbar | Tercera Notificación",
         "props": {
             "blockClass": "promo-topbar-link",
             "label": "PAGA CON TU MEDIO DE PAGO FAVORITO A TRAVÉS DE PAYU",

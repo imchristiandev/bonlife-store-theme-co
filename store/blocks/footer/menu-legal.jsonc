@@ -1,17 +1,19 @@
 {
     "vtex.menu@2.x:menu#legal":{
+        "title": "Footer | Menú Legal",
         "props": {
             "orientation": "vertical"
         },
         "children":[
             "menu-item#option-one-legal",
             "menu-item#option-two-legal",
-            "menu-item#option-three-legal"
+            "menu-item#option-three-legal",
+            "menu-item#option-four-legal"
         ]
     },
     "menu-item#option-one-legal":{
         "props":{
-            "id": "option-three-legal",
+            "id": "option-one-legal",
             "type": "custom",
             "iconId": "null",
             "highlight": false,
@@ -26,7 +28,7 @@
     },
     "menu-item#option-two-legal":{
         "props":{
-            "id": "option-one-legal",
+            "id": "option-two-legal",
             "type": "custom",
             "iconId": "null",
             "highlight": false,
@@ -41,7 +43,7 @@
     },
     "menu-item#option-three-legal":{
         "props":{
-            "id": "option-four-legal",
+            "id": "option-three-legal",
             "type": "custom",
             "iconId": "null",
             "highlight": false,
@@ -51,6 +53,21 @@
                 "noFollow": false,
                 "tagTitle": "Políticas de compra",
                 "text": "Políticas de compra"
+            }
+        }
+    },
+    "menu-item#option-four-legal":{
+        "props":{
+            "id": "option-four-legal",
+            "type": "custom",
+            "iconId": "null",
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "/contenido/distribuidores",
+                "noFollow": false,
+                "tagTitle": "¿Quieres ser distribuidor?",
+                "text": "¿Quieres ser distribuidor?"
             }
         }
     }    

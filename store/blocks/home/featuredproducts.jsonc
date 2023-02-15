@@ -1,5 +1,6 @@
 {
     "flex-layout.row#featured-products-row__desktop":{
+        "title": "Productos Destacados Desktop",
         "props":{
             "blockClass": "featured-products-section",
             "horizontalAlign": "center",
@@ -32,6 +33,7 @@
         ]
     },    
     "rich-text#featured-products-title__desktop":{
+        "title": "Productos Destacados Desktop | Título Sección",
         "props": {
           "blockClass": "featured-products-title__desktop",
           "text": "## Productos Destacados",
@@ -40,6 +42,7 @@
         }
     },    
     "list-context.product-list#featured-products-context":{
+        "title": "Productos Destacados | Contexto Producto",
         "blocks":[
             "product-summary.shelf#featured-products-shelf"
         ],
@@ -54,6 +57,7 @@
         }
     },
     "product-summary.shelf#featured-products-shelf":{
+        "title": "Productos Destacados | Vitrina de Productos",
         "props":{
             "blockClass": "featured-products-product-summary"
         },
@@ -66,6 +70,7 @@
         ]
     },
     "product-summary-image#image__featured-products-shelf":{
+        "title": "Productos Destacados | Vitrina de Productos | Imágen de Producto",
         "props":{
             "showBadge": true,
             "displayMode": "normal",
@@ -77,21 +82,25 @@
         }
     },
     "product-list-price#featured-module-list-price":{
+        "title": "Productos Destacados | Vitrina de Productos | Precio de lista",
         "props":{
             "blockClass": "featured-module-list-price"
         }
     },
     "product-selling-price#featured-products-selling-price":{
+        "title": "Productos Destacados | Vitrina de Productos | Precio de venta",
         "props":{
             "blockClass": "featured-products-selling-price"
         }
     },
     "add-to-cart-button":{
+        "title": "Productos Destacados | Vitrina de Productos | Agregar al Carrito",
         "props":{
             "text": "¡Lo Quiero!"
         }
     },
     "slider-layout#featured-products-slider-shelf":{
+        "title": "Productos Destacados | Vitrina de Productos | Slider",
         "props":{
             "itemsPerPage":{
                 "desktop": 4,
@@ -120,7 +129,8 @@
             "centerModeSlidesGap": 2
         }
     },
-    "flex-layout.row#featured-products-row__mobile":{
+    "flex-layout.row#featured-products-row__mobile":{     
+        "title": "Productos Destacados Mobile",
         "props":{            
             "blockClass": "featured-products-row__mobile",
             "paddingTop": 6,
@@ -149,6 +159,7 @@
         ]
     },
     "rich-text#featured-products-title__mobile":{
+        "title": "Productos Destacados Mobile | Título Sección",
         "props": {
           "blockClass": "featured-products-title__mobile",
           "text": "## Productos Destacados",

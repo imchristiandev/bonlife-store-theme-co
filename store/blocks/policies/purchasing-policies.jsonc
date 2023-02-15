@@ -8,6 +8,7 @@
         ]
     },
     "flex-layout.row#purchasing-policies-row": {
+        "title": "Políticas de compra",
         "props": {
             "blockClass": "purchasing-policies-row",
             "preventHorizontalStretch": true,
@@ -31,6 +32,7 @@
         ]
     },
     "rich-text#purchasing-policies-text": {
+        "title": "Políticas de compra | Texto",
         "props": {
             "blockClass": "purchasing-policies-text",
             "text": "# Políticas de compra\n## POLÍTICAS DE CAMBIO Y GARANTÍA\nSORETEX DE COLOMBIA como principal política comercializa prendas con creativos e innovadores diseños, con los más altos estándares de calidad y al más competitivo precio. Apreciado cliente, favor antes de realizar un cambio o solicitar una garantía tener en cuenta las siguientes recomendaciones.\n- Todo cambio se debe realizar máximo en 10 días, contados a partir de la confirmación de entrega del producto, en perfecto estado y con sus etiquetas originales.\n- Los costos de envío por defectos de fabricación en lo que a cambios se refiere, serán asumidos por la empresa.\n- Las prendas de promoción o precios especiales no serán cambiadas excepto por problemas de calidad comprobados.\n- Todos nuestros productos cuentan con 30 días de garantía por defectos de fabricación comprobados, no serán asumidos los defectos o desperfectos resultantes de a una incorrecta utilización o manipulación del producto, entiéndase defectos resultantes por los desgastes producidos por el mal uso del mismo (daños en costuras, rotos, mal lavado)\n- Toda irregularidad e inconsistencia en el pedido se debe notificar al correo electrónico info@bonlife.com.co o comunicarse a nuestras líneas de servicio al cliente (572) 5572822 (57) 3165351122\n**Plazo de Entrega**\nEl plazo de entrega para Cali y alrededores es de máximo 4 días hábiles. Para las siguientes ciudades el plazo de entrega es de máximo 5 días hábiles: Medellín, Bogotá, Pereira y Armenia. Para el resto del país, entregaremos tu pedido en un plazo de máximo 7 días hábiles. El plazo de entrega comenzará a contar a partir de la confirmación de tu pago.\n\n**Entregas internacionales**\nA convenir con el cliente según el país de entrega a través de info@bonlife.com.co",

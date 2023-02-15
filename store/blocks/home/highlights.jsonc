@@ -1,5 +1,6 @@
 {
     "flex-layout.row#highlights":{
+        "title": "Highlights",
         "props":{
             "blockClass": "highlightRow",
             "horizontalAlign": "center",
@@ -18,6 +19,7 @@
         ]        
     },
     "flex-layout.col#highlight1":{
+        "title": "Highlights | Highlight Uno",
         "props": {
             "blockClass": "highlight-col-shipping",
             "verticalAlign": "middle",
@@ -30,6 +32,7 @@
         ]
     },    
     "flex-layout.col#highlight2":{
+        "title": "Highlights | Highlight Dos",
         "props": {
             "blockClass": "highlight-col-safe-shopping",
             "verticalAlign": "middle",
@@ -42,6 +45,7 @@
         ]
     },    
     "flex-layout.col#highlight3":{
+        "title": "Highlights | Highlight Tres",
         "props": {
             "blockClass": "highlight-col-payment-methods",
             "verticalAlign": "middle",
@@ -54,6 +58,7 @@
         ]
     },
     "flex-layout.col#highlight4":{
+        "title": "Highlights | Highlight Cuatro",
         "props": {
             "blockClass": "highlight-col-refund",
             "verticalAlign": "middle",
@@ -66,6 +71,7 @@
         ]
     },
     "rich-text#highlight1-title":{
+        "title": "Highlights | Highlight Uno | Título",
         "props":{
             "blockClass": "highlights-title",
             "text":"Envío<br>Gratis",
@@ -74,6 +80,7 @@
         }
     },
     "rich-text#highlight1-description":{
+        "title": "Highlights | Highlight Uno | Descripción",
         "props":{
             "blockClass": "highlights-description",
             "text": "Por compras<br>desde $200.000",
@@ -83,6 +90,7 @@
         }
     },
     "rich-text#highlight2-title":{
+        "title": "Highlights | Highlight Dos | Título",
         "props":{
             "blockClass": "highlights-title",
             "text":"Compras<br>Seguras",
@@ -91,6 +99,7 @@
         }
     },
     "rich-text#highlight2-description":{
+        "title": "Highlights | Highlight Dos | Descripción",
         "props":{
             "blockClass": "highlights-description",
             "text": "Seguridad de<br>principio a fin",
@@ -100,6 +109,7 @@
         }
     },
     "rich-text#highlight3-title":{
+        "title": "Highlights | Highlight Tres | Título",
         "props":{
             "blockClass": "highlights-title",
             "text":"Medios de<br>Pago",
@@ -108,6 +118,7 @@
         }
     },
     "rich-text#highlight3-description":{
+        "title": "Highlights | Highlight Tres | Descripción",
         "props":{
             "blockClass": "highlights-description",
             "text": "Tarjetas Débito<br>y Crédito",
@@ -117,6 +128,7 @@
         }
     },
     "rich-text#highlight4-title":{
+        "title": "Highlights | Highlight Cuatro | Título",
         "props":{
             "blockClass": "highlights-title",
             "text":"Devolución<br>sin Costo",
@@ -125,6 +137,7 @@
         }
     },
     "rich-text#highlight4-description":{
+        "title": "Highlights | Highlight Cuatro | Descripción",
         "props":{
             "blockClass": "highlights-description",
             "text": "Por compras<br>desde $300.000",

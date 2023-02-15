@@ -53,6 +53,7 @@
     }
   },
   "product-summary.shelf": {
+    "title": "Vitrina de productos por defecto",
     "children": [
       "product-summary-image",
       "product-summary-name",
@@ -62,6 +63,7 @@
     ]
   },
   "product-summary-image": {
+    "title": "Vitrina de productos por defecto | Imagen",
     "props": {
       "showBadge": true,
       "showCollections": true,
@@ -73,11 +75,13 @@
     }
   },
   "product-list-price#default": {
+    "title": "Vitrina de productos por defecto | Precio de lista",
     "props": {
       "blockClass": "list-price-default"
     }
   },
   "product-selling-price": {
+    "title": "Vitrina de productos por defecto | Precio de venta",
     "props": {
       "blockClass": "selling-price"
     }

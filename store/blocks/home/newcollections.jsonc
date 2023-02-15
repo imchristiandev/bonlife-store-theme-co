@@ -1,5 +1,6 @@
 {
     "flex-layout.row#new-collection-row__desktop": {
+        "title": "Nueva Colección Desktop",
         "props": {
             "blockClass": "new-collection-section",
             "paddingTop": 8,
@@ -22,6 +23,7 @@
         ]
     },
     "stack-layout#new-collection-stack-layout-banner": {
+        "title": "Nueva Colección Desktop | Banner Izquierda",
         "props": {
             "blockClass": "new-collection-stack-layout-banner"
         },
@@ -31,6 +33,7 @@
         ]
     },
     "video#left-video-new-collection__desktop": {
+        "title": "Nueva Colección Desktop | Banner Izquierda | Video",
         "props": {            
             "src": "https://catalogo.bonlife.com.co/BONLIFE%20VERTICAL-FHD_1-corregido.mp4",
             "blockClass": "left-video-new-collection__desktop",    
@@ -43,6 +46,7 @@
         }
     },
     "image#banner-badge-new-collection": {
+        "title": "Nueva Colección Desktop | Banner Izquierda | Badge",
         "props": {
             "blockClass": "banner-badge-new-collection",
             "src": "assets/images/home/new-collection/instagram-icon.png",
@@ -54,6 +58,7 @@
         }
     },
     "flex-layout.col#new-collection-col__desktop": {
+        "title": "Nueva Colección Desktop | Columna Vitrina Producto",
         "props": {
             "blockClass": "new-collection-col__desktop",
             "verticalAlign": "middle",
@@ -69,6 +74,7 @@
         ]
     },
     "rich-text#new-collections-title": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Título Sección",
         "props": {
             "blockClass": "section-title-h2",
             "text": "## Es hora de mejorar tu juego",
@@ -77,6 +83,7 @@
         }
     },
     "rich-text#new-collections-description": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Subtítulo Sección",
         "props": {
             "blockClass": "section-description",
             "text": "Diseños exclusivos para mujeres que les justa sentirse naturales, fuertes y seguros de si mismas",
@@ -85,6 +92,7 @@
         }
     },
     "list-context.product-list#new-collection-shelf": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Contexto de producto",
         "blocks": [
             "product-summary.shelf#summary__new-collection-shelf"
         ],
@@ -99,6 +107,7 @@
         }
     },
     "product-summary.shelf#summary__new-collection-shelf": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Producto",
         "props": {
             "blockClass": "new-collection-shelf"
         },
@@ -111,16 +120,19 @@
         ]
     },
     "product-list-price#new-collections-module-list-price": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Precio de Lista",
         "props": {
             "blockClass": "new-collections-module-list-price"
         }
     },
     "product-selling-price#new-collections-module-selling-price": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Precio de Venta",
         "props": {
             "blockClass": "new-collections-module-selling-price"
         }
     },
     "slider-layout#new-collection-slider": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Slider",
         "props": {
             "itemsPerPage": {
                 "desktop": 3,
@@ -162,6 +174,7 @@
         ]
     },
     "link#collection-button": {
+        "title": "Nueva Colección | Columna Vitrina Producto | Botón",
         "props": {
             "label": "Ver otros productos",
             "href": "/137?map=productClusterIds",
@@ -173,6 +186,7 @@
         }
     },
     "flex-layout.row#new-collection-row__mobile": {
+        "title": "Nueva Colección Mobile",
         "props": {
             "paddingTop": 4,
             "paddingBottom": 8
@@ -204,6 +218,7 @@
         ]
     },
     "flex-layout.col#new-collection-button-col__mobile": {
+        "title": "Nueva Colección Mobile | Columna Vitrina Producto | Botón",
         "props": {
             "verticalAlign": "middle",
             "horizontalAlign": "center",

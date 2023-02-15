@@ -13,12 +13,14 @@
     },
     /*DESKTOP*/
     "header-layout.desktop#pdp-plp": {
+        "title": "Header Desktop Internas",
         "children": [
             "flex-layout.row#promo-topbar",
             "flex-layout.row#main-header-row-pdp-plp"
         ]
     },
     "flex-layout.row#main-header-row-pdp-plp": {
+        "title": "Header Desktop Internas",
         "props": {
             "blockClass": "main-header-row-pdp-plp"
         },
@@ -35,6 +37,7 @@
         ]
     },
     "sticky-layout#desktop-pdp-plp": {
+        "title": "Header Desktop Internas | Sticky Header",
         "props": {
             "blockClass": "sticky-header-pdp-plp"
         },
@@ -71,6 +74,7 @@
         ]
     },
     "logo#desktop-pdp-plp": {
+        "title": "Header Desktop Internas | Logo",
         "props": {
             "title": "Logo",
             "href": "/",
@@ -88,6 +92,7 @@
         ]
     },
     "login#login-pdp-plp": {
+        "title": "Header Desktop Internas | Login",
         "props": {
             "blockClass": "login-header-pdp-plp",
             "showIconProfile": false,

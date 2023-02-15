@@ -1,0 +1,247 @@
+{
+    "store.custom#reseller": {
+        "parent": {
+            "header": "header#pdp-plp"
+        },
+        "children": [
+            "stack-layout#reseller-main"
+        ]
+    },
+    "stack-layout#reseller-main":{
+        "title": "Sección Distribuidor",
+        "props":{
+            "blockClass": "reseller-main"
+        },
+        "children":[
+            "flex-layout.row#reseller-background-row",
+            "flex-layout.row#reseller-main-row"
+        ]
+    },
+    "flex-layout.row#reseller-background-row":{
+        "props":{
+            "blockClass": "reseller-background-row",
+            "fullWidth": true,
+            "preventHorizontalStretch": false
+        },
+        "children":[
+            "flex-layout.col#reseller-image-col"
+        ]
+    },
+    "flex-layout.col#reseller-image-col": {
+        "props": {
+            "blockClass": "reseller-image-col",
+            "verticalAlign": "top",
+            "width": "100%"
+        },
+        "children": [
+            "image#reseller-image"
+        ]
+    },
+    "image#reseller-image": {
+        "title": "Reseller | Image",
+        "props": {
+            "src": "assets/images/home/slider/desktop/home-main-banner-slider_1.jpg",
+            "width": "100%"
+        }
+    },
+    "flex-layout.row#reseller-main-row": {
+        "title": "Distribuidor",
+        "props": {
+            "blockClass": "reseller-main-row",
+            "preventHorizontalStretch": false,
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "paddingTop": 3,
+            "paddingBottom": 4
+        },
+        "children": [
+            "flex-layout.col#reseller-content-col"
+        ]
+    },    
+    "flex-layout.col#reseller-content-col": {
+        "props": {
+            "blockClass": "reseller-form-col",
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "width": "100%",
+            "paddingLeft": 7,
+            "paddingRight": 7
+        },
+        "children": [
+            "rich-text#reseller-title",
+            "rich-text#reseller-description",
+            "flex-layout.row#reseller-form-row"
+        ]
+    },
+    "rich-text#reseller-title": {
+        "title": "Distribuidor | Título Sección",
+        "props": {
+            "blockClass": "reseller-title",
+            "text": "¡Se un distribuidor!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-1"
+        }
+    },
+    "rich-text#reseller-description": {
+        "title": "Distribuidor | Descripción Sección",
+        "props": {
+            "blockClass": "reseller-description",
+            "text": "**Conviértete en Distribuidor Bonlife**. Accede a beneficios como precios especiales, colecciones pre-lanzamiento, orientación para incrementar tus ventas y mucho más. Diligencia y envía el formulario con tus datos personales, un asesor se comunicará contigo en breve. **Únete a la familia Bonlife**",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "flex-layout.row#reseller-form-row": {
+        "props": {
+            "blockClass": "reseller-form-row",
+            "fullWidth": true,
+            "preventHorizontalStretch": false,
+            "horizontalAlign": "center",
+            "paddingTop": 7,
+            "paddingBottom": 8
+        },
+        "children": [
+            "flex-layout.col#reseller-form-col"
+        ]
+    },
+    "flex-layout.col#reseller-form-col": {
+        "props": {
+            "blockClass": "reseller-form-col",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "width": "100%"
+        },
+        "children": [
+            "form#reseller-form"
+        ]
+    },
+    "form#reseller-form": {
+        "title": "Distribuidor | Formulario",
+        "props": {
+            "entity": "DT",
+            "schema": "distribuidor"
+        },
+        "children": [
+            "flex-layout.row#form-fields-row",
+            "flex-layout.row#submit-field-row"
+        ],
+        "blocks": [
+            "form-success"
+        ]
+    },
+    "flex-layout.row#form-fields-row":{
+        "props":{            
+            "blockClass": "form-fields-row",
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "colGap": 5
+        },
+        "children":[
+            "flex-layout.col#form-fields-left-col",
+            "flex-layout.col#form-fields-right-col"
+        ]
+    },
+    "flex-layout.col#form-fields-left-col":{
+        "props": {
+            "blockClass": "form-fields-col",
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "rowGap": 5
+        },
+        "children":[
+            "form-input.text#fullName",
+            "form-input.text#emailContact",
+            "form-input.text#contactNumber"
+        ]
+    },
+    "flex-layout.col#form-fields-right-col":{
+        "props": {
+            "blockClass": "form-fields-col",
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "rowGap": 5
+        },
+        "children":[
+            "form-input.text#countryName",
+            "form-input.text#departmentName",
+            "form-input.text#cityName"
+        ]
+    },
+    "flex-layout.row#submit-field-row":{
+        "props":{            
+            "blockClass": "submit-field-row",
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "paddingTop": 7,
+            "paddingBottom": 5
+        },
+        "children":[
+            "flex-layout.col#submit-field-col"
+        ]
+    },
+    "flex-layout.col#submit-field-col":{
+        "props": {
+            "blockClass": "submit-field-col",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"            
+        },
+        "children":[
+            "form-submit"
+        ]
+    },
+    "form-input.text#fullName":{
+        "props":{
+            "pointer": "#/properties/fullName",
+            "label": "Nombre"
+        }
+    },
+    "form-input.text#emailContact":{
+        "props":{
+            "pointer": "#/properties/emailContact",
+            "label": "Email"
+        }
+    },
+    "form-input.text#contactNumber":{
+        "props":{
+            "pointer": "#/properties/contactNumber",
+            "label": "Teléfono de Contacto"
+        }
+    },
+    "form-input.text#countryName":{
+        "props":{
+            "pointer": "#/properties/countryName",
+            "label": "País"
+        }
+    },
+    "form-input.text#departmentName":{
+        "props":{
+            "pointer": "#/properties/departmentName",
+            "label": "Departamento"
+        }
+    },
+    "form-input.text#cityName":{
+        "props":{
+            "pointer": "#/properties/cityName",
+            "label": "Ciudad"
+        }
+    },
+    "form-submit":{
+        "props":{
+            "label": "Enviar"
+        }
+    },
+    "form-success": {
+        "children": [
+            "rich-text#successSubmit"
+        ]
+    },
+    "rich-text#successSubmit": {
+        "title": "Distribuidor | Mensaje Envío Exitoso",
+        "props": {
+            "text": "Gracias por confiar en nosotros. Tus datos han sido enviados correctamente. Un asesor se comunicará contigo en breve.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

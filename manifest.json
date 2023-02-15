@@ -60,7 +60,8 @@
     "vtex.my-cards": "1.x",
     "vtex.my-authentication": "1.x",
     "vtex.store-media": "0.x",
-    "vtex.condition-layout": "2.x"
+    "vtex.condition-layout": "2.x",
+    "vtex.store-form": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x"

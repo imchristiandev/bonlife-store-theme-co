@@ -12,6 +12,7 @@
     ]
   },
   "header-layout.desktop": {
+    "title": "Header Desktop Home",
     "children": [
       "flex-layout.row#promo-topbar",
       "flex-layout.row#main-header-row"
@@ -33,6 +34,7 @@
     ]
   },
   "sticky-layout#desktop": {
+    "title": "Header Desktop Home | Sticky Header",
     "props": {
       "blockClass": "sticky-header"
     },
@@ -106,6 +108,7 @@
     ]
   },
   "logo#desktop": {
+    "title": "Header Desktop | Logo",
     "props": {
       "title": "Logo",
       "href": "/",
@@ -127,6 +130,7 @@
     ]
   },
   "search-bar": {
+    "title": "Header | Search Bar",
     "blocks": [
       "autocomplete-result-list.v2"
     ],
@@ -141,6 +145,7 @@
     }
   },
   "autocomplete-result-list.v2": {
+    "title": "Header | Autocomplete",
     "blocks": [
       "product-summary.shelf"
     ],
@@ -175,6 +180,7 @@
     ]
   },
   "login": {
+    "title": "Header Home | Login",
     "props": {
       "blockClass": "login-header",
       "showIconProfile": false,
@@ -184,11 +190,14 @@
   },
   //MOBILE
   "header-layout.mobile": {
+    "title": "Header Mobile",
     "children": [
+      "flex-layout.row#promo-topbar",
       "sticky-layout#mobile"
     ]
   },
   "sticky-layout#mobile": {
+    "title": "Header Mobile | Sticky Header",
     "props": {
       "blockClass": "sticky-header-mobile"
     },
@@ -234,6 +243,7 @@
     ]
   },
   "logo#mobile": {
+    "title": "Header Mobile | Logo",
     "props": {
       "blockClass": "logo-mobile",
       "title": "Logo Bonlife",
@@ -276,6 +286,7 @@
     ]
   },
   "login#mobile": {
+    "title": "Header Mobile | Login",
     "props": {
       "blockClass": "login-mobile",
       "showIconProfile": true,

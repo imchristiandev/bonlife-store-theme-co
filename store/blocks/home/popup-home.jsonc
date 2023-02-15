@@ -1,7 +1,7 @@
 {
     "modal-trigger#popup-home-trigger":{
         "props":{
-            "trigger": "load"
+            "trigger": "load-session"
         },
         "children":[
             "modal-layout#popup-home-layout"
@@ -36,6 +36,7 @@
         ]
     },
     "flex-layout.row#popup-home-modal-content-row":{
+        "title": "Popup Home",
         "props":{
             "blockClass": "popup-home-modal-content-row",
             "fullWidth": true,
@@ -58,6 +59,7 @@
         ]
     },
     "image#popup-image":{
+        "title": "Popup Home | Imágen",
         "props": {
             "src": "assets/images/plp/bonlife-co-mobile-plp-default.jpg",
             "width": "100%"
@@ -76,7 +78,7 @@
             "flex-layout.row#popup-description-row"
         ]
     },
-    "flex-layout.row#popup-description-row":{
+    "flex-layout.row#popup-description-row":{        
         "props":{
             "blockClass": "popup-description-row",
             "horizontalAlign": "center",
@@ -102,6 +104,7 @@
         ]
     },
     "rich-text#popup-title":{
+        "title": "Popup Home | Título",
         "props":{
             "blockClass": "popup-title",
             "text": "# 10% OFF",
@@ -110,23 +113,26 @@
         }
     },
     "rich-text#popup-description":{
+        "title": "Popup Home | Descripción",
         "props":{
             "blockClass": "popup-description",
-            "text": "**¡Estamos de lanzamiento!** Obtén tu **10% de descuento** ingresando el siguiente código en el checkout de tu compra.",
+            "text": "**¡Estamos de lanzamiento!** Obtén tu **% de descuento** ingresando el siguiente código en el checkout de tu compra.",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
         }
     },
     "rich-text#popup-featured-text":{
+        "title": "Popup Home | Texto Destacado",
         "props":{
             "blockClass": "popup-featured-text",
-            "text": "**bonlifeponal23**",
+            "text": "** **",
             "font": "t-heading-4",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
         }
     },
     "rich-text#popup-newsletter-cta":{
+        "title": "Popup Home | Descripción Newsletter",
         "props":{
             "blockClass": "popup-newsletter-cta",
             "text": "**Suscríbete** y se la primera en enterarte de todas las novedades.",
@@ -135,6 +141,7 @@
         }
     },
     "newsletter-form#popup-form":{
+        "title": "Popup Home | Formulario Newsletter",
         "props":{
             "blockClass": "popup-form"
         },

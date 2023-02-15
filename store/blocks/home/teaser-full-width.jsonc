@@ -1,5 +1,6 @@
 {
     "flex-layout.row#teaser-full-width-row": {
+        "title": "Parallax Ancho Completo",
         "props": {
             "blockClass": "teaser-full-width-row",
             "fullWidth": true,
@@ -19,6 +20,7 @@
         ]
     },
     "info-card#teaser-full-width-info-card": {
+        "title": "Parallax Ancho Completo | Card",
         "props": {
             "id": "teaser-full-width-info-card",
             "blockClass": "teaser-full-width-info-card",

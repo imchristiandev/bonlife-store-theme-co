@@ -80,6 +80,7 @@
     }
   },
   "search-result-layout":{
+    "title": "Galería de Productos",
     "blocks":[
       "search-result-layout.desktop",
       "search-result-layout.mobile",
@@ -89,6 +90,7 @@
 
   //DESKTOP
   "search-result-layout.desktop":{
+    "title": "Galería de Productos Desktop",
     "children":[
       "flex-layout.row#promo-banner__desktop",
       "flex-layout.row#searchbread",
@@ -188,24 +190,28 @@
     }
   },
   "image#promo-banner-women__desktop":{
+    "title": "Galería de Productos Desktop | Imagen Mujer",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-women-plp-banner.jpg"
     }
   },
   "image#promo-banner-men__desktop":{
+    "title": "Galería de Productos Desktop | Imagen Hombre",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-men-plp-banner.jpg"
     }
   },
   "image#promo-banner-accesories__desktop":{
+    "title": "Galería de Productos Desktop | Imagen Accesorios",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-accesories-plp-banner.jpg"
     }
   },
   "image#promo-banner-default__desktop":{
+    "title": "Galería de Productos Desktop | Imagen Default",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/plp-promotional-banner.jpg"
@@ -359,11 +365,13 @@
     ]
   },
   "search-fetch-previous": {
+    "title": "Galería de Productos | Fetch Anterior",
     "props": {
       "htmlElementForButton": "a"
     }
   },
   "search-fetch-more": {
+    "title": "Galería de Productos | Fetch Posterior",
     "props": {
       "htmlElementForButton": "a"
     }
@@ -382,6 +390,7 @@
 
   //MOBILE
   "search-result-layout.mobile": {
+    "title": "Galería de Productos Mobile",
     "children": [
       "flex-layout.row#promo-banner__mobile",
       "flex-layout.row#searchinfomobile",
@@ -491,6 +500,7 @@
     }
   },
   "image#promo-banner-women__mobile":{
+    "title": "Galería de Productos Mobile | Imagen Mujer",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-co-mobile-plp-women.jpg",
@@ -498,6 +508,7 @@
     }
   },
   "image#promo-banner-men__mobile":{
+    "title": "Galería de Productos Mobile | Imagen Hombre",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-co-mobile-plp-men.jpg",
@@ -505,6 +516,7 @@
     }
   },
   "image#promo-banner-accesories__mobile":{
+    "title": "Galería de Productos Mobile | Imagen Accesorios",
     "props":{
       "blockClass": "image-promo-banner-desktop",
       "src": "assets/images/plp/bonlife-co-mobile-plp-accesories.jpg",
@@ -512,6 +524,7 @@
     }
   },
   "image#promo-banner-default__mobile":{
+    "title": "Galería de Productos Mobile | Imagen Default",
     "props":{
       "blockClass": "promo-banner-mobile",
       "src": "assets/images/plp/bonlife-co-mobile-plp-default.jpg",
@@ -647,6 +660,7 @@
     ]
   },
   "rich-text#option-grid": {
+    "title": "Galería de Productos | Texto Opción",
     "props": {
       "text": "Grid",
       "textColor": "c-auto",
@@ -654,6 +668,7 @@
     }
   },
   "rich-text#option-list": {
+    "title": "Galería de Productos | Texto Opción",
     "props": {
       "text": "List",
       "textColor": "c-auto",

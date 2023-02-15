@@ -1,5 +1,6 @@
 {
   "flex-layout.row#main-slider-row": {
+    "title": "Slider Principal",
     "props":{
       "blockClass": "main-slider-row",
       "fullWidth": true,
@@ -10,6 +11,7 @@
     ]
   },
   "list-context.image-list#home-slider": {
+    "title": "Slider Principal | Listado Imágenes",
     "children": [
       "slider-layout#main-slider__home-slider"
     ],
@@ -58,6 +60,7 @@
     }
   },
   "slider-layout#main-slider__home-slider": {
+    "title": "Slider Principal | Slider",
     "props": {
       "itemsPerPage": {
         "desktop": 1,

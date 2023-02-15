@@ -3,6 +3,7 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": { 
+    "title": "Footer Desktop",
     "children": [
       "flex-layout.row#footer-main",
       "flex-layout.row#footer-logistic-information",
@@ -10,6 +11,7 @@
     ]
   },  
   "flex-layout.row#footer-main":{
+    "title": "Footer Fila Principal",
     "props":{
       "paddingTop": 6,
       "paddingBottom": 8,
@@ -22,6 +24,7 @@
     ]
   },
   "flex-layout.col#left-col__footer":{    
+    // "title": "Footer | Columna Izquierda",
     "props":{
       "blockClass": "left-col-footer",
       "width": "40%",
@@ -36,6 +39,7 @@
     ]
   },
   "logo#logo__left-col__footer":{
+    "title": "Footer | Logo Bonlife",
     "props":{
       "title": "Logo Bonlife",
       "href": "/",
@@ -44,6 +48,7 @@
     }
   },
   "social-networks":{
+    "title": "Footer | Redes Sociales",
     "props":{
       "socialNetworks":[
         {"url": "https://www.facebook.com/bonlife.co", "name": "Facebook"},
@@ -53,6 +58,7 @@
     }
   },  
   "flex-layout.col#right-col__footer":{
+    // "title": "Footer | Columna Derecha",
     "props":{
       "blockClass": "right-col-footer",
       "width": "60%",
@@ -66,6 +72,7 @@
     ]
   },  
   "flex-layout.row#newsletter-row":{
+    "title": "Footer | Fila Newsletter",
     "props":{
       "blockClass": "newsletter-row",
       "fullWidth": true,
@@ -77,6 +84,7 @@
     ]    
   },
   "flex-layout.col#newsletter-col":{
+    // "title": "Footer | Columna Newsletter",
     "props":{
       "blockClass": "newsletter-col",
       "verticalAlign": "middle",
@@ -89,6 +97,7 @@
     ]
   },
   "rich-text#newletter-title":{
+    "title": "Footer | Título Newsletter",
     "props":{
       "text": "## Newsletter",
       "textAligment": "LEFT",
@@ -96,6 +105,7 @@
     }
   } , 
   "newsletter-form":{
+    "title": "Footer | Formulario Newsletter",
     "props":{
       "blockClass": "newsletter-form"
     },
@@ -115,34 +125,40 @@
     }
   },
   "flex-layout.row#contact-info-row":{
+    "title": "Footer | Fila Información Contacto",
     "children":[
       "flex-layout.col#contact-col",
       "flex-layout.col#policy-col"      
     ]
   },  
   "flex-layout.col#contact-col":{
+    // "title": "Footer | Columna Información Contacto",
     "children": [
       "rich-text#col-title__contact-col",
       "vtex.menu@2.x:menu#aboutus"      
     ]
   },
   "flex-layout.col#policy-col":{
+    // "title": "Footer | Columna Políticas",
     "children": [
       "rich-text#col-title__policy-col",
       "vtex.menu@2.x:menu#legal"      
     ]
   },
   "rich-text#col-title__contact-col":{
+    "title": "Footer | Título Información Contacto",
     "props":{
       "text": "#### Contáctenos"
     }
   },  
   "rich-text#col-title__policy-col":{
+    "title": "Footer | Título Políticas",
     "props":{
       "text": "#### Políticas"
     }
   },  
   "flex-layout.row#footer-logistic-information":{
+    "title": "Footer | Fila Información Logística",
     "props":{
       "paddingTop": 4,
       "paddingBottom": 7,
@@ -156,7 +172,8 @@
       "flex-layout.col#carriers-col"
     ]
   },  
-  "flex-layout.col#payment-methods-col":{
+  "flex-layout.col#payment-methods-col":{  
+    // "title": "Footer | Columna Métodos de Pago",
     "props":{
       "verticalAlign": "middle",
       "horizontalAlign": "center",
@@ -168,6 +185,7 @@
     ]
   },
   "flex-layout.col#carriers-col":{
+    // "title": "Footer | Columna Carriers",
     "props":{
       "verticalAlign": "middle",
       "horizontalAlign": "center",
@@ -179,6 +197,7 @@
     ]
   },
   "image#payment-methods-img":{
+    "title": "Footer | Imágen Métodos de Pago",
     "props":{
       "src": "assets/images/footer/bonlife-co-desktop-images-business-payments.png",
       "height": "100px",
@@ -186,6 +205,7 @@
     }
   },
   "image#carriers-img":{
+    "title": "Footer | Imágen Carriers",
     "props":{
       "src": "assets/images/footer/bonlife-co-desktop-images-business-couriers.png",
       "height": "100px",
@@ -193,6 +213,7 @@
     }
   },
   "flex-layout.row#copyright__desktop":{
+    "title": "Footer | Fila Copyright",
     "props":{
       "fullWidth": true,
       "blockClass": "footer-copyright"
@@ -202,7 +223,8 @@
       "flex-layout.row#copyright-logos-right-col"
     ]
   },
-  "flex-layout.col#copyright-text-left-col":{
+  "flex-layout.col#copyright-text-left-col":{    
+    // "title": "Footer | Columna Texto Copyright",
     "props":{
       "verticalAlign": "middle",
       "width": "90%",
@@ -211,6 +233,7 @@
     "children":["rich-text#copyright-text"]
   },
   "rich-text#copyright-text":{
+    "title": "Footer | Texto Copyright",
     "props":{
       "blockClass": "copyright-text",
       "text": "Copyright © 2022 Bonlife - Derechos reservados",
@@ -219,6 +242,7 @@
     }
   },
   "flex-layout.row#copyright-logos-right-col":{
+    // "title": "Footer | Fila Logos Copyright",
     "props":{
       "paddingTop": 3,
       "preventHorizontalStretch": true,
@@ -231,12 +255,19 @@
     ]
   },
   "image#onewaylogo":{
+    "title": "Footer | Imagen Logo OWI",
     "props":{
       "src": "assets/images/copyright/logo-owi.png",
-      "height": "30px"
+      "height": "30px",
+      "link":{
+        "attributeNofollow": true,
+        "newTab": true,
+        "url": "https://www.onewayinnovation.com/"
+      }
     }
   },
   "image#vtexlogo":{
+    "title": "Footer | Imagen Logo VTEX",
     "props":{
       "src": "assets/images/copyright/logo-vtex.png",
       "height": "30px"
@@ -244,11 +275,13 @@
   },
 
   "footer-layout.mobile": { 
+    "title": "Footer Mobile",
     "children": [
       "flex-layout.row#footer-mobile"
     ]
   },
   "flex-layout.row#footer-mobile":{
+    // "title": "Footer Mobile | Fila Principal",
     "props":{
       "blockClass": "footer-mobile-row",
       "fullWidth": true
@@ -260,6 +293,7 @@
     ]
   },
   "flex-layout.row#copyright__mobile":{
+    "title": "Footer Mobile | Fila Copyright",
     "props":{
       "blockClass": "footer-copyright"
     },
@@ -269,6 +303,7 @@
     ]
   },
   "flex-layout.col#copyright-text-col__mobile":{
+    // "title": "Footer Mobile | Columna Texto Copyright",
     "props":{
       "blockClass": "copyright-text-col-mobile",
       "verticalAlign": "middle"
@@ -278,6 +313,7 @@
     ]
   },
   "rich-text#copyright-text-col__mobile":{
+    "title": "Footer Mobile | Texto Copyright Mobile",
     "props":{
       "blockClass": "copyright-text-mobile",
       "text": "Copyright © 2022 Bonlife - Derechos reservados",
@@ -286,6 +322,7 @@
     }
   },
   "flex-layout.row#copyright-logos-row__mobile":{
+    // "title": "Footer Mobile | Fila Logos Copyright",
     "props":{
       "blockClass": "copyright-logos-row-mobile",
       "paddingTop": 3,

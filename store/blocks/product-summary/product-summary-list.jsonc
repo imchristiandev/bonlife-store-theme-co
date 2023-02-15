@@ -1,5 +1,6 @@
 {
   "product-summary.shelf#list-layout": {
+    "title": "Galería de Productos | Lista de Productos",
     "props": {
       "blockClass": "list-layout"
     },
@@ -67,6 +68,7 @@
     ]
   },
   "product-summary-image#summaryListDesktop": {
+    "title": "Galería de Productos | Lista de Productos | Imagen",
     "props": {
       "showBadge": true,
       "showCollections": true,
@@ -101,6 +103,7 @@
     }
   },
   "product-summary-name#summaryListDesktop": {
+    "title": "Galería de Productos | Lista de Productos | Nombre",
     "props": {
       "blockClass": "summaryListDesktop"
     }
@@ -135,6 +138,7 @@
     ]
   },
   "product-price-savings#savings-product-price-list-layout":{
+    "title": "Galería de Productos | Lista de Productos | Descuento",
     "props":{
       "blockClass": "savings-product-price-list-layout",
       "percentageStyle": "compact",
@@ -153,11 +157,13 @@
     ]
   },
   "product-list-price#summary": {
+    "title": "Galería de Productos | Lista de Productos | Precio de lista",
     "props": {
       "blockClass": "summary"
     }
   },
   "product-selling-price#selling-price-list-layout":{
+    "title": "Galería de Productos | Lista de Productos | Precio de venta",
     "props":{
       "blockClass": "selling-price-list-layout"
     }
@@ -180,6 +186,7 @@
     ]
   },
   "add-to-cart-button#buyNow": {
+    "title": "Galería de Productos | Lista de Productos | Agregar al carrito",
     "props": {
       "text": "Cómpralo ahora",
       "isOneClickBuy": true,
@@ -223,6 +230,7 @@
     ]
   },
   "product-summary-image#summaryListMobile": {
+    "title": "Galería de Productos Mobile | Lista de Productos | Imagen",
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
@@ -230,7 +238,7 @@
       "blockClass": "product-summary-image-mobile"
     }
   },
-  "flex-layout.col#summaryDetailsListMobile": {
+  "flex-layout.col#summaryDetailsListMobile": {    
     "props": {
       "blockClass": "summary-details-col-mobile",
       "preventVerticalStretch": true,
@@ -260,6 +268,7 @@
     }
   },
   "product-summary-name#summaryListMobile": {
+    "title": "Galería de Productos Mobile | Lista de Productos | Nombre",
     "props": {
       "tag": "div",
       "blockClass": "name-summary-list-mobile"
@@ -311,6 +320,7 @@
     ]
   },
   "product-selling-price#list-layout-selling-price":{
+    "title": "Galería de Productos Mobile | Lista de Productos | Precio de venta",
     "props":{
       "blockClass": "list-layout-selling-price"
     }

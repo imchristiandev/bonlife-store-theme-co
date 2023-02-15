@@ -12,6 +12,7 @@
     ]
   },
   "flex-layout.row#product-breadcrumb-row":{
+    "title": "Página Producto | Fila Breadcrumb",
     "children":[
       "breadcrumb#pdp-breadcrumb"
     ],
@@ -21,11 +22,13 @@
     }
   },
   "breadcrumb#pdp-breadcrumb":{
+    "title": "Página Producto | Fila Breadcrumb | Breadcrumb",
     "props":{
       "showOnMobile": true
     }
   }, 
   "responsive-layout.desktop#product-main-info-desktop":{
+    "title": "Página Producto Desktop",
     "children":[      
       "flex-layout.row#product-main-desktop"
     ]
@@ -56,6 +59,7 @@
     }
   },
   "product-images":{
+    "title": "Página Producto | Imágenes",
     "props":{
       "blockClass": "product-images-product-main",
       "displayMode": "list",
@@ -66,6 +70,7 @@
     }
   },
   "modal-layout#product-image-detailed-modal":{
+    "title": "Página Producto | Popup Zoom Imagen",
     "props":{
       "blockClass": "product-image-detailed-modal",
       "scroll": "body",
@@ -109,11 +114,13 @@
     ]
   },
   "product-name#product-name-detailed-image-zoom":{
+    "title": "Página Producto | Popup Zoom Imagen | Nombre Producto",
     "props":{
       "blockClass": "product-name-detailed-image-zoom"
     }
   },
   "product-identifier.product#product-identifier-detailed-image-zoom":{
+    "title": "Página Producto | Popup Zoom Imagen | Identificador Producto",
     "props":{
       "blockClass": "product-identifier-detailed-image-zoom"
     }
@@ -126,7 +133,7 @@
   },
   "sticky-layout#main-info-product":{
     "children":[
-      "flex-layout.col#main-info-product-main-desktop"    
+      "flex-layout.col#main-info-product-main-desktop"
     ]
   },
   "flex-layout.col#main-info-product-main-desktop":{
@@ -159,6 +166,7 @@
     ]
   },
   "product-name#product-name-pdp":{
+    "title": "Página Producto | Nombre Producto",
     "props": {
       "blockClass": "product-name-pdp"
     }
@@ -173,6 +181,7 @@
     ]
   },
   "product-identifier.product#product-identifier-pdp":{
+    "title": "Página Producto | Identificador Producto",
     "props":{
       "blockClass": "product-identifier-pdp"
     }
@@ -207,6 +216,7 @@
     ]
   },
   "product-selling-price#product-selling-price-pdp":{
+    "title": "Página Producto | Precio de venta",
     "props":{
       "blockClass": "product-selling-price-pdp",
       "showSavings": true
@@ -235,6 +245,7 @@
     ]
   },
   "product-price-savings#product-savings-pdp":{
+    "title": "Página Producto | Descuento",
     "props":{
       "blockClass": "product-savings-pdp",
       "percentageStyle": "compact",
@@ -255,6 +266,7 @@
     ]
   },
   "product-list-price#product-list-price-pdp":{
+    "title": "Página Producto | Precio de Lista",
     "props":{
       "blockClass": "product-list-price-pdp",
       "message": "Antes:\n{listPriceValue}"
@@ -269,6 +281,7 @@
     ]
   },
   "sku-selector#sku-selector-pdp":{
+    "title": "Página Producto | Selector SKU",
     "props":{
       "blockClass": "sku-selector-pdp",
       "displayMode": "default",
@@ -299,6 +312,7 @@
     ]
   },
   "product-quantity#product-quantity-pdp":{
+    "title": "Página Producto | Selector de Cantidad",
     "props":{
       "blockClass": "product-quantity-pdp"
     }
@@ -313,17 +327,20 @@
     ]
   },
   "add-to-cart-button#add-to-cart-button-pdp":{
+    "title": "Página Producto | Agregar al carrito",
     "props":{
       "blockClass": "add-to-cart-button-pdp",
       "text": "Comprar"
     }
   },
   "shipping-simulator#shipping-simulator-pdp":{
+    "title": "Página Producto | Simulador de envío",
     "props":{
       "blockClass": "shipping-simulator-pdp"
     }
   },
   "share#default":{
+    "title": "Página Producto | Compartir en redes",
     "props":{
       "blockClass": "social-media-share",
       "social":{
@@ -337,6 +354,7 @@
 
   //MOBILE
   "responsive-layout.mobile#product-main-info-mobile":{
+    "title": "Página Producto Mobile",
     "children":[
       "flex-layout.row#main-product-info-row-mobile"
     ]
@@ -377,6 +395,7 @@
     ]
   },
   "product-images#product-images-pdp-mobile":{
+    "title": "Página Producto Mobile | Imágenes",
     "props":{
       "blockClass": "product-images-pdp-mobile",
       "displayMode": "carousel ",

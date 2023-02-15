@@ -1,5 +1,6 @@
 {
     "vtex.menu@2.x:menu#aboutus":{
+        "title": "Footer | Menú Sobre Nosotros",
         "props": {
             "orientation": "vertical"
         },
