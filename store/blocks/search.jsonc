@@ -7,7 +7,6 @@
     "props":{
       "context":{
         "maxItemsPerPage": 10,
-        "orderByField": "OrderByBestDiscountDESC",
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -23,7 +22,6 @@
     "props":{
       "context": {
         "maxItemsPerPage": 10,
-        "orderByField": "OrderByBestDiscountDESC",
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -38,8 +36,7 @@
     "blocks":["search-result-layout"],
     "props":{
       "context": {
-        "maxItemsPerPage": 10,
-        "orderByField": "OrderByBestDiscountDESC",
+        "maxItemsPerPage": 10,        
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -55,7 +52,6 @@
     "props":{
       "context": {
         "maxItemsPerPage": 10,
-        "orderByField": "OrderByBestDiscountDESC",
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -71,7 +67,6 @@
     "props":{
       "context": {
         "maxItemsPerPage": 10,
-        "orderByField": "OrderByBestDiscountDESC",
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",

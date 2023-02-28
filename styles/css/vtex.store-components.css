@@ -175,6 +175,11 @@
     border-radius: 0;
 }
 
+.skuSelectorContainer--sku-selector-pdp .seeMoreButton :global(.vtex-button){
+    background-color: #000;
+    margin-left: 15px;
+}
+
 .skuSelectorItem--sku-selector-pdp{
     height: 25px;
 }
