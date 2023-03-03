@@ -16,7 +16,8 @@
       "paddingTop": 6,
       "paddingBottom": 8,
       "blockClass": "footer-main",
-      "fullWidth": true
+      "fullWidth": true,
+      "preserveLayoutOnMobile": false
     },
     "children":[
       "flex-layout.col#left-col__footer",      
@@ -58,7 +59,6 @@
     }
   },  
   "flex-layout.col#right-col__footer":{
-    // "title": "Footer | Columna Derecha",
     "props":{
       "blockClass": "right-col-footer",
       "width": "60%",
@@ -84,7 +84,6 @@
     ]    
   },
   "flex-layout.col#newsletter-col":{
-    // "title": "Footer | Columna Newsletter",
     "props":{
       "blockClass": "newsletter-col",
       "verticalAlign": "middle",
@@ -132,14 +131,12 @@
     ]
   },  
   "flex-layout.col#contact-col":{
-    // "title": "Footer | Columna Información Contacto",
     "children": [
       "rich-text#col-title__contact-col",
       "vtex.menu@2.x:menu#aboutus"      
     ]
   },
   "flex-layout.col#policy-col":{
-    // "title": "Footer | Columna Políticas",
     "children": [
       "rich-text#col-title__policy-col",
       "vtex.menu@2.x:menu#legal"      
@@ -173,7 +170,6 @@
     ]
   },  
   "flex-layout.col#payment-methods-col":{  
-    // "title": "Footer | Columna Métodos de Pago",
     "props":{
       "verticalAlign": "middle",
       "horizontalAlign": "center",
@@ -185,7 +181,6 @@
     ]
   },
   "flex-layout.col#carriers-col":{
-    // "title": "Footer | Columna Carriers",
     "props":{
       "verticalAlign": "middle",
       "horizontalAlign": "center",
@@ -224,7 +219,6 @@
     ]
   },
   "flex-layout.col#copyright-text-left-col":{    
-    // "title": "Footer | Columna Texto Copyright",
     "props":{
       "verticalAlign": "middle",
       "width": "90%",
@@ -242,7 +236,6 @@
     }
   },
   "flex-layout.row#copyright-logos-right-col":{
-    // "title": "Footer | Fila Logos Copyright",
     "props":{
       "paddingTop": 3,
       "preventHorizontalStretch": true,
@@ -281,10 +274,10 @@
     ]
   },
   "flex-layout.row#footer-mobile":{
-    // "title": "Footer Mobile | Fila Principal",
     "props":{
       "blockClass": "footer-mobile-row",
-      "fullWidth": true
+      "fullWidth": true,
+      "preserveLayoutOnMobile": false
     },
     "children":[
       "flex-layout.row#footer-main",
@@ -295,7 +288,8 @@
   "flex-layout.row#copyright__mobile":{
     "title": "Footer Mobile | Fila Copyright",
     "props":{
-      "blockClass": "footer-copyright"
+      "blockClass": "footer-copyright",
+      "fullWidth": true
     },
     "children":[
       "flex-layout.col#copyright-text-col__mobile",
@@ -303,7 +297,6 @@
     ]
   },
   "flex-layout.col#copyright-text-col__mobile":{
-    // "title": "Footer Mobile | Columna Texto Copyright",
     "props":{
       "blockClass": "copyright-text-col-mobile",
       "verticalAlign": "middle"
@@ -322,7 +315,6 @@
     }
   },
   "flex-layout.row#copyright-logos-row__mobile":{
-    // "title": "Footer Mobile | Fila Logos Copyright",
     "props":{
       "blockClass": "copyright-logos-row-mobile",
       "paddingTop": 3,

@@ -113,7 +113,8 @@
             "width": "100%"
         },
         "children": [
-            "form#reseller-form"
+            "reseller-form"
+            // "form#reseller-form"
         ]
     },
     "form#reseller-form": {

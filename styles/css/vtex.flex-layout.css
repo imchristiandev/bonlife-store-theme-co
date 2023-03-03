@@ -340,6 +340,26 @@
     /*PROMO TOPBAR*/   
 }
 
+@media screen and (min-width: 638px) and (max-width: 1024px){
+    .flexRowContent--footer-mobile-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexRowContent--footer-mobile-row .stretchChildrenWidth{
+        width: 100% !important;
+    }
+
+    .flexRowContent--footer-mobile-row .flexRowContent--footer-main{
+        flex-direction: column;
+    }
+
+    .flexRowContent--footer-main .flexColChild--left-col-footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .flexRowContent--categories-row {
         padding-top: 50px;
