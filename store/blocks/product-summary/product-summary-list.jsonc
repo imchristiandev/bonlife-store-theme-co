@@ -77,7 +77,14 @@
         "criteria": "index",
         "index": 2
       },
-      "height": 250,
+      "width": {
+        "desktop": 600,
+        "mobile": 600
+      },
+      "height": {
+        "desktop": 800,
+        "mobile": 800
+      },
       "blockClass": "summary-list-desktop-image"
     }
   },

@@ -3,6 +3,10 @@
     padding-top: 0;
 }
 
+.searchResultContainer--search-result-layout-desktop {
+    max-width: 100%;
+}
+
 .galleryTitle--layout{
     font-family: 'PoppinsRegular';
     font-size: 2.25rem;

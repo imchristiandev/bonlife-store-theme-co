@@ -6,7 +6,7 @@
     "blocks": ["search-result-layout"],
     "props":{
       "context":{
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 12,
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -21,7 +21,7 @@
     "blocks":["search-result-layout"],
     "props":{
       "context": {
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 12,
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -36,7 +36,7 @@
     "blocks":["search-result-layout"],
     "props":{
       "context": {
-        "maxItemsPerPage": 10,        
+        "maxItemsPerPage": 12,        
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -51,7 +51,7 @@
     "blocks":["search-result-layout"],
     "props":{
       "context": {
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 12,
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -66,7 +66,7 @@
     "blocks":["search-result-layout"],
     "props":{
       "context": {
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 12,
         "hideUnavailableItems": true,
         "facetsBehavior": "static",
         "skusFilter": "FIRST_AVAILABLE",
@@ -96,7 +96,7 @@
     "props":{
       "blockClass": "search-result-layout-desktop",
       "showFacetQuantity": true,
-      "thresholdForFacetSearch": 10,
+      "thresholdForFacetSearch": 12,
       "defaultGalleryLayout": "grid",
       "preventRouteChange": true
     }
@@ -252,8 +252,8 @@
   "filter-navigator.v3":{
     "props": {
       "blockClass": "filter-navigator",
-      "maxItemsDepartment": 10,
-      "maxItemsCategory": 10,
+      "maxItemsDepartment": 12,
+      "maxItemsCategory": 12,
       "initiallyCollapsed": false,
       "openFiltersMode": "many",
       "scrollToTop": "none",
@@ -403,7 +403,7 @@
         "mode2": "normal"
       },
       "defaultGalleryLayout": "grid",
-      "thresholdForFacetSearch": 10,
+      "thresholdForFacetSearch": 12,
       "preventRouteChange": true,
       "showProductsCount": true,
       "showFacetQuantity": true
@@ -599,7 +599,6 @@
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
-            "(min-width:1367px)": 4,
             "desktop": 3,
             "tablet": 3,
             "phone": 2

@@ -94,6 +94,9 @@
 .infoCardCallActionContainer--info-card-promoBanner :global(.vtex-button){
     border-radius: 0px;
 }
+.discountContainer {
+    width: 100%;
+}
 /*PROMO BANNERS*/
 
 /*FEATURED CATEGORIES*/
