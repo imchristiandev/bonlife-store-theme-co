@@ -141,6 +141,7 @@
       "flex-layout.row#product-name-row",
       "flex-layout.row#product-identifier-row",
       "flex-layout.row#product-price-row",
+      "flex-layout.row#addi",
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
       "flex-layout.row#add-to-cart-button-row-pdp",
@@ -373,6 +374,7 @@
       "flex-layout.row#product-identifier-row",
       "flex-layout.row#product-images-row-mobile",
       "flex-layout.row#product-price-row-mobile",
+      "flex-layout.row#addi",
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
       "flex-layout.row#add-to-cart-button-row-pdp",      
@@ -386,6 +388,21 @@
       "paddingRight": 5
     }
   },
+
+  "flex-layout.row#addi": {
+    "title": "ADDI Widget",
+    "children": [
+      "flex-layout.col#addi"
+    ]
+  },
+
+  "flex-layout.col#addi": {
+    "children": [
+      "addi-infos"
+    ]
+  },
+
+  "addi-infos": {},
   "flex-layout.row#product-images-row-mobile":{
     "props":{
       "blockClass": "product-images-row-mobile"

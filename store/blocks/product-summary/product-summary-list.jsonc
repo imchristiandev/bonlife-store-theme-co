@@ -79,11 +79,11 @@
       },
       "width": {
         "desktop": 600,
-        "mobile": 600
+        "mobile": 300
       },
       "height": {
         "desktop": 800,
-        "mobile": 800
+        "mobile": 400
       },
       "blockClass": "summary-list-desktop-image"
     }
