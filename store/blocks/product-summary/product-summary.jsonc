@@ -25,7 +25,14 @@
     "props": {
       "showBadge": true,
       "showCollections": true,
-      "aspectRatio": "3:4",
+      "width": {
+        "desktop": 600,
+        "mobile": 600
+      },
+      "height": {
+        "desktop": 800,
+        "mobile": 800
+      },
       "hoverImage": {
         "criteria": "index",
         "index": 1
