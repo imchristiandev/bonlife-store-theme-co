@@ -1,0 +1,9 @@
+.lowStockText,
+.lowStockHighlight {
+  color: #cb2128;
+  font-weight: 600;
+}
+
+.lowStockText{
+  margin-right: 5px;
+}
