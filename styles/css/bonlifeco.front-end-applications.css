@@ -1,0 +1,17 @@
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+}
+
+.whatsapp__button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.whatsapp__image {
+  width: 60px;
+  height: 60px;
+}
