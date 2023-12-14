@@ -16,7 +16,8 @@
         "title": "Header Desktop Internas",
         "children": [
             "flex-layout.row#promo-topbar",
-            "flex-layout.row#main-header-row-pdp-plp"
+            "flex-layout.row#main-header-row-pdp-plp",
+            "promotion-popup"
         ]
     },
     "flex-layout.row#main-header-row-pdp-plp": {
