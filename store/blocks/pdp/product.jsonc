@@ -8,6 +8,7 @@
       "__fold__",
       "responsive-layout.desktop#product-main-info-desktop",
       "responsive-layout.mobile#product-main-info-mobile",
+      "special-suggested-products",
       "flex-layout.row#cross-selling-pdp-row"
     ]
   },
@@ -142,6 +143,7 @@
       "flex-layout.row#product-identifier-row",
       "flex-layout.row#product-price-row",
       "flex-layout.row#addi",
+      "product-availability",
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
       "flex-layout.row#add-to-cart-button-row-pdp",
@@ -375,6 +377,7 @@
       "flex-layout.row#product-images-row-mobile",
       "flex-layout.row#product-price-row-mobile",
       "flex-layout.row#addi",
+      "product-availability",
       "flex-layout.row#sku-selector-row",
       "flex-layout.row#product-quantity-row",
       "flex-layout.row#add-to-cart-button-row-pdp",      
@@ -477,5 +480,12 @@
     "children":[
       "product-list-price#product-list-price-pdp"
     ]
+  },
+  "product-availability": {
+    "props": {
+      "threshold": "10",
+      "lowStockMessage": "Últimas unidades: {quantity}",
+      "highStockMessage": "Item en stock!"
+    }
   }
 }
