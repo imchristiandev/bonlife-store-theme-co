@@ -8,6 +8,7 @@
       "__fold__",
       "responsive-layout.desktop#product-main-info-desktop",
       "responsive-layout.mobile#product-main-info-mobile",
+      "special-suggested-products",
       "flex-layout.row#cross-selling-pdp-row"
     ]
   },
