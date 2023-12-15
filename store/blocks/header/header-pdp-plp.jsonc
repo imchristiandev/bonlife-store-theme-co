@@ -17,7 +17,7 @@
         "children": [
             "flex-layout.row#promo-topbar",
             "flex-layout.row#main-header-row-pdp-plp",
-            "promotion-popup",
+            // "promotion-popup",
             "whatsapp-button"
         ]
     },
