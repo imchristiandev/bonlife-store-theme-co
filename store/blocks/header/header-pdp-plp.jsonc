@@ -17,7 +17,8 @@
         "children": [
             "flex-layout.row#promo-topbar",
             "flex-layout.row#main-header-row-pdp-plp",
-            "promotion-popup"
+            "promotion-popup",
+            "whatsapp-button"
         ]
     },
     "flex-layout.row#main-header-row-pdp-plp": {
@@ -99,6 +100,12 @@
             "showIconProfile": false,
             "iconLabel": "Mi cuenta",
             "logInButtonBehavior": "popover"
+        }
+    },
+    "whatsapp-button": {
+        "props": {
+            "phone": "+573165351122",
+            "message": "Tengo interés en los productos de Bonlife"
         }
     }
 }

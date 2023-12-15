@@ -16,7 +16,8 @@
     "children": [
       "flex-layout.row#promo-topbar",
       "flex-layout.row#main-header-row",
-      "promotion-popup"
+      "promotion-popup",
+      "whatsapp-button"
     ]
   },
   "flex-layout.row#main-header-row": {
@@ -195,7 +196,8 @@
     "children": [
       "flex-layout.row#promo-topbar",
       "sticky-layout#mobile",
-      "promotion-popup"
+      "promotion-popup",
+      "whatsapp-button"
     ]
   },
   "sticky-layout#mobile": {
