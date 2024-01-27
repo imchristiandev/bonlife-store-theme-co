@@ -18,7 +18,10 @@
     //MOBILE
     "drawer": {
         "children": [
-            "mega-menu#mobile"
+            // TODO: Change this to "mega-menu#mobile" when the mega-menu is ready
+            // ! Delete all children of "mega-menu#mobile" when the mega-menu is ready
+            //"mega-menu#mobile"
+            "responsive-mega-menu"
         ],
         "blocks": [
             "drawer-header#my-drawer"

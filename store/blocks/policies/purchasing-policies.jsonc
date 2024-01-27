@@ -1,8 +1,8 @@
 {
     "store.custom#purchasing-policies": {
-        "parent": {
-            "header": "header#pdp-plp"
-        },
+        // "parent": {
+        //     "header": "header#pdp-plp"
+        // },
         "children": [
             "flex-layout.row#purchasing-policies-row"
         ]

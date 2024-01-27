@@ -1,8 +1,8 @@
 {
   "store.orderplaced": {
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks": [
       "order-placed"
     ]
@@ -12,14 +12,14 @@
       "my-account"
     ],
     "parent": {
-      "challenge": "challenge.profile",
-      "header": "header#pdp-plp"
+      "challenge": "challenge.profile"
+      // "header": "header#pdp-plp"
     }
   },
   "store.login": {
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks": [
       "flex-layout.row#login-layout-row"
     ]

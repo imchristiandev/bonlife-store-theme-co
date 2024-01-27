@@ -42,7 +42,10 @@
     },
     "children": [
       "flex-layout.row#header-logo-main-actions-desktop-row",
-      "flex-layout.row#header-menu-desktop-row"
+      // TODO: Change this to "mega-menu#mobile" when the mega-menu is ready
+      // ! Delete all children of "mega-menu#mobile" when the mega-menu is ready
+      // "flex-layout.row#header-menu-desktop-row"
+      "responsive-mega-menu"
     ]
   },
   "flex-layout.row#header-logo-main-actions-desktop-row": {
@@ -60,21 +63,21 @@
       "flex-layout.col#login-minicart-col"
     ]
   },
-  "flex-layout.row#header-menu-desktop-row": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true,
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": [
-      "flex-layout.col#category-menu"
-    ]
-  },
+  // "flex-layout.row#header-menu-desktop-row": {
+  //   "props": {
+  //     "blockClass": "main-header",
+  //     "horizontalAlign": "center",
+  //     "verticalAlign": "center",
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true,
+  //     "paddingTop": 4,
+  //     "paddingBottom": 4
+  //   },
+  //   "children": [
+  //     "flex-layout.col#category-menu"
+  //   ]
+  // },
   "flex-layout.col#trigger-mega-menu": {
     "props": {
       "blockClass": "trigger-mega-menu.col",

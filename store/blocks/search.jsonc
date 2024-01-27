@@ -1,8 +1,8 @@
 {
   "store.search": {
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks": ["search-result-layout"],
     "props":{
       "context":{
@@ -15,9 +15,9 @@
     }
   },
   "store.search#brand":{
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks":["search-result-layout"],
     "props":{
       "context": {
@@ -30,9 +30,9 @@
     }
   },
   "store.search#department":{
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks":["search-result-layout"],
     "props":{
       "context": {
@@ -45,9 +45,9 @@
     }
   },
   "store.search#category":{
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks":["search-result-layout"],
     "props":{
       "context": {
@@ -60,9 +60,9 @@
     }
   },
   "store.search#subcategory":{
-    "parent":{
-      "header": "header#pdp-plp"
-    },
+    // "parent":{
+    //   "header": "header#pdp-plp"
+    // },
     "blocks":["search-result-layout"],
     "props":{
       "context": {

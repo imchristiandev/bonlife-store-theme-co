@@ -1,8 +1,8 @@
 {
     "store.custom#reseller": {
-        "parent": {
-            "header": "header#pdp-plp"
-        },
+        // "parent": {
+        //     "header": "header#pdp-plp"
+        // },
         "children": [
             "stack-layout#reseller-main"
         ]

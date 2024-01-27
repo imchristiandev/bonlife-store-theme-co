@@ -1,8 +1,8 @@
 {
     "store.custom#privacy-policy": {
-        "parent": {
-            "header": "header#pdp-plp"
-        },
+        // "parent": {
+        //     "header": "header#pdp-plp"
+        // },
         "children": [
             "flex-layout.row#privacy-main-row"
         ]

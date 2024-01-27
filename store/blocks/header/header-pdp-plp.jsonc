@@ -1,111 +1,111 @@
 {
-    "header#pdp-plp": {
-        "blocks": [
-            "header-layout.desktop#pdp-plp",
-            "header-layout.mobile"
-        ]
-    },
-    "header.full#pdp-plp": {
-        "blocks": [
-            "header-layout.desktop#pdp-plp",
-            "header-layout.mobile"
-        ]
-    },
-    /*DESKTOP*/
-    "header-layout.desktop#pdp-plp": {
-        "title": "Header Desktop Internas",
-        "children": [
-            "flex-layout.row#promo-topbar",
-            "flex-layout.row#main-header-row-pdp-plp",
-            // "promotion-popup",
-            "whatsapp-button"
-        ]
-    },
-    "flex-layout.row#main-header-row-pdp-plp": {
-        "title": "Header Desktop Internas",
-        "props": {
-            "blockClass": "main-header-row-pdp-plp"
-        },
-        "children": [
-            "flex-layout.col#main-header-col-pdp-plp"
-        ]
-    },
-    "flex-layout.col#main-header-col-pdp-plp": {
-        "props":{
-            "blockClass": "main-header-col-pdp-plp"
-        },
-        "children": [
-            "sticky-layout#desktop-pdp-plp"
-        ]
-    },
-    "sticky-layout#desktop-pdp-plp": {
-        "title": "Header Desktop Internas | Sticky Header",
-        "props": {
-            "blockClass": "sticky-header-pdp-plp"
-        },
-        "children": [
-            "flex-layout.row#header-menu-desktop-row-pdp-plp"
-        ]
-    },
-    "flex-layout.row#header-menu-desktop-row-pdp-plp": {
-        "props": {
-            "blockClass": "main-header-pdp-plp",
-            "horizontalAlign": "center",
-            "verticalAlign": "center",
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true,
-            "fullWidth": true,
-            "paddingTop": 4,
-            "paddingBottom": 4
-        },
-        "children": [
-            "flex-layout.col#logo-desktop-pdp-plp",
-            "flex-layout.col#category-menu",
-            "flex-layout.col#spacer",
-            "flex-layout.col#search-bar-col-pdp-plp",
-            "login#login-pdp-plp",
-            "minicart.v2"
-        ]
-    },
-    "flex-layout.col#logo-desktop-pdp-plp": {
-        "props": {
-            "verticalAlign": "middle"
-        },
-        "children": [
-            "logo#desktop-pdp-plp"
-        ]
-    },
-    "logo#desktop-pdp-plp": {
-        "title": "Header Desktop Internas | Logo",
-        "props": {
-            "title": "Logo",
-            "href": "/",
-            "url": "assets/images/header/bonlife-logo-negative.png",
-            "height": "50"
-        }
-    },
-    "flex-layout.col#search-bar-col-pdp-plp": {
-        "props": {
-            "blockClass": "search-bar-col-pdp-plp",
-            "verticalAlign": "middle"
-        },
-        "children": [
-            "search-bar"
-        ]
-    },
-    "login#login-pdp-plp": {
-        "title": "Header Desktop Internas | Login",
-        "props": {
-            "blockClass": "login-header-pdp-plp",
-            "showIconProfile": false,
-            "iconLabel": "Mi cuenta",
-            "logInButtonBehavior": "popover"
-        }
-    },
-    "whatsapp-button": {
-        "props": {
-            "phone": "+573165351122",
-            "message": "Tengo interés en los productos de Bonlife"
-        }
-    }
+    // "header#pdp-plp": {
+    //     "blocks": [
+    //         "header-layout.desktop#pdp-plp",
+    //         "header-layout.mobile"
+    //     ]
+    // },
+    // "header.full#pdp-plp": {
+    //     "blocks": [
+    //         "header-layout.desktop#pdp-plp",
+    //         "header-layout.mobile"
+    //     ]
+    // },
+    // /*DESKTOP*/
+    // "header-layout.desktop#pdp-plp": {
+    //     "title": "Header Desktop Internas",
+    //     "children": [
+    //         "flex-layout.row#promo-topbar",
+    //         "flex-layout.row#main-header-row-pdp-plp",
+    //         // "promotion-popup",
+    //         "whatsapp-button"
+    //     ]
+    // },
+    // "flex-layout.row#main-header-row-pdp-plp": {
+    //     "title": "Header Desktop Internas",
+    //     "props": {
+    //         "blockClass": "main-header-row-pdp-plp"
+    //     },
+    //     "children": [
+    //         "flex-layout.col#main-header-col-pdp-plp"
+    //     ]
+    // },
+    // "flex-layout.col#main-header-col-pdp-plp": {
+    //     "props":{
+    //         "blockClass": "main-header-col-pdp-plp"
+    //     },
+    //     "children": [
+    //         "sticky-layout#desktop-pdp-plp"
+    //     ]
+    // },
+    // "sticky-layout#desktop-pdp-plp": {
+    //     "title": "Header Desktop Internas | Sticky Header",
+    //     "props": {
+    //         "blockClass": "sticky-header-pdp-plp"
+    //     },
+    //     "children": [
+    //         "flex-layout.row#header-menu-desktop-row-pdp-plp"
+    //     ]
+    // },
+    // "flex-layout.row#header-menu-desktop-row-pdp-plp": {
+    //     "props": {
+    //         "blockClass": "main-header-pdp-plp",
+    //         "horizontalAlign": "center",
+    //         "verticalAlign": "center",
+    //         "preventHorizontalStretch": true,
+    //         "preventVerticalStretch": true,
+    //         "fullWidth": true,
+    //         "paddingTop": 4,
+    //         "paddingBottom": 4
+    //     },
+    //     "children": [
+    //         "flex-layout.col#logo-desktop-pdp-plp",
+    //         "flex-layout.col#category-menu",
+    //         "flex-layout.col#spacer",
+    //         "flex-layout.col#search-bar-col-pdp-plp",
+    //         "login#login-pdp-plp",
+    //         "minicart.v2"
+    //     ]
+    // },
+    // "flex-layout.col#logo-desktop-pdp-plp": {
+    //     "props": {
+    //         "verticalAlign": "middle"
+    //     },
+    //     "children": [
+    //         "logo#desktop-pdp-plp"
+    //     ]
+    // },
+    // "logo#desktop-pdp-plp": {
+    //     "title": "Header Desktop Internas | Logo",
+    //     "props": {
+    //         "title": "Logo",
+    //         "href": "/",
+    //         "url": "assets/images/header/bonlife-logo-negative.png",
+    //         "height": "50"
+    //     }
+    // },
+    // "flex-layout.col#search-bar-col-pdp-plp": {
+    //     "props": {
+    //         "blockClass": "search-bar-col-pdp-plp",
+    //         "verticalAlign": "middle"
+    //     },
+    //     "children": [
+    //         "search-bar"
+    //     ]
+    // },
+    // "login#login-pdp-plp": {
+    //     "title": "Header Desktop Internas | Login",
+    //     "props": {
+    //         "blockClass": "login-header-pdp-plp",
+    //         "showIconProfile": false,
+    //         "iconLabel": "Mi cuenta",
+    //         "logInButtonBehavior": "popover"
+    //     }
+    // },
+    // "whatsapp-button": {
+    //     "props": {
+    //         "phone": "+573165351122",
+    //         "message": "Tengo interés en los productos de Bonlife"
+    //     }
+    // }
 }

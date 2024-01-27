@@ -1,8 +1,8 @@
 {
     "store.custom#data-treatment": {
-        "parent": {
-            "header": "header#pdp-plp"
-        },
+        // "parent": {
+        //     "header": "header#pdp-plp"
+        // },
         "children": [
             "flex-layout.row#data-treatment-main-row"
         ]
