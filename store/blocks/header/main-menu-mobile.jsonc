@@ -27,6 +27,16 @@
             "drawer-header#my-drawer"
         ]
     },
+    "responsive-mega-menu": {
+        "title": "Mega Menu",
+        "props": {
+            "mobileMenuType": "accordion",
+            "mobileMenuItemsBehavior": "openChildren",
+            "mobileMenuDepartmentsTitleOn": true,
+            "mobileMenuDepartmentsTitle": "Categorías2",
+            "mobileMenuIconSize": 14
+        }
+    },
     "mega-menu#mobile": {
         "props": {
             "blockClass": "mega-menu-mobile",
