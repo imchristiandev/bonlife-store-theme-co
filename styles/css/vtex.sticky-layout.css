@@ -1,6 +1,6 @@
 /*HEADER HOME*/
 .wrapper--sticky-header .container--sticky-header{
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgb(0 0 0 / 58%);
     transition: background-color .5s ease-in;
     border-bottom: 1px solid rgba(255,255,255, 0.4);
 }
