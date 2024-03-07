@@ -10,7 +10,8 @@
       "custom-grid",
       "responsive-layout.desktop#home-desktop2",
       "responsive-layout.mobile#home-mobile2",
-      "flex-layout.row#categories-row",
+      //"flex-layout.row#categories-row",
+      //"flex-layout.row#promo-cards-row",
       "flex-layout.row#promo-cards-row",
       "flex-layout.row#highlights"
     ]
@@ -23,8 +24,7 @@
   "responsive-layout.desktop#home-desktop2": {
     "children": [
       "flex-layout.row#teaser-gif-row",
-      "flex-layout.row#featured-products-row__desktop",
-      "flex-layout.row#promo-cards-row"
+      "flex-layout.row#featured-products-row__desktop"
     ]
   },
   "responsive-layout.mobile#home-mobile":{
