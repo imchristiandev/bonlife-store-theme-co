@@ -180,3 +180,9 @@
 .secondLevelItem__list--button:hover::after {
   width: 100%;
 }
+
+.whatsapp {
+  bottom: 90px;
+  right: 20px;
+  z-index: 1;
+}
