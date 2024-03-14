@@ -2,12 +2,12 @@
   "store.home": { 
     "blocks": [            
       "flex-layout.row#main-slider-row",
-      "responsive-layout.desktop#home-desktop",
-      "responsive-layout.mobile#home-mobile",
       "modal-trigger#popup-home-trigger",
       "__fold__",
       "flex-layout.row#teaser-full-width-row",
       "custom-grid",
+      "responsive-layout.desktop#home-desktop",
+      "responsive-layout.mobile#home-mobile",
       "responsive-layout.desktop#home-desktop2",
       "responsive-layout.mobile#home-mobile2",
       //"flex-layout.row#categories-row",
