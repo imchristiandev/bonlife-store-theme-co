@@ -273,6 +273,12 @@
 /*RESULT PDP*/
 
 /*PDP*/
+@media screen and (min-width: 768px) {
+    .flexRow--product-breadcrumb-row {
+        margin-top: 180px;
+    }
+}
+
 .flexColChild--shipping-simulator-col :global(.vtex-dropdown__label) {
     font-size: 1rem;
     margin-bottom: 12px;
